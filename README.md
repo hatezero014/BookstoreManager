@@ -1,6 +1,7 @@
 # LTTQ-QLNS
 
 Đề án môn IT008 - Lập trình trực quan (UIT).
+
 Phần mềm quản lí nhà sách.
 ## Thành viên
 - Lê Xuân Nam - KTPM2022.2
