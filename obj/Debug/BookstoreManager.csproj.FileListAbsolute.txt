@@ -10,3 +10,17 @@ C:\Users\ngdm2\OneDrive\Desktop\BookstoreManager\obj\Debug\BookstoreManager.cspr
 C:\Users\ngdm2\OneDrive\Desktop\BookstoreManager\obj\Debug\BookstoreManager.exe
 C:\Users\ngdm2\OneDrive\Desktop\BookstoreManager\obj\Debug\BookstoreManager.pdb
 C:\Users\ngdm2\OneDrive\Desktop\BookstoreManager\obj\Debug\BookstoreManager.Form1.resources
+C:\code\BookstoreManager\bin\Debug\BookstoreManager.exe.config
+C:\code\BookstoreManager\bin\Debug\BookstoreManager.exe
+C:\code\BookstoreManager\bin\Debug\BookstoreManager.pdb
+C:\code\BookstoreManager\bin\Debug\RJCodeAdvance.RJControls.dll
+C:\code\BookstoreManager\obj\Debug\BookstoreManager.csproj.AssemblyReference.cache
+C:\code\BookstoreManager\obj\Debug\BookstoreManager.Properties.Resources.resources
+C:\code\BookstoreManager\obj\Debug\BookstoreManager.csproj.GenerateResource.cache
+C:\code\BookstoreManager\obj\Debug\BookstoreManager.csproj.CoreCompileInputs.cache
+C:\code\BookstoreManager\obj\Debug\BookstoreManager.csproj.CopyComplete
+C:\code\BookstoreManager\obj\Debug\BookstoreManager.exe
+C:\code\BookstoreManager\obj\Debug\BookstoreManager.pdb
+C:\code\BookstoreManager\obj\Debug\BookstoreManager.LoginPage.resources
+C:\code\BookstoreManager\bin\Debug\MaterialSkin.dll
+C:\code\BookstoreManager\obj\Debug\BookstoreManager.Form1.resources
