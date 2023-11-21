@@ -13,7 +13,6 @@ C:\Users\ngdm2\OneDrive\Desktop\BookstoreManager\obj\Debug\BookstoreManager.Form
 C:\code\BookstoreManager\bin\Debug\BookstoreManager.exe.config
 C:\code\BookstoreManager\bin\Debug\BookstoreManager.exe
 C:\code\BookstoreManager\bin\Debug\BookstoreManager.pdb
-C:\code\BookstoreManager\bin\Debug\RJCodeAdvance.RJControls.dll
 C:\code\BookstoreManager\obj\Debug\BookstoreManager.csproj.AssemblyReference.cache
 C:\code\BookstoreManager\obj\Debug\BookstoreManager.Properties.Resources.resources
 C:\code\BookstoreManager\obj\Debug\BookstoreManager.csproj.GenerateResource.cache
@@ -21,6 +20,16 @@ C:\code\BookstoreManager\obj\Debug\BookstoreManager.csproj.CoreCompileInputs.cac
 C:\code\BookstoreManager\obj\Debug\BookstoreManager.csproj.CopyComplete
 C:\code\BookstoreManager\obj\Debug\BookstoreManager.exe
 C:\code\BookstoreManager\obj\Debug\BookstoreManager.pdb
-C:\code\BookstoreManager\obj\Debug\BookstoreManager.LoginPage.resources
 C:\code\BookstoreManager\bin\Debug\MaterialSkin.dll
-C:\code\BookstoreManager\obj\Debug\BookstoreManager.Form1.resources
+C:\code\BookstoreManager\bin\Debug\LiveCharts.dll
+C:\code\BookstoreManager\bin\Debug\LiveCharts.WinForms.dll
+C:\code\BookstoreManager\bin\Debug\LiveCharts.Wpf.dll
+C:\code\BookstoreManager\bin\Debug\LiveCharts.pdb
+C:\code\BookstoreManager\bin\Debug\LiveCharts.xml
+C:\code\BookstoreManager\bin\Debug\LiveCharts.WinForms.pdb
+C:\code\BookstoreManager\bin\Debug\LiveCharts.WinForms.xml
+C:\code\BookstoreManager\bin\Debug\LiveCharts.Wpf.pdb
+C:\code\BookstoreManager\bin\Debug\LiveCharts.Wpf.xml
+C:\code\BookstoreManager\obj\Debug\BookstoreManager.Main_Admin.resources
+C:\code\BookstoreManager\obj\Debug\BookstoreManager.Login.resources
+C:\code\BookstoreManager\obj\Debug\BookstoreManager.Main_Employee.resources
