@@ -33,3 +33,4 @@ C:\code\BookstoreManager\bin\Debug\LiveCharts.Wpf.xml
 C:\code\BookstoreManager\obj\Debug\BookstoreManager.Main_Admin.resources
 C:\code\BookstoreManager\obj\Debug\BookstoreManager.Login.resources
 C:\code\BookstoreManager\obj\Debug\BookstoreManager.Main_Employee.resources
+C:\code\BookstoreManager\obj\Debug\BookstoreManager.Selling.resources

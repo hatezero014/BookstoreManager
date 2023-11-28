@@ -82,8 +82,20 @@
     <Compile Include="Main_Employee.Designer.cs">
       <DependentUpon>Main_Employee.cs</DependentUpon>
     </Compile>
+    <Compile Include="NhapSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhapSach.Designer.cs">
+      <DependentUpon>NhapSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BanHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BanHang.Designer.cs">
+      <DependentUpon>BanHang.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -92,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Main_Employee.resx">
       <DependentUpon>Main_Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhapSach.resx">
+      <DependentUpon>NhapSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -102,6 +117,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BanHang.resx">
+      <DependentUpon>BanHang.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

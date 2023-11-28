@@ -67,7 +67,7 @@
             this.materialTextBox1.Depth = 0;
             this.materialTextBox1.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTextBox1.Hint = "Mật khẩu";
-            this.materialTextBox1.LeadingIcon = null;
+            this.materialTextBox1.LeadingIcon = ((System.Drawing.Image)(resources.GetObject("materialTextBox1.LeadingIcon")));
             this.materialTextBox1.Location = new System.Drawing.Point(425, 292);
             this.materialTextBox1.MaxLength = 50;
             this.materialTextBox1.MouseState = MaterialSkin.MouseState.OUT;
@@ -86,7 +86,7 @@
             this.materialTextBox2.Depth = 0;
             this.materialTextBox2.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTextBox2.Hint = "Tên đăng nhập";
-            this.materialTextBox2.LeadingIcon = null;
+            this.materialTextBox2.LeadingIcon = ((System.Drawing.Image)(resources.GetObject("materialTextBox2.LeadingIcon")));
             this.materialTextBox2.Location = new System.Drawing.Point(425, 220);
             this.materialTextBox2.MaxLength = 50;
             this.materialTextBox2.MouseState = MaterialSkin.MouseState.OUT;
