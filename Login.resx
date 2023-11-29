@@ -361,7 +361,7 @@
         VhKCxP3mN416ojTEaTAoxX/+5f8DrXxLb3xVaCEAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="materialTextBox1.LeadingIcon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="txbPass.LeadingIcon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAKJJREFUSEvl
         VIEJgDAM2yme4ime4iee4imeog2sUFzrtk5haiCgs23aZhh6wUhciFvkGs9uwUTcDc7EJqBLLoYJ8C6n
@@ -369,7 +369,7 @@
         CuD5DCsvgRWItaDwYyvK4UcCLb8KzfwEbKZW4IqW+a9GCAepAo/w3hdATwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="materialTextBox2.LeadingIcon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="txbUsername.LeadingIcon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAKxJREFUSEvt
         k4sJgDAMRDuKoziKo7iJoziKo2ieelBKodEWUfDBQT8muaY1/HyGzjSZVtNyjllrAolInIpCTYrI+Wwi

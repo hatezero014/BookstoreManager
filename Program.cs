@@ -13,7 +13,7 @@ namespace BookstoreManager
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BanHang());
+            Application.Run(new Login());
         }
     }
 }

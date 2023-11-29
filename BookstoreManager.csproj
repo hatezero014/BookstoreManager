@@ -64,6 +64,31 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\CTBHDAO.cs" />
+    <Compile Include="DAO\CTNSDAO.cs" />
+    <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\HOADONBANHANGDAO.cs" />
+    <Compile Include="DAO\HOADONNHAPSACHDAO.cs" />
+    <Compile Include="DAO\KHACHHANGDAO.cs" />
+    <Compile Include="DAO\LOAISACHDAO.cs" />
+    <Compile Include="DAO\NHACUNGCAPDAO.cs" />
+    <Compile Include="DAO\NHANVIENDAO.cs" />
+    <Compile Include="DAO\NHAXUATBANDAO.cs" />
+    <Compile Include="DAO\SACHDAO.cs" />
+    <Compile Include="DAO\SACHGIAMGIADAO.cs" />
+    <Compile Include="DAO\TAIKHOANDAO.cs" />
+    <Compile Include="DTO\CTBH.cs" />
+    <Compile Include="DTO\CTNS.cs" />
+    <Compile Include="DTO\HOADONBANHANG.cs" />
+    <Compile Include="DTO\HOADONNHAPSACH.cs" />
+    <Compile Include="DTO\KHACHHANG.cs" />
+    <Compile Include="DTO\LOAISACH.cs" />
+    <Compile Include="DTO\NHACUNGCAP.cs" />
+    <Compile Include="DTO\NHANVIEN.cs" />
+    <Compile Include="DTO\NHAXUATBAN.cs" />
+    <Compile Include="DTO\SACH.cs" />
+    <Compile Include="DTO\SACHGIAMGIA.cs" />
+    <Compile Include="DTO\TAIKHOAN.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
