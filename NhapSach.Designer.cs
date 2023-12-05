@@ -133,7 +133,7 @@
             this.AddBtn.NoAccentTextColor = System.Drawing.Color.Empty;
             this.AddBtn.Size = new System.Drawing.Size(104, 36);
             this.AddBtn.TabIndex = 24;
-            this.AddBtn.Text = "Thêm sách";
+            this.AddBtn.Text = "Thêm ";
             this.AddBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.AddBtn.UseAccentColor = false;
             this.AddBtn.UseVisualStyleBackColor = true;
@@ -165,7 +165,7 @@
             this.materialTextBox6.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTextBox6.Hint = "Đơn giá nhập";
             this.materialTextBox6.LeadingIcon = null;
-            this.materialTextBox6.Location = new System.Drawing.Point(939, 310);
+            this.materialTextBox6.Location = new System.Drawing.Point(1106, 311);
             this.materialTextBox6.MaxLength = 50;
             this.materialTextBox6.MouseState = MaterialSkin.MouseState.OUT;
             this.materialTextBox6.Multiline = false;
@@ -183,7 +183,7 @@
             this.materialTextBox4.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTextBox4.Hint = "Số lượng";
             this.materialTextBox4.LeadingIcon = null;
-            this.materialTextBox4.Location = new System.Drawing.Point(1129, 310);
+            this.materialTextBox4.Location = new System.Drawing.Point(939, 311);
             this.materialTextBox4.MaxLength = 50;
             this.materialTextBox4.MouseState = MaterialSkin.MouseState.OUT;
             this.materialTextBox4.Multiline = false;
@@ -230,7 +230,7 @@
             this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
             this.materialButton1.Size = new System.Drawing.Size(104, 36);
             this.materialButton1.TabIndex = 19;
-            this.materialButton1.Text = "Huỷ chọn";
+            this.materialButton1.Text = "Huỷ";
             this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
             this.materialButton1.UseAccentColor = false;
             this.materialButton1.UseVisualStyleBackColor = true;

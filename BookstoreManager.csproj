@@ -107,6 +107,9 @@
     <Compile Include="Main_Employee.Designer.cs">
       <DependentUpon>Main_Employee.cs</DependentUpon>
     </Compile>
+    <Compile Include="NewComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="NhapSach.cs">
       <SubType>Form</SubType>
     </Compile>
