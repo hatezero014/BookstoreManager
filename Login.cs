@@ -73,5 +73,33 @@ namespace BookstoreManager
             return;
         }
         #endregion
+
+        private void materialButton1_Click(object sender, EventArgs e)
+        {
+            string username = txbUsername.Text;
+            string password = txbPass.Text;
+            int isCheckAccount = isLogin(username, password);
+
+            if (isCheckAccount >= 0)
+            {
+                if (isCheckAccount == 0)
+                {
+                    Main_Employee main_Employee = new Main_Employee();
+                    main_Employee.Show();
+                }
+                else
+                {
+                    Main_Admin main_Admin = new Main_Admin();
+                    main_Admin.Show();
+                }
+            }
+            else
+            {
+                // de ntn no ms hien ra dung
+                MaterialMessageBox.Show(this,
+                    @"Thông tin đăng nhập không đúng.               
+            Vui lòng thử lại!", "Thông báo", MessageBoxButtons.OK, false, FlexibleMaterialForm.ButtonsPosition.Right);
+            }
+        }
     }
 }
