@@ -25,6 +25,11 @@ namespace BookstoreManager
         }
 
         #region methods
+
+        void Xuat()
+        {
+
+        }
         int isLogin(string username, string password)
         {
             return TAIKHOANDAO.Instance.Login(username, password);
