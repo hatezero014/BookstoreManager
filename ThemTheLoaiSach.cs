@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace BookstoreManager
 {
-    public partial class NhapSach : MaterialForm
+    public partial class ThemTheLoaiSach : MaterialForm
     {
-        public NhapSach()
+        public ThemTheLoaiSach()
         {
             InitializeComponent();
             MaterialSkinManager materialSkinManager = MaterialSkinManager.Instance;

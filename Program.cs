@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows.Forms;
 
 namespace BookstoreManager
@@ -13,7 +13,7 @@ namespace BookstoreManager
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            Application.Run(new ThemNhaCungCap());
         }
     }
 }

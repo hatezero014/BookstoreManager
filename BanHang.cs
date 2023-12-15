@@ -20,22 +20,7 @@ namespace BookstoreManager
             MaterialSkinManager materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
-            materialSkinManager.ColorScheme = new ColorScheme(Color.FromArgb(0, 84, 195), Color.FromArgb(13, 0, 195), Color.FromArgb(0, 182, 195), Color.FromArgb(199, 0, 0), TextShade.WHITE);
-        }
-
-        private void DeleteBtn_Click(object sender, EventArgs e)
-        {
-            // xoá sách trong cthd
-        }
-
-        private void ResetButton_Click(object sender, EventArgs e)
-        {
-            // đặt lại textbox
-            BookNoComboBox.SelectedItem = "Chọn sách";
-            QuantityTextBox.Text = "0";
-            BookNameTextBox.Text = "";
-            UnitPriceTextBox.Text = "";
-            TotalPriceTextBox.Text = "";
+            materialSkinManager.ColorScheme = new ColorScheme(Color.FromArgb(0, 84, 195), Color.FromArgb(13, 0, 195), Color.FromArgb(0, 182, 195), Color.FromArgb(0, 155, 179), TextShade.WHITE);
         }
     }
 }

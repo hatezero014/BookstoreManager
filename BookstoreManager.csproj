@@ -89,6 +89,42 @@
     <Compile Include="DTO\SACH.cs" />
     <Compile Include="DTO\SACHGIAMGIA.cs" />
     <Compile Include="DTO\TAIKHOAN.cs" />
+    <Compile Include="ThemSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemSach.Designer.cs">
+      <DependentUpon>ThemSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XemKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XemKhachHang.Designer.cs">
+      <DependentUpon>XemKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemNhanVien.Designer.cs">
+      <DependentUpon>ThemNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemNhaCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemNhaCungCap.Designer.cs">
+      <DependentUpon>ThemNhaCungCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemNhaXuatBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemNhaXuatBan.Designer.cs">
+      <DependentUpon>ThemNhaXuatBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemTheLoaiSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemTheLoaiSach.Designer.cs">
+      <DependentUpon>ThemTheLoaiSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,14 +137,11 @@
     <Compile Include="Main_Admin.Designer.cs">
       <DependentUpon>Main_Admin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main_Employee.cs">
+    <Compile Include="Main_NhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main_Employee.Designer.cs">
-      <DependentUpon>Main_Employee.cs</DependentUpon>
-    </Compile>
-    <Compile Include="NewComboBox.cs">
-      <SubType>Component</SubType>
+    <Compile Include="Main_NhanVien.Designer.cs">
+      <DependentUpon>Main_NhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="NhapSach.cs">
       <SubType>Form</SubType>
@@ -124,17 +157,53 @@
     <Compile Include="BanHang.Designer.cs">
       <DependentUpon>BanHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThemKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemKhachHang.Designer.cs">
+      <DependentUpon>ThemKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XemCTBH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XemCTBH.Designer.cs">
+      <DependentUpon>XemCTBH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XemCTNS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XemCTNS.Designer.cs">
+      <DependentUpon>XemCTNS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XemNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XemNhanVien.Designer.cs">
+      <DependentUpon>XemNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XemSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XemSach.Designer.cs">
+      <DependentUpon>XemSach.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main_Admin.resx">
       <DependentUpon>Main_Admin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main_Employee.resx">
-      <DependentUpon>Main_Employee.cs</DependentUpon>
+    <EmbeddedResource Include="Main_NhanVien.resx">
+      <DependentUpon>Main_NhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemNhaCungCap.resx">
+      <DependentUpon>ThemNhaCungCap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NhapSach.resx">
       <DependentUpon>NhapSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemNhaXuatBan.resx">
+      <DependentUpon>ThemNhaXuatBan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -147,6 +216,36 @@
     </Compile>
     <EmbeddedResource Include="BanHang.resx">
       <DependentUpon>BanHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemSach.resx">
+      <DependentUpon>ThemSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemTheLoaiSach.resx">
+      <DependentUpon>ThemTheLoaiSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemKhachHang.resx">
+      <DependentUpon>ThemKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemNhanVien.resx">
+      <DependentUpon>ThemNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XemCTBH.resx">
+      <DependentUpon>XemCTBH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XemCTNS.resx">
+      <DependentUpon>XemCTNS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XemKhachHang.aa-DJ.resx">
+      <DependentUpon>XemKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XemKhachHang.resx">
+      <DependentUpon>XemKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XemNhanVien.resx">
+      <DependentUpon>XemNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XemSach.resx">
+      <DependentUpon>XemSach.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

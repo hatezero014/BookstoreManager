@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace BookstoreManager
 {
-    public partial class NhapSach : MaterialForm
+    public partial class XemKhachHang : MaterialForm
     {
-        public NhapSach()
+        public XemKhachHang()
         {
             InitializeComponent();
             MaterialSkinManager materialSkinManager = MaterialSkinManager.Instance;
@@ -22,5 +22,6 @@ namespace BookstoreManager
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(Color.FromArgb(0, 84, 195), Color.FromArgb(13, 0, 195), Color.FromArgb(0, 182, 195), Color.FromArgb(0, 155, 179), TextShade.WHITE);
         }
+
     }
 }

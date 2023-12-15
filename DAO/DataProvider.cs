@@ -21,7 +21,7 @@ namespace BookstoreManager.DAO
 
         private DataProvider() { }
 
-        private string connectionStr = "Data Source=TOTALLYNOTMINH;Initial Catalog=QUANLYNHASACH;Integrated Security=True";
+        private string connectionStr = "Data Source=ACER;Initial Catalog=QUANLYNHASACH;Integrated Security=True";
         public DataTable ExcuteQuery(string query, object[] parameter = null)
         {
             DataTable data = new DataTable();

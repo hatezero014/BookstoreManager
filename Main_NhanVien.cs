@@ -12,15 +12,20 @@ using System.Windows.Forms;
 
 namespace BookstoreManager
 {
-    public partial class NhapSach : MaterialForm
+    public partial class Main_NhanVien : MaterialForm
     {
-        public NhapSach()
+        public Main_NhanVien()
         {
             InitializeComponent();
             MaterialSkinManager materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(Color.FromArgb(0, 84, 195), Color.FromArgb(13, 0, 195), Color.FromArgb(0, 182, 195), Color.FromArgb(0, 155, 179), TextShade.WHITE);
+        }
+
+        private void EmployeeTabControl_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.Text = this.EmployeeTabControl.SelectedTab.Text;
         }
     }
 }

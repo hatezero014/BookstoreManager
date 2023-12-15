@@ -1,4 +1,4 @@
-﻿using BookstoreManager.DAO;
+﻿    using BookstoreManager.DAO;
 using MaterialSkin;
 using MaterialSkin.Controls;
 using System;
@@ -21,7 +21,7 @@ namespace BookstoreManager
             MaterialSkinManager materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
-            materialSkinManager.ColorScheme = new ColorScheme(Color.FromArgb(0, 84, 195), Color.FromArgb(13, 0, 195), Color.FromArgb(0, 182, 195), Color.FromArgb(255, 2, 102), TextShade.WHITE);
+            materialSkinManager.ColorScheme = new ColorScheme(Color.FromArgb(0, 84, 195), Color.FromArgb(13, 0, 195), Color.FromArgb(0, 182, 195), Color.FromArgb(0, 155, 179), TextShade.WHITE);
         }
 
         #region methods
@@ -32,7 +32,17 @@ namespace BookstoreManager
         #endregion
 
         #region events
-        private void LoginButton_Click(object sender, EventArgs e)
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void materialFloatingActionButton1_Click(object sender, EventArgs e)
         {
             string username = txbUsername.Text;
             string password = txbPass.Text;
@@ -42,7 +52,7 @@ namespace BookstoreManager
             {
                 if (isCheckAccount == 0)
                 {
-                    Main_Employee main_Employee = new Main_Employee();
+                    Main_NhanVien main_Employee = new Main_NhanVien();
                     main_Employee.Show();
                 }
                 else
@@ -53,11 +63,9 @@ namespace BookstoreManager
             }
             else
             {
-                // de ntn no ms hien ra dung
-                MaterialMessageBox.Show(this, 
-                    @"Thông tin đăng nhập không đúng.               
-                Vui lòng thử lại!", "Thông báo", MessageBoxButtons.OK, false, FlexibleMaterialForm.ButtonsPosition.Right);
+                MessageBox.Show("Tài khoản hoặc mật khẩu không đúng!", "Thông báo", MessageBoxButtons.OK);
             }
+            return;
         }
         #endregion
     }

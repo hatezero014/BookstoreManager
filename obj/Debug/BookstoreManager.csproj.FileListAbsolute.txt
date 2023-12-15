@@ -32,7 +32,6 @@ C:\code\BookstoreManager\bin\Debug\LiveCharts.Wpf.pdb
 C:\code\BookstoreManager\bin\Debug\LiveCharts.Wpf.xml
 C:\code\BookstoreManager\obj\Debug\BookstoreManager.Main_Admin.resources
 C:\code\BookstoreManager\obj\Debug\BookstoreManager.Login.resources
-C:\code\BookstoreManager\obj\Debug\BookstoreManager.Main_Employee.resources
 C:\Users\NamLe\Downloads\LTTQ-QLNS-new-material-design\LTTQ-QLNS-new-material-design\bin\Debug\BookstoreManager.exe.config
 C:\Users\NamLe\Downloads\LTTQ-QLNS-new-material-design\LTTQ-QLNS-new-material-design\bin\Debug\BookstoreManager.exe
 C:\Users\NamLe\Downloads\LTTQ-QLNS-new-material-design\LTTQ-QLNS-new-material-design\bin\Debug\BookstoreManager.pdb
@@ -86,3 +85,9 @@ C:\code\UIT\n\LTTQ-QLNS-new-material-design\LTTQ-QLNS-new-material-design\obj\De
 C:\code\UIT\n\LTTQ-QLNS-new-material-design\LTTQ-QLNS-new-material-design\obj\Debug\BookstoreManager.pdb
 C:\code\BookstoreManager\obj\Debug\BookstoreManager.NhapSach.resources
 C:\code\BookstoreManager\obj\Debug\BookstoreManager.BanHang.resources
+C:\code\BookstoreManager\obj\Debug\BookstoreManager.Main_NhanVien.resources
+C:\code\BookstoreManager\obj\Debug\BookstoreManager.TheLoaiSach.resources
+C:\code\BookstoreManager\obj\Debug\BookstoreManager.NhaCungCap.resources
+C:\code\BookstoreManager\obj\Debug\BookstoreManager.NhaXuatBan.resources
+C:\code\BookstoreManager\obj\Debug\BookstoreManager.ThemKhachHang.resources
+C:\code\BookstoreManager\obj\Debug\BookstoreManager.ThemNhanVien.resources
