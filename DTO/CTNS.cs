@@ -10,7 +10,7 @@ namespace BookstoreManager.DTO
 {
     public class CTNS
     {
-        public CTNS(string maNS, string maSach, int soLuong, SqlMoney giaNhap, SqlMoney thanhTien)
+        public CTNS(string maNS, string maSach, int soLuong, decimal giaNhap, decimal thanhTien)
         {
             this.MaNS = maNS;
             this.MaSach = maSach;
@@ -24,8 +24,8 @@ namespace BookstoreManager.DTO
             this.MaNS = row["MANS"].ToString();
             this.MaSach = row["MASACH"].ToString();
             this.SoLuong = (int)row["SOLUONG"];
-            this.GiaNhap = (SqlMoney)row["GIANHAP"];
-            this.ThanhTien = (SqlMoney)row["THANHTIEN"];
+            this.GiaNhap = (decimal)row["GIANHAP"];
+            this.ThanhTien = (decimal)row["THANHTIEN"];
         }
 
         private string maNS;
@@ -34,14 +34,14 @@ namespace BookstoreManager.DTO
 
         private int soLuong;
 
-        private SqlMoney giaNhap;
+        private decimal giaNhap;
 
-        private SqlMoney thanhTien;
+        private decimal thanhTien;
 
         public string MaNS { get => maNS; set => maNS = value; }
         public string MaSach { get => maSach; set => maSach = value; }
         public int SoLuong { get => soLuong; set => soLuong = value; }
-        public SqlMoney GiaNhap { get => giaNhap; set => giaNhap = value; }
-        public SqlMoney ThanhTien { get => thanhTien; set => thanhTien = value; }
+        public decimal GiaNhap { get => giaNhap; set => giaNhap = value; }
+        public decimal ThanhTien { get => thanhTien; set => thanhTien = value; }
     }
 }

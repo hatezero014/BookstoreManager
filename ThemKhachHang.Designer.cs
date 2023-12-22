@@ -28,159 +28,166 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.materialTextBox1 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox2 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox3 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox4 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox5 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
-            this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
+            this.txbMaKH = new MaterialSkin.Controls.MaterialTextBox();
+            this.txbHoTen = new MaterialSkin.Controls.MaterialTextBox();
+            this.txbSDT = new MaterialSkin.Controls.MaterialTextBox();
+            this.txbDiaChi = new MaterialSkin.Controls.MaterialTextBox();
+            this.btnThem = new MaterialSkin.Controls.MaterialButton();
+            this.btnXoa = new MaterialSkin.Controls.MaterialButton();
+            this.btnThoat = new MaterialSkin.Controls.MaterialButton();
             this.SuspendLayout();
             // 
-            // materialTextBox1
+            // txbMaKH
             // 
-            this.materialTextBox1.AnimateReadOnly = false;
-            this.materialTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox1.Depth = 0;
-            this.materialTextBox1.Enabled = false;
-            this.materialTextBox1.Font = new System.Drawing.Font("Roboto", 9.6F);
-            this.materialTextBox1.Hint = "Mã khách hàng";
-            this.materialTextBox1.LeadingIcon = null;
-            this.materialTextBox1.Location = new System.Drawing.Point(43, 99);
-            this.materialTextBox1.MaxLength = 50;
-            this.materialTextBox1.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox1.Multiline = false;
-            this.materialTextBox1.Name = "materialTextBox1";
-            this.materialTextBox1.Size = new System.Drawing.Size(178, 50);
-            this.materialTextBox1.TabIndex = 0;
-            this.materialTextBox1.Text = "KH001";
-            this.materialTextBox1.TrailingIcon = null;
+            this.txbMaKH.AnimateReadOnly = false;
+            this.txbMaKH.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbMaKH.Depth = 0;
+            this.txbMaKH.Enabled = false;
+            this.txbMaKH.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txbMaKH.Hint = "Mã khách hàng";
+            this.txbMaKH.LeadingIcon = null;
+            this.txbMaKH.Location = new System.Drawing.Point(37, 99);
+            this.txbMaKH.MaxLength = 50;
+            this.txbMaKH.MouseState = MaterialSkin.MouseState.OUT;
+            this.txbMaKH.Multiline = false;
+            this.txbMaKH.Name = "txbMaKH";
+            this.txbMaKH.Size = new System.Drawing.Size(178, 50);
+            this.txbMaKH.TabIndex = 10;
+            this.txbMaKH.Text = "";
+            this.txbMaKH.TrailingIcon = null;
             // 
-            // materialTextBox2
+            // txbHoTen
             // 
-            this.materialTextBox2.AnimateReadOnly = false;
-            this.materialTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox2.Depth = 0;
-            this.materialTextBox2.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox2.Hint = "Họ tên";
-            this.materialTextBox2.LeadingIcon = null;
-            this.materialTextBox2.Location = new System.Drawing.Point(239, 99);
-            this.materialTextBox2.MaxLength = 50;
-            this.materialTextBox2.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox2.Multiline = false;
-            this.materialTextBox2.Name = "materialTextBox2";
-            this.materialTextBox2.Size = new System.Drawing.Size(321, 50);
-            this.materialTextBox2.TabIndex = 0;
-            this.materialTextBox2.Text = "";
-            this.materialTextBox2.TrailingIcon = null;
+            this.txbHoTen.AnimateReadOnly = false;
+            this.txbHoTen.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbHoTen.Depth = 0;
+            this.txbHoTen.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txbHoTen.Hint = "Họ tên";
+            this.txbHoTen.LeadingIcon = null;
+            this.txbHoTen.Location = new System.Drawing.Point(230, 99);
+            this.txbHoTen.MaxLength = 50;
+            this.txbHoTen.MouseState = MaterialSkin.MouseState.OUT;
+            this.txbHoTen.Multiline = false;
+            this.txbHoTen.Name = "txbHoTen";
+            this.txbHoTen.Size = new System.Drawing.Size(324, 50);
+            this.txbHoTen.TabIndex = 1;
+            this.txbHoTen.Text = "";
+            this.txbHoTen.TrailingIcon = null;
             // 
-            // materialTextBox3
+            // txbSDT
             // 
-            this.materialTextBox3.AnimateReadOnly = false;
-            this.materialTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox3.Depth = 0;
-            this.materialTextBox3.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox3.Hint = "Số điện thoại";
-            this.materialTextBox3.LeadingIcon = null;
-            this.materialTextBox3.Location = new System.Drawing.Point(43, 169);
-            this.materialTextBox3.MaxLength = 10;
-            this.materialTextBox3.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox3.Multiline = false;
-            this.materialTextBox3.Name = "materialTextBox3";
-            this.materialTextBox3.Size = new System.Drawing.Size(254, 50);
-            this.materialTextBox3.TabIndex = 0;
-            this.materialTextBox3.Text = "";
-            this.materialTextBox3.TrailingIcon = null;
+            this.txbSDT.AnimateReadOnly = false;
+            this.txbSDT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbSDT.Depth = 0;
+            this.txbSDT.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txbSDT.Hint = "Số điện thoại";
+            this.txbSDT.LeadingIcon = null;
+            this.txbSDT.Location = new System.Drawing.Point(37, 169);
+            this.txbSDT.MaxLength = 10;
+            this.txbSDT.MouseState = MaterialSkin.MouseState.OUT;
+            this.txbSDT.Multiline = false;
+            this.txbSDT.Name = "txbSDT";
+            this.txbSDT.Size = new System.Drawing.Size(517, 50);
+            this.txbSDT.TabIndex = 2;
+            this.txbSDT.Text = "";
+            this.txbSDT.TrailingIcon = null;
             // 
-            // materialTextBox4
+            // txbDiaChi
             // 
-            this.materialTextBox4.AnimateReadOnly = false;
-            this.materialTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox4.Depth = 0;
-            this.materialTextBox4.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox4.Hint = "Email";
-            this.materialTextBox4.LeadingIcon = null;
-            this.materialTextBox4.Location = new System.Drawing.Point(316, 169);
-            this.materialTextBox4.MaxLength = 25;
-            this.materialTextBox4.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox4.Multiline = false;
-            this.materialTextBox4.Name = "materialTextBox4";
-            this.materialTextBox4.Size = new System.Drawing.Size(244, 50);
-            this.materialTextBox4.TabIndex = 0;
-            this.materialTextBox4.Text = "";
-            this.materialTextBox4.TrailingIcon = null;
+            this.txbDiaChi.AnimateReadOnly = false;
+            this.txbDiaChi.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbDiaChi.Depth = 0;
+            this.txbDiaChi.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txbDiaChi.Hint = "Địa chỉ";
+            this.txbDiaChi.LeadingIcon = null;
+            this.txbDiaChi.Location = new System.Drawing.Point(37, 241);
+            this.txbDiaChi.MaxLength = 100;
+            this.txbDiaChi.MouseState = MaterialSkin.MouseState.OUT;
+            this.txbDiaChi.Multiline = false;
+            this.txbDiaChi.Name = "txbDiaChi";
+            this.txbDiaChi.Size = new System.Drawing.Size(517, 50);
+            this.txbDiaChi.TabIndex = 3;
+            this.txbDiaChi.Text = "";
+            this.txbDiaChi.TrailingIcon = null;
             // 
-            // materialTextBox5
+            // btnThem
             // 
-            this.materialTextBox5.AnimateReadOnly = false;
-            this.materialTextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox5.Depth = 0;
-            this.materialTextBox5.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox5.Hint = "Địa chỉ";
-            this.materialTextBox5.LeadingIcon = null;
-            this.materialTextBox5.Location = new System.Drawing.Point(43, 241);
-            this.materialTextBox5.MaxLength = 100;
-            this.materialTextBox5.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox5.Multiline = false;
-            this.materialTextBox5.Name = "materialTextBox5";
-            this.materialTextBox5.Size = new System.Drawing.Size(517, 50);
-            this.materialTextBox5.TabIndex = 0;
-            this.materialTextBox5.Text = "";
-            this.materialTextBox5.TrailingIcon = null;
+            this.btnThem.AutoSize = false;
+            this.btnThem.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnThem.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnThem.Depth = 0;
+            this.btnThem.HighEmphasis = true;
+            this.btnThem.Icon = null;
+            this.btnThem.Location = new System.Drawing.Point(437, 319);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnThem.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnThem.Name = "btnThem";
+            this.btnThem.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnThem.Size = new System.Drawing.Size(117, 36);
+            this.btnThem.TabIndex = 12;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnThem.UseAccentColor = false;
+            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
-            // materialButton1
+            // btnXoa
             // 
-            this.materialButton1.AutoSize = false;
-            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton1.Depth = 0;
-            this.materialButton1.HighEmphasis = true;
-            this.materialButton1.Icon = null;
-            this.materialButton1.Location = new System.Drawing.Point(443, 319);
-            this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton1.Name = "materialButton1";
-            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton1.Size = new System.Drawing.Size(117, 36);
-            this.materialButton1.TabIndex = 1;
-            this.materialButton1.Text = "Thêm";
-            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton1.UseAccentColor = false;
-            this.materialButton1.UseVisualStyleBackColor = true;
+            this.btnXoa.AutoSize = false;
+            this.btnXoa.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnXoa.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnXoa.Depth = 0;
+            this.btnXoa.HighEmphasis = true;
+            this.btnXoa.Icon = null;
+            this.btnXoa.Location = new System.Drawing.Point(318, 319);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnXoa.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnXoa.Size = new System.Drawing.Size(103, 36);
+            this.btnXoa.TabIndex = 11;
+            this.btnXoa.Text = "Xoá";
+            this.btnXoa.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
+            this.btnXoa.UseAccentColor = false;
+            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
-            // materialButton2
+            // btnThoat
             // 
-            this.materialButton2.AutoSize = false;
-            this.materialButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton2.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton2.Depth = 0;
-            this.materialButton2.HighEmphasis = true;
-            this.materialButton2.Icon = null;
-            this.materialButton2.Location = new System.Drawing.Point(307, 319);
-            this.materialButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton2.Name = "materialButton2";
-            this.materialButton2.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton2.Size = new System.Drawing.Size(117, 36);
-            this.materialButton2.TabIndex = 1;
-            this.materialButton2.Text = "Xoá";
-            this.materialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
-            this.materialButton2.UseAccentColor = false;
-            this.materialButton2.UseVisualStyleBackColor = true;
+            this.btnThoat.AutoSize = false;
+            this.btnThoat.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnThoat.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnThoat.Depth = 0;
+            this.btnThoat.HighEmphasis = true;
+            this.btnThoat.Icon = null;
+            this.btnThoat.Location = new System.Drawing.Point(209, 319);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnThoat.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnThoat.Size = new System.Drawing.Size(93, 36);
+            this.btnThoat.TabIndex = 10;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
+            this.btnThoat.UseAccentColor = false;
+            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // ThemKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(610, 399);
-            this.Controls.Add(this.materialButton2);
-            this.Controls.Add(this.materialButton1);
-            this.Controls.Add(this.materialTextBox4);
-            this.Controls.Add(this.materialTextBox5);
-            this.Controls.Add(this.materialTextBox3);
-            this.Controls.Add(this.materialTextBox2);
-            this.Controls.Add(this.materialTextBox1);
+            this.ClientSize = new System.Drawing.Size(593, 381);
+            this.Controls.Add(this.btnThoat);
+            this.Controls.Add(this.btnXoa);
+            this.Controls.Add(this.btnThem);
+            this.Controls.Add(this.txbDiaChi);
+            this.Controls.Add(this.txbSDT);
+            this.Controls.Add(this.txbHoTen);
+            this.Controls.Add(this.txbMaKH);
+            this.FormStyle = MaterialSkin.Controls.MaterialForm.FormStyles.ActionBar_48;
             this.Name = "ThemKhachHang";
+            this.Padding = new System.Windows.Forms.Padding(3, 72, 3, 3);
             this.Text = "Thêm khách hàng mới";
             this.ResumeLayout(false);
 
@@ -188,12 +195,12 @@
 
         #endregion
 
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox1;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox2;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox3;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox4;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox5;
-        private MaterialSkin.Controls.MaterialButton materialButton1;
-        private MaterialSkin.Controls.MaterialButton materialButton2;
+        private MaterialSkin.Controls.MaterialTextBox txbMaKH;
+        private MaterialSkin.Controls.MaterialTextBox txbHoTen;
+        private MaterialSkin.Controls.MaterialTextBox txbSDT;
+        private MaterialSkin.Controls.MaterialTextBox txbDiaChi;
+        private MaterialSkin.Controls.MaterialButton btnThem;
+        private MaterialSkin.Controls.MaterialButton btnXoa;
+        private MaterialSkin.Controls.MaterialButton btnThoat;
     }
 }

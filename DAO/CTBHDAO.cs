@@ -1,5 +1,7 @@
-﻿using System;
+﻿using BookstoreManager.DTO;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,5 +19,21 @@ namespace BookstoreManager.DAO
         }
 
         private CTBHDAO() { }
+
+        public List<CTBH> GetListCTBHByID(string maBH)
+        {
+            string query = $"SELECT * FROM CTBH WHERE MABH = '{maBH}'";
+
+            List<CTBH> result = new List<CTBH>();
+
+            DataTable data = DataProvider.Intstance.ExcuteQuery(query);
+
+            foreach (DataRow row in data.Rows)
+            {
+                result.Add(new CTBH(row));
+            }
+
+            return result;
+        }
     }
 }

@@ -69,7 +69,7 @@
             this.txbPass.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txbPass.Hint = "Mật khẩu";
             this.txbPass.LeadingIcon = ((System.Drawing.Image)(resources.GetObject("txbPass.LeadingIcon")));
-            this.txbPass.Location = new System.Drawing.Point(423, 266);
+            this.txbPass.Location = new System.Drawing.Point(423, 264);
             this.txbPass.MaxLength = 25;
             this.txbPass.MouseState = MaterialSkin.MouseState.OUT;
             this.txbPass.Multiline = false;
@@ -100,17 +100,18 @@
             // 
             // materialButton1
             // 
+            this.materialButton1.AutoSize = false;
             this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.materialButton1.Depth = 0;
             this.materialButton1.HighEmphasis = true;
             this.materialButton1.Icon = null;
-            this.materialButton1.Location = new System.Drawing.Point(642, 340);
+            this.materialButton1.Location = new System.Drawing.Point(624, 334);
             this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton1.Name = "materialButton1";
             this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton1.Size = new System.Drawing.Size(105, 36);
+            this.materialButton1.Size = new System.Drawing.Size(123, 42);
             this.materialButton1.TabIndex = 4;
             this.materialButton1.Text = "Đăng nhập";
             this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -123,7 +124,7 @@
             this.AcceptButton = this.materialButton1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(822, 474);
+            this.ClientSize = new System.Drawing.Size(822, 428);
             this.Controls.Add(this.materialButton1);
             this.Controls.Add(this.txbUsername);
             this.Controls.Add(this.txbPass);

@@ -10,7 +10,7 @@ namespace BookstoreManager.DTO
 {
     public class HOADONBANHANG
     {
-        public HOADONBANHANG(string maBH, string maKH, string maNV, DateTime ngayBan, SqlMoney tongTien)
+        public HOADONBANHANG(string maBH, string maKH, string maNV, DateTime ngayBan, decimal tongTien)
         {
             this.MaBH = maBH;
             this.MaKH = maKH;
@@ -25,7 +25,7 @@ namespace BookstoreManager.DTO
             this.MaKH = row["MAKH"].ToString();
             this.MaNV = row["MANV"].ToString();
             this.NgayBan = (DateTime)row["NGAYBAN"];
-            this.TongTien = (SqlMoney)row["TONGTIEN"];
+            this.TongTien = (decimal)row["TONGTIEN"];
         }
 
         private string maBH;
@@ -36,12 +36,12 @@ namespace BookstoreManager.DTO
 
         private DateTime ngayBan;
 
-        private SqlMoney tongTien;
+        private decimal tongTien;
 
         public string MaBH { get => maBH; set => maBH = value; }
         public string MaKH { get => maKH; set => maKH = value; }
         public string MaNV { get => maNV; set => maNV = value; }
         public DateTime NgayBan { get => ngayBan; set => ngayBan = value; }
-        public SqlMoney TongTien { get => tongTien; set => tongTien = value; }
+        public decimal TongTien { get => tongTien; set => tongTien = value; }
     }
 }

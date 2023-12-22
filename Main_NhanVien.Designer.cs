@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main_NhanVien));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.EmployeeTabControl = new MaterialSkin.Controls.MaterialTabControl();
             this.HomepageTab = new System.Windows.Forms.TabPage();
             this.BookTab = new System.Windows.Forms.TabPage();
@@ -72,7 +71,7 @@
             this.EmployeeTabControl.Multiline = true;
             this.EmployeeTabControl.Name = "EmployeeTabControl";
             this.EmployeeTabControl.SelectedIndex = 0;
-            this.EmployeeTabControl.Size = new System.Drawing.Size(1401, 898);
+            this.EmployeeTabControl.Size = new System.Drawing.Size(1292, 622);
             this.EmployeeTabControl.TabIndex = 1;
             this.EmployeeTabControl.SelectedIndexChanged += new System.EventHandler(this.EmployeeTabControl_SelectedIndexChanged);
             // 
@@ -81,8 +80,8 @@
             this.HomepageTab.ImageKey = "home_FILL0_wght400_GRAD0_opsz24.png";
             this.HomepageTab.Location = new System.Drawing.Point(4, 46);
             this.HomepageTab.Name = "HomepageTab";
-            this.HomepageTab.Padding = new System.Windows.Forms.Padding(3);
-            this.HomepageTab.Size = new System.Drawing.Size(1393, 848);
+            this.HomepageTab.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.HomepageTab.Size = new System.Drawing.Size(1284, 572);
             this.HomepageTab.TabIndex = 4;
             this.HomepageTab.Text = "Trang chủ";
             this.HomepageTab.UseVisualStyleBackColor = true;
@@ -92,8 +91,8 @@
             this.BookTab.ImageKey = "book_4_FILL0_wght400_GRAD0_opsz24.png";
             this.BookTab.Location = new System.Drawing.Point(4, 46);
             this.BookTab.Name = "BookTab";
-            this.BookTab.Padding = new System.Windows.Forms.Padding(3);
-            this.BookTab.Size = new System.Drawing.Size(1393, 848);
+            this.BookTab.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.BookTab.Size = new System.Drawing.Size(1284, 572);
             this.BookTab.TabIndex = 1;
             this.BookTab.Text = "Sách";
             this.BookTab.UseVisualStyleBackColor = true;
@@ -104,8 +103,8 @@
             this.ReceiptTab.ImageKey = "unarchive_FILL0_wght400_GRAD0_opsz24.png";
             this.ReceiptTab.Location = new System.Drawing.Point(4, 46);
             this.ReceiptTab.Name = "ReceiptTab";
-            this.ReceiptTab.Padding = new System.Windows.Forms.Padding(3);
-            this.ReceiptTab.Size = new System.Drawing.Size(1393, 848);
+            this.ReceiptTab.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.ReceiptTab.Size = new System.Drawing.Size(1284, 572);
             this.ReceiptTab.TabIndex = 0;
             this.ReceiptTab.Text = "Bán hàng";
             this.ReceiptTab.UseVisualStyleBackColor = true;
@@ -124,7 +123,7 @@
             this.Receipt_DataPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.Receipt_DataPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
             this.Receipt_DataPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.Receipt_DataPanel.Size = new System.Drawing.Size(1387, 842);
+            this.Receipt_DataPanel.Size = new System.Drawing.Size(1278, 566);
             this.Receipt_DataPanel.TabIndex = 2;
             // 
             // Receipt_SearchBarPanel
@@ -170,7 +169,7 @@
             this.materialTextBox21.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.materialTextBox21.Depth = 0;
             this.materialTextBox21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialTextBox21.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTextBox21.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTextBox21.HideSelection = true;
             this.materialTextBox21.Hint = "Nhập mã hoá đơn";
             this.materialTextBox21.LeadingIcon = null;
@@ -218,17 +217,9 @@
             this.Receipt_DataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Receipt_DataGridView.Location = new System.Drawing.Point(3, 98);
             this.Receipt_DataGridView.Name = "Receipt_DataGridView";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Receipt_DataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.Receipt_DataGridView.RowHeadersWidth = 51;
             this.Receipt_DataGridView.RowTemplate.Height = 24;
-            this.Receipt_DataGridView.Size = new System.Drawing.Size(1381, 741);
+            this.Receipt_DataGridView.Size = new System.Drawing.Size(1381, 465);
             this.Receipt_DataGridView.TabIndex = 2;
             // 
             // materialLabel1
@@ -251,8 +242,8 @@
             this.ImportTab.ImageKey = "archive_FILL0_wght400_GRAD0_opsz24.png";
             this.ImportTab.Location = new System.Drawing.Point(4, 46);
             this.ImportTab.Name = "ImportTab";
-            this.ImportTab.Padding = new System.Windows.Forms.Padding(3);
-            this.ImportTab.Size = new System.Drawing.Size(1393, 848);
+            this.ImportTab.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.ImportTab.Size = new System.Drawing.Size(1284, 572);
             this.ImportTab.TabIndex = 3;
             this.ImportTab.Text = "Nhập sách";
             this.ImportTab.UseVisualStyleBackColor = true;
@@ -262,8 +253,8 @@
             this.CustomerTab.ImageKey = "digital_wellbeing_FILL0_wght400_GRAD0_opsz24.png";
             this.CustomerTab.Location = new System.Drawing.Point(4, 46);
             this.CustomerTab.Name = "CustomerTab";
-            this.CustomerTab.Padding = new System.Windows.Forms.Padding(3);
-            this.CustomerTab.Size = new System.Drawing.Size(1393, 848);
+            this.CustomerTab.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.CustomerTab.Size = new System.Drawing.Size(1284, 572);
             this.CustomerTab.TabIndex = 2;
             this.CustomerTab.Text = "Khách hàng";
             this.CustomerTab.UseVisualStyleBackColor = true;
@@ -273,8 +264,8 @@
             this.AccountTab.ImageKey = "account_circle_FILL0_wght400_GRAD0_opsz24.png";
             this.AccountTab.Location = new System.Drawing.Point(4, 46);
             this.AccountTab.Name = "AccountTab";
-            this.AccountTab.Padding = new System.Windows.Forms.Padding(3);
-            this.AccountTab.Size = new System.Drawing.Size(1393, 848);
+            this.AccountTab.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.AccountTab.Size = new System.Drawing.Size(1284, 572);
             this.AccountTab.TabIndex = 5;
             this.AccountTab.Text = "Tài khoản";
             this.AccountTab.UseVisualStyleBackColor = true;
@@ -290,16 +281,16 @@
             this.imageList1.Images.SetKeyName(4, "digital_wellbeing_FILL0_wght400_GRAD0_opsz24.png");
             this.imageList1.Images.SetKeyName(5, "account_circle_FILL0_wght400_GRAD0_opsz24.png");
             // 
-            // Main_Employee
+            // Main_NhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1404, 981);
+            this.ClientSize = new System.Drawing.Size(1295, 705);
             this.Controls.Add(this.EmployeeTabControl);
             this.DrawerShowIconsWhenHidden = true;
             this.DrawerTabControl = this.EmployeeTabControl;
             this.FormStyle = MaterialSkin.Controls.MaterialForm.FormStyles.ActionBar_56;
-            this.Name = "Main_Employee";
+            this.Name = "Main_NhanVien";
             this.Padding = new System.Windows.Forms.Padding(0, 80, 3, 3);
             this.Text = "Trang chủ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

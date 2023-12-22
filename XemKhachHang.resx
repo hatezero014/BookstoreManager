@@ -118,258 +118,258 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="materialButton1.AutoSize" type="System.Boolean, mscorlib">
+  <data name="btnCapNhatKH.AutoSize" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="materialButton1.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+  <data name="btnCapNhatKH.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="materialButton1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btnCapNhatKH.Location" type="System.Drawing.Point, System.Drawing">
     <value>443, 316</value>
   </data>
-  <data name="materialButton1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="btnCapNhatKH.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 6, 4, 6</value>
   </data>
-  <data name="materialButton1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btnCapNhatKH.Size" type="System.Drawing.Size, System.Drawing">
     <value>117, 36</value>
   </data>
-  <data name="materialButton1.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnCapNhatKH.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="materialButton1.Text" xml:space="preserve">
+  <data name="btnCapNhatKH.Text" xml:space="preserve">
     <value>Cập nhật</value>
   </data>
-  <data name="&gt;&gt;materialButton1.Name" xml:space="preserve">
-    <value>materialButton1</value>
+  <data name="&gt;&gt;btnCapNhatKH.Name" xml:space="preserve">
+    <value>btnCapNhatKH</value>
   </data>
-  <data name="&gt;&gt;materialButton1.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnCapNhatKH.Type" xml:space="preserve">
     <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;materialButton1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnCapNhatKH.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;materialButton1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="materialTextBox4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 16px</value>
-  </data>
-  <data name="materialTextBox4.Hint" xml:space="preserve">
-    <value>Email</value>
-  </data>
-  <data name="materialTextBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>316, 166</value>
-  </data>
-  <data name="materialTextBox4.MaxLength" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="materialTextBox4.Multiline" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="materialTextBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>244, 50</value>
-  </data>
-  <data name="materialTextBox4.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;btnCapNhatKH.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="materialTextBox4.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;materialTextBox4.Name" xml:space="preserve">
-    <value>materialTextBox4</value>
-  </data>
-  <data name="&gt;&gt;materialTextBox4.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialTextBox, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;materialTextBox4.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;materialTextBox4.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="materialTextBox5.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="txbDiaChi.Font" type="System.Drawing.Font, System.Drawing">
     <value>Roboto, 16px</value>
   </data>
-  <data name="materialTextBox5.Hint" xml:space="preserve">
+  <data name="txbDiaChi.Hint" xml:space="preserve">
     <value>Địa chỉ</value>
   </data>
-  <data name="materialTextBox5.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="txbDiaChi.Location" type="System.Drawing.Point, System.Drawing">
     <value>43, 238</value>
   </data>
-  <data name="materialTextBox5.MaxLength" type="System.Int32, mscorlib">
+  <data name="txbDiaChi.MaxLength" type="System.Int32, mscorlib">
     <value>100</value>
   </data>
-  <data name="materialTextBox5.Multiline" type="System.Boolean, mscorlib">
+  <data name="txbDiaChi.Multiline" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="materialTextBox5.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txbDiaChi.Size" type="System.Drawing.Size, System.Drawing">
     <value>517, 50</value>
   </data>
-  <data name="materialTextBox5.TabIndex" type="System.Int32, mscorlib">
+  <data name="txbDiaChi.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="materialTextBox5.Text" xml:space="preserve">
+  <data name="txbDiaChi.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;materialTextBox5.Name" xml:space="preserve">
-    <value>materialTextBox5</value>
+  <data name="&gt;&gt;txbDiaChi.Name" xml:space="preserve">
+    <value>txbDiaChi</value>
   </data>
-  <data name="&gt;&gt;materialTextBox5.Type" xml:space="preserve">
+  <data name="&gt;&gt;txbDiaChi.Type" xml:space="preserve">
     <value>MaterialSkin.Controls.MaterialTextBox, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;materialTextBox5.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txbDiaChi.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;materialTextBox5.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txbDiaChi.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="materialTextBox3.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="txbSDT.Font" type="System.Drawing.Font, System.Drawing">
     <value>Roboto, 16px</value>
   </data>
-  <data name="materialTextBox3.Hint" xml:space="preserve">
+  <data name="txbSDT.Hint" xml:space="preserve">
     <value>Số điện thoại</value>
   </data>
-  <data name="materialTextBox3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="txbSDT.Location" type="System.Drawing.Point, System.Drawing">
     <value>43, 166</value>
   </data>
-  <data name="materialTextBox3.MaxLength" type="System.Int32, mscorlib">
+  <data name="txbSDT.MaxLength" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
-  <data name="materialTextBox3.Multiline" type="System.Boolean, mscorlib">
+  <data name="txbSDT.Multiline" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="materialTextBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>254, 50</value>
+  <data name="txbSDT.Size" type="System.Drawing.Size, System.Drawing">
+    <value>517, 50</value>
   </data>
-  <data name="materialTextBox3.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="txbSDT.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="materialTextBox3.Text" xml:space="preserve">
+  <data name="txbSDT.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;materialTextBox3.Name" xml:space="preserve">
-    <value>materialTextBox3</value>
+  <data name="&gt;&gt;txbSDT.Name" xml:space="preserve">
+    <value>txbSDT</value>
   </data>
-  <data name="&gt;&gt;materialTextBox3.Type" xml:space="preserve">
+  <data name="&gt;&gt;txbSDT.Type" xml:space="preserve">
     <value>MaterialSkin.Controls.MaterialTextBox, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;materialTextBox3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txbSDT.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;materialTextBox3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txbSDT.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="materialTextBox2.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="txbHoTen.Font" type="System.Drawing.Font, System.Drawing">
     <value>Roboto, 16px</value>
   </data>
-  <data name="materialTextBox2.Hint" xml:space="preserve">
+  <data name="txbHoTen.Hint" xml:space="preserve">
     <value>Họ tên</value>
   </data>
-  <data name="materialTextBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>239, 96</value>
+  <data name="txbHoTen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>234, 96</value>
   </data>
-  <data name="materialTextBox2.MaxLength" type="System.Int32, mscorlib">
+  <data name="txbHoTen.MaxLength" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
-  <data name="materialTextBox2.Multiline" type="System.Boolean, mscorlib">
+  <data name="txbHoTen.Multiline" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="materialTextBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>321, 50</value>
+  <data name="txbHoTen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>326, 50</value>
   </data>
-  <data name="materialTextBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="txbHoTen.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="materialTextBox2.Text" xml:space="preserve">
+  <data name="txbHoTen.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;materialTextBox2.Name" xml:space="preserve">
-    <value>materialTextBox2</value>
+  <data name="&gt;&gt;txbHoTen.Name" xml:space="preserve">
+    <value>txbHoTen</value>
   </data>
-  <data name="&gt;&gt;materialTextBox2.Type" xml:space="preserve">
+  <data name="&gt;&gt;txbHoTen.Type" xml:space="preserve">
     <value>MaterialSkin.Controls.MaterialTextBox, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;materialTextBox2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txbHoTen.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;materialTextBox2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txbHoTen.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="materialTextBox1.Enabled" type="System.Boolean, mscorlib">
+  <data name="txbMaKH.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="materialTextBox1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 9.6pt</value>
+  <data name="txbMaKH.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 16px</value>
   </data>
-  <data name="materialTextBox1.Hint" xml:space="preserve">
+  <data name="txbMaKH.Hint" xml:space="preserve">
     <value>Mã khách hàng</value>
   </data>
-  <data name="materialTextBox1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="txbMaKH.Location" type="System.Drawing.Point, System.Drawing">
     <value>43, 96</value>
   </data>
-  <data name="materialTextBox1.MaxLength" type="System.Int32, mscorlib">
+  <data name="txbMaKH.MaxLength" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
-  <data name="materialTextBox1.Multiline" type="System.Boolean, mscorlib">
+  <data name="txbMaKH.Multiline" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="materialTextBox1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txbMaKH.Size" type="System.Drawing.Size, System.Drawing">
     <value>178, 50</value>
   </data>
-  <data name="materialTextBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="txbMaKH.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="materialTextBox1.Text" xml:space="preserve">
-    <value>KH001</value>
+  <data name="txbMaKH.Text" xml:space="preserve">
+    <value />
   </data>
-  <data name="&gt;&gt;materialTextBox1.Name" xml:space="preserve">
-    <value>materialTextBox1</value>
+  <data name="&gt;&gt;txbMaKH.Name" xml:space="preserve">
+    <value>txbMaKH</value>
   </data>
-  <data name="&gt;&gt;materialTextBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;txbMaKH.Type" xml:space="preserve">
     <value>MaterialSkin.Controls.MaterialTextBox, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;materialTextBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txbMaKH.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;materialTextBox1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txbMaKH.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="materialButton3.AutoSize" type="System.Boolean, mscorlib">
+  <data name="btnXoaKH.AutoSize" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="materialButton3.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+  <data name="btnXoaKH.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
   </data>
-  <data name="materialButton3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btnXoaKH.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="materialButton3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btnXoaKH.Location" type="System.Drawing.Point, System.Drawing">
     <value>309, 316</value>
   </data>
-  <data name="materialButton3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="btnXoaKH.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 6, 4, 6</value>
   </data>
-  <data name="materialButton3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btnXoaKH.Size" type="System.Drawing.Size, System.Drawing">
     <value>117, 36</value>
   </data>
-  <data name="materialButton3.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnXoaKH.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="materialButton3.Text" xml:space="preserve">
+  <data name="btnXoaKH.Text" xml:space="preserve">
     <value>Xoá</value>
   </data>
-  <data name="&gt;&gt;materialButton3.Name" xml:space="preserve">
-    <value>materialButton3</value>
+  <data name="&gt;&gt;btnXoaKH.Name" xml:space="preserve">
+    <value>btnXoaKH</value>
   </data>
-  <data name="&gt;&gt;materialButton3.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnXoaKH.Type" xml:space="preserve">
     <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;materialButton3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnXoaKH.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;materialButton3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnXoaKH.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnThoat.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btnThoat.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="btnThoat.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnThoat.Location" type="System.Drawing.Point, System.Drawing">
+    <value>198, 316</value>
+  </data>
+  <data name="btnThoat.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 6, 4, 6</value>
+  </data>
+  <data name="btnThoat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 36</value>
+  </data>
+  <data name="btnThoat.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="btnThoat.Text" xml:space="preserve">
+    <value>Thoát</value>
+  </data>
+  <data name="&gt;&gt;btnThoat.Name" xml:space="preserve">
+    <value>btnThoat</value>
+  </data>
+  <data name="&gt;&gt;btnThoat.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnThoat.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnThoat.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -380,6 +380,9 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>601, 385</value>
+  </data>
+  <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 72, 3, 3</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Thông tin khách hàng</value>

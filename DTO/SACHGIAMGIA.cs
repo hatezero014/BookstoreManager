@@ -10,7 +10,7 @@ namespace BookstoreManager.DTO
 {
     public class SACHGIAMGIA
     {
-        SACHGIAMGIA(string maSach, SqlMoney giaGiam, DateTime giamDen)
+        SACHGIAMGIA(string maSach, decimal giaGiam, DateTime giamDen)
         {
             this.MaSach = maSach;
             this.GiaGiam = giaGiam;
@@ -20,18 +20,18 @@ namespace BookstoreManager.DTO
         SACHGIAMGIA(DataRow row)
         {
             this.MaSach = row["MASACH"].ToString();
-            this.GiaGiam = (SqlMoney)row["GIAGIAM"];
+            this.GiaGiam = (decimal)row["GIAGIAM"];
             this.GiamDen = (DateTime)row["GIAMDEN"];
         }
 
         private string maSach;
 
-        private SqlMoney giaGiam;
+        private decimal giaGiam;
 
         private DateTime giamDen;
 
         public string MaSach { get => maSach; set => maSach = value; }
-        public SqlMoney GiaGiam { get => giaGiam; set => giaGiam = value; }
+        public decimal GiaGiam { get => giaGiam; set => giaGiam = value; }
         public DateTime GiamDen { get => giamDen; set => giamDen = value; }
     }
 }

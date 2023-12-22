@@ -29,121 +29,128 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(XemKhachHang));
-            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
-            this.materialTextBox4 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox5 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox3 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox2 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox1 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialButton3 = new MaterialSkin.Controls.MaterialButton();
+            this.btnCapNhatKH = new MaterialSkin.Controls.MaterialButton();
+            this.txbDiaChi = new MaterialSkin.Controls.MaterialTextBox();
+            this.txbSDT = new MaterialSkin.Controls.MaterialTextBox();
+            this.txbHoTen = new MaterialSkin.Controls.MaterialTextBox();
+            this.txbMaKH = new MaterialSkin.Controls.MaterialTextBox();
+            this.btnXoaKH = new MaterialSkin.Controls.MaterialButton();
+            this.btnThoat = new MaterialSkin.Controls.MaterialButton();
             this.SuspendLayout();
             // 
-            // materialButton1
+            // btnCapNhatKH
             // 
-            resources.ApplyResources(this.materialButton1, "materialButton1");
-            this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton1.Depth = 0;
-            this.materialButton1.HighEmphasis = true;
-            this.materialButton1.Icon = null;
-            this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton1.Name = "materialButton1";
-            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton1.UseAccentColor = false;
-            this.materialButton1.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.btnCapNhatKH, "btnCapNhatKH");
+            this.btnCapNhatKH.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnCapNhatKH.Depth = 0;
+            this.btnCapNhatKH.HighEmphasis = true;
+            this.btnCapNhatKH.Icon = null;
+            this.btnCapNhatKH.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnCapNhatKH.Name = "btnCapNhatKH";
+            this.btnCapNhatKH.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnCapNhatKH.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnCapNhatKH.UseAccentColor = false;
+            this.btnCapNhatKH.UseVisualStyleBackColor = true;
+            this.btnCapNhatKH.Click += new System.EventHandler(this.btnCapNhatKH_Click);
             // 
-            // materialTextBox4
+            // txbDiaChi
             // 
-            this.materialTextBox4.AnimateReadOnly = false;
-            this.materialTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox4.Depth = 0;
-            resources.ApplyResources(this.materialTextBox4, "materialTextBox4");
-            this.materialTextBox4.LeadingIcon = null;
-            this.materialTextBox4.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox4.Name = "materialTextBox4";
-            this.materialTextBox4.TrailingIcon = null;
+            this.txbDiaChi.AnimateReadOnly = false;
+            this.txbDiaChi.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbDiaChi.Depth = 0;
+            resources.ApplyResources(this.txbDiaChi, "txbDiaChi");
+            this.txbDiaChi.LeadingIcon = null;
+            this.txbDiaChi.MouseState = MaterialSkin.MouseState.OUT;
+            this.txbDiaChi.Name = "txbDiaChi";
+            this.txbDiaChi.TrailingIcon = null;
             // 
-            // materialTextBox5
+            // txbSDT
             // 
-            this.materialTextBox5.AnimateReadOnly = false;
-            this.materialTextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox5.Depth = 0;
-            resources.ApplyResources(this.materialTextBox5, "materialTextBox5");
-            this.materialTextBox5.LeadingIcon = null;
-            this.materialTextBox5.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox5.Name = "materialTextBox5";
-            this.materialTextBox5.TrailingIcon = null;
+            this.txbSDT.AnimateReadOnly = false;
+            this.txbSDT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbSDT.Depth = 0;
+            resources.ApplyResources(this.txbSDT, "txbSDT");
+            this.txbSDT.LeadingIcon = null;
+            this.txbSDT.MouseState = MaterialSkin.MouseState.OUT;
+            this.txbSDT.Name = "txbSDT";
+            this.txbSDT.TrailingIcon = null;
             // 
-            // materialTextBox3
+            // txbHoTen
             // 
-            this.materialTextBox3.AnimateReadOnly = false;
-            this.materialTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox3.Depth = 0;
-            resources.ApplyResources(this.materialTextBox3, "materialTextBox3");
-            this.materialTextBox3.LeadingIcon = null;
-            this.materialTextBox3.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox3.Name = "materialTextBox3";
-            this.materialTextBox3.TrailingIcon = null;
+            this.txbHoTen.AnimateReadOnly = false;
+            this.txbHoTen.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbHoTen.Depth = 0;
+            resources.ApplyResources(this.txbHoTen, "txbHoTen");
+            this.txbHoTen.LeadingIcon = null;
+            this.txbHoTen.MouseState = MaterialSkin.MouseState.OUT;
+            this.txbHoTen.Name = "txbHoTen";
+            this.txbHoTen.TrailingIcon = null;
             // 
-            // materialTextBox2
+            // txbMaKH
             // 
-            this.materialTextBox2.AnimateReadOnly = false;
-            this.materialTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox2.Depth = 0;
-            resources.ApplyResources(this.materialTextBox2, "materialTextBox2");
-            this.materialTextBox2.LeadingIcon = null;
-            this.materialTextBox2.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox2.Name = "materialTextBox2";
-            this.materialTextBox2.TrailingIcon = null;
+            this.txbMaKH.AnimateReadOnly = false;
+            this.txbMaKH.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbMaKH.Depth = 0;
+            resources.ApplyResources(this.txbMaKH, "txbMaKH");
+            this.txbMaKH.LeadingIcon = null;
+            this.txbMaKH.MouseState = MaterialSkin.MouseState.OUT;
+            this.txbMaKH.Name = "txbMaKH";
+            this.txbMaKH.TrailingIcon = null;
             // 
-            // materialTextBox1
+            // btnXoaKH
             // 
-            this.materialTextBox1.AnimateReadOnly = false;
-            this.materialTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox1.Depth = 0;
-            resources.ApplyResources(this.materialTextBox1, "materialTextBox1");
-            this.materialTextBox1.LeadingIcon = null;
-            this.materialTextBox1.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox1.Name = "materialTextBox1";
-            this.materialTextBox1.TrailingIcon = null;
+            resources.ApplyResources(this.btnXoaKH, "btnXoaKH");
+            this.btnXoaKH.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnXoaKH.Depth = 0;
+            this.btnXoaKH.HighEmphasis = true;
+            this.btnXoaKH.Icon = null;
+            this.btnXoaKH.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnXoaKH.Name = "btnXoaKH";
+            this.btnXoaKH.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnXoaKH.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
+            this.btnXoaKH.UseAccentColor = false;
+            this.btnXoaKH.UseVisualStyleBackColor = true;
+            this.btnXoaKH.Click += new System.EventHandler(this.btnXoaKH_Click);
             // 
-            // materialButton3
+            // btnThoat
             // 
-            resources.ApplyResources(this.materialButton3, "materialButton3");
-            this.materialButton3.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton3.Depth = 0;
-            this.materialButton3.HighEmphasis = true;
-            this.materialButton3.Icon = null;
-            this.materialButton3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton3.Name = "materialButton3";
-            this.materialButton3.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton3.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
-            this.materialButton3.UseAccentColor = false;
-            this.materialButton3.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.btnThoat, "btnThoat");
+            this.btnThoat.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnThoat.Depth = 0;
+            this.btnThoat.HighEmphasis = true;
+            this.btnThoat.Icon = null;
+            this.btnThoat.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnThoat.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
+            this.btnThoat.UseAccentColor = false;
+            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // XemKhachHang
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.materialButton3);
-            this.Controls.Add(this.materialButton1);
-            this.Controls.Add(this.materialTextBox4);
-            this.Controls.Add(this.materialTextBox5);
-            this.Controls.Add(this.materialTextBox3);
-            this.Controls.Add(this.materialTextBox2);
-            this.Controls.Add(this.materialTextBox1);
+            this.Controls.Add(this.btnThoat);
+            this.Controls.Add(this.btnXoaKH);
+            this.Controls.Add(this.btnCapNhatKH);
+            this.Controls.Add(this.txbDiaChi);
+            this.Controls.Add(this.txbSDT);
+            this.Controls.Add(this.txbHoTen);
+            this.Controls.Add(this.txbMaKH);
+            this.FormStyle = MaterialSkin.Controls.MaterialForm.FormStyles.ActionBar_48;
             this.Name = "XemKhachHang";
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private MaterialSkin.Controls.MaterialButton materialButton1;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox4;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox5;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox3;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox2;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox1;
-        private MaterialSkin.Controls.MaterialButton materialButton3;
+        private MaterialSkin.Controls.MaterialButton btnCapNhatKH;
+        private MaterialSkin.Controls.MaterialTextBox txbDiaChi;
+        private MaterialSkin.Controls.MaterialTextBox txbSDT;
+        private MaterialSkin.Controls.MaterialTextBox txbHoTen;
+        private MaterialSkin.Controls.MaterialTextBox txbMaKH;
+        private MaterialSkin.Controls.MaterialButton btnXoaKH;
+        private MaterialSkin.Controls.MaterialButton btnThoat;
     }
 }

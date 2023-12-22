@@ -10,7 +10,7 @@ namespace BookstoreManager.DTO
 {
     public class CTBH
     {
-        public CTBH(string maBH, string maSach, int soLuong, SqlMoney donGia, SqlMoney thanhTien)
+        public CTBH(string maBH, string maSach, int soLuong, decimal donGia, decimal thanhTien)
         {
             this.MaBH = maBH;
             this.MaSach = maSach;
@@ -24,8 +24,8 @@ namespace BookstoreManager.DTO
             this.MaBH = row["MABH"].ToString();
             this.MaSach = row["MASACH"].ToString();
             this.SoLuong = (int)row["SOLUONG"];
-            this.DonGia = (SqlMoney)row["DONGIA"];
-            this.ThanhTien = (SqlMoney)row["THANHTIEN"];
+            this.DonGia = (decimal)row["DONGIA"];
+            this.ThanhTien = (decimal)row["THANHTIEN"];
         }
 
         private string maBH;
@@ -34,13 +34,13 @@ namespace BookstoreManager.DTO
 
         private int soLuong;
 
-        private SqlMoney donGia;
+        private decimal donGia;
 
-        private SqlMoney thanhTien;
+        private decimal thanhTien;
         public string MaBH { get => maBH; set => maBH = value; }
         public string MaSach { get => maSach; set => maSach = value; }
         public int SoLuong { get => soLuong; set => soLuong = value; }
-        public SqlMoney DonGia { get => donGia; set => donGia = value; }
-        public SqlMoney ThanhTien { get => thanhTien; set => thanhTien = value; }
+        public decimal DonGia { get => donGia; set => donGia = value; }
+        public decimal ThanhTien { get => thanhTien; set => thanhTien = value; }
     }
 }
