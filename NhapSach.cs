@@ -18,7 +18,7 @@ namespace BookstoreManager
 {
     public partial class NhapSach : MaterialForm
     {
-        public NhapSach()
+        public NhapSach(string maNV)
         {
             InitializeComponent();
             MaterialSkinManager materialSkinManager = MaterialSkinManager.Instance;
@@ -26,18 +26,18 @@ namespace BookstoreManager
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(Color.FromArgb(0, 84, 195), Color.FromArgb(13, 0, 195), Color.FromArgb(0, 182, 195), Color.FromArgb(0, 155, 179), TextShade.WHITE);
 
-            Load();
+            Load(maNV);
         }
 
         #region methods
 
-        new void Load()
+        new void Load(string maNV)
         {
             LoadSach();
-            LoadInit();
+            LoadInit(maNV);
         }
 
-        void LoadInit()
+        void LoadInit(string maNV)
         {
             string maNS = HOADONNHAPSACHDAO.Instance.GetIDOfNS();
             int lastNumber = int.Parse(maNS.Substring(2).Trim());
@@ -46,9 +46,10 @@ namespace BookstoreManager
 
             txbMaHD.Text = nextID.ToString();
             txbNgayTao.Text = DateTime.Now.ToString("dd-MM-yyyy");
-            txbMaNV.Text = "NV001";//////////////////////////////////////////////////////////////////// sửa sau
+            txbMaNV.Text = maNV;
             cbListSach.Text = "";
             cbListSach.SelectedIndex = -1;
+            cbListSach.Invalidate();
         }
 
         void LoadSach()
@@ -82,6 +83,18 @@ namespace BookstoreManager
             }
 
             return null;
+        }
+
+        void Clear()
+        {
+            txbSLNhap.Text = "";
+            txbSLKho.Text = "";
+            txbThanhTien.Text = "";
+            txbDonGia.Text = "";
+            txbMaSach.Text = "";
+            dtgvCTNS.ClearSelection();
+            cbListSach.SelectedIndex = -1;
+            cbListSach.Refresh();
         }
 
         #endregion
@@ -144,14 +157,7 @@ namespace BookstoreManager
 
         private void btnHuyChon_Click(object sender, EventArgs e)
         {
-            txbSLNhap.Text = "";
-            txbSLKho.Text = "";
-            txbThanhTien.Text = "";
-            txbDonGia.Text = "";
-            txbMaSach.Text = "";
-            dtgvCTNS.ClearSelection();
-            cbListSach.SelectedIndex = -1;
-            cbListSach.Invalidate();
+            Clear();
         }
 
         private void btnXoaSach_Click(object sender, EventArgs e)
@@ -169,15 +175,8 @@ namespace BookstoreManager
                     thanhToan -= thanhTien;
                     lbTongThanhToan.Text = FormatMoney(thanhToan);
 
-                    txbSLNhap.Text = "";
-                    txbSLKho.Text = "";
-                    txbThanhTien.Text = "";
-                    txbDonGia.Text = "";
-                    txbMaSach.Text = "";
                     dtgvCTNS.Rows.Remove(row);
-                    dtgvCTNS.ClearSelection();
-                    cbListSach.Text = "";
-                    cbListSach.SelectedIndex = -1;
+                    Clear();
                 }
             }
             else
@@ -220,20 +219,21 @@ namespace BookstoreManager
                 return;
             }
 
-            if (dtgvCTNS.Rows.Count > 0)
+            if (dtgvCTNS.Rows.Count > 1)
             {
                 string maNS = txbMaHD.Text;
                 string maNV = txbMaNV.Text;
                 DateTime parsedDateTime = DateTime.ParseExact(txbNgayTao.Text, "dd-MM-yyyy", CultureInfo.InvariantCulture);
                 string ngayTao = parsedDateTime.ToString("yyyy-MM-dd");
-                decimal thanhToan = decimal.Parse(txbThanhTien.Text);
+                decimal thanhToan = decimal.Parse(lbTongThanhToan.Text);
 
                 if (MessageBox.Show("Đồng ý tạo hóa đơn?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
                     HOADONNHAPSACHDAO.Instance.InsertNS(maNS, maNCC, maNV, ngayTao, thanhToan);
 
-                    foreach (DataGridViewRow row in dtgvCTNS.Rows)
+                    for (int i = 0; i < dtgvCTNS.Rows.Count - 1; i++)
                     {
+                        var row = dtgvCTNS.Rows[i];
                         string maSach = row.Cells["Column1"].Value.ToString().Trim();
                         string tenSach = row.Cells["Column2"].Value.ToString().Trim();
                         int soLuong = int.Parse(row.Cells["Column3"].Value.ToString().Trim());
@@ -241,6 +241,12 @@ namespace BookstoreManager
                         decimal thanhTien = decimal.Parse(row.Cells["Column5"].Value.ToString().Trim());
 
                         CTNSDAO.Instance.InsertCTNS(maNS, maSach, donGia, soLuong, thanhTien);
+
+                        SACH sach = SACHDAO.Instance.GetBookByID(maSach);
+                        LOAISACH loaiSach = LOAISACHDAO.Instance.GetLoaiSachByID(sach.MaLS.Trim());
+                        NHAXUATBAN nxb = NHAXUATBANDAO.Instance.GetNXBByID(sach.MaNXB);
+                        SACHDAO.Instance.UpdateBookByID(maSach, tenSach, sach.TacGia.Trim(), sach.GiaSach, sach.NamXB, sach.MoTa.Trim(),
+                                                            sach.SoLuong - soLuong, nxb.TenNXB.Trim(), loaiSach.TenLS);
                     }
                     MessageBox.Show("Tạo hóa đơn thành công!", "Thông báo");
                     this.Close();

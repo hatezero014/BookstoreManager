@@ -1,15 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data;
 using System.Data.SqlTypes;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace BookstoreManager.DTO
 {
-    public class SACH
+    public class SACH : INotifyPropertyChanged
     {
+        public event PropertyChangedEventHandler PropertyChanged;
+        public virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
         public SACH(string maSach, string tenSach, string tacGia, decimal? giaSach, short namXB, string moTa, int soLuong, string maNXB, string maLS)
         {
             this.MaSach = maSach;

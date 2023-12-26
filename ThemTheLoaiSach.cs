@@ -45,8 +45,30 @@ namespace BookstoreManager
 
             DataGridViewRow selectedRow = dtgvListLS.Rows[0];
 
-            txbMaLS.Text = selectedRow.Cells["Column1"].Value.ToString().Trim();
-            txbTenLS.Text = selectedRow.Cells["Column2"].Value.ToString().Trim();
+            if (dtgvListLS.Rows.Count > 1)
+            {
+                txbMaLS.Text = selectedRow.Cells["Column1"].Value.ToString().Trim();
+                txbTenLS.Text = selectedRow.Cells["Column2"].Value.ToString().Trim();
+                btnActionLS.Text = "CẬP NHẬT";
+            }
+            else
+            {
+                Clear();
+            }
+        }
+
+        void Clear()
+        {
+            string maLS = LOAISACHDAO.Instance.GetIDOfLS();
+            int lastNumber = int.Parse(maLS.Substring(2).Trim());
+            int nextNumber = lastNumber + 1;
+            string nextID = string.Format("LS{0:D3}", nextNumber);
+
+            txbMaLS.Text = nextID.ToString();
+            txbTenLS.Text = "";
+            dtgvListLS.ClearSelection();
+            btnActionLS.Text = "THÊM";
+            btnXoaLS.Enabled = false;
         }
 
         #endregion
@@ -56,9 +78,7 @@ namespace BookstoreManager
         {
             if (e.RowIndex == dtgvListLS.Rows.Count - 1)
             {
-                txbMaLS.Text = "";
-                txbTenLS.Text = "";
-                dtgvListLS.ClearSelection();
+                Clear();
                 return;
             }
             if (e.RowIndex >= 0)
@@ -75,6 +95,7 @@ namespace BookstoreManager
             {
                 dtgvListLS.ClearSelection();
             }
+            btnXoaLS.Enabled = true;
         }
 
         private void btnXoaLS_Click(object sender, EventArgs e)
@@ -90,8 +111,6 @@ namespace BookstoreManager
                     if (LOAISACHDAO.Instance.DeleteLSByID(maLS))
                     {
                         MessageBox.Show("Xoá loại sách thành công!", "Thông báo");
-                        txbMaLS.Text = "";
-                        txbTenLS.Text = "";
                         LoadInfo();
                     }
                     else
@@ -106,69 +125,74 @@ namespace BookstoreManager
             }
         }
 
-        private void btnThemLS_Click(object sender, EventArgs e)
-        {
-            string maLS = txbMaLS.Text;
-            string tenLS = txbTenLS.Text;
-
-            LOAISACH loaisach = LOAISACHDAO.Instance.GetLoaiSachByID(maLS);
-
-            if (loaisach == null)
-            {
-                if (LOAISACHDAO.Instance.InsertLS(maLS, tenLS))
-                {
-                    MessageBox.Show("Thêm loại sách thành công!", "Thông báo");
-                    LoadInfo();
-                }
-                else
-                {
-                    MessageBox.Show("Thêm loại sách thất bại!", "Thông báo");
-                }
-            }
-            else
-            {
-                MessageBox.Show("Mã loại sách đã tồn tại!", "Thông báo");
-            }
-        }
-
         private void btnHuyChonLS_Click(object sender, EventArgs e)
         {
-            txbMaLS.Text = "";
-            txbTenLS.Text = "";
-            dtgvListLS.ClearSelection();
+            Clear();
         }
 
-        private void btnSuaLS_Click(object sender, EventArgs e)
+
+        private void btnActionLS_Click(object sender, EventArgs e)
         {
+            if (txbTenLS.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập tên loại sách!", "Thông báo!");
+                return;
+            }
             string maLS = txbMaLS.Text;
             string tenLS = txbTenLS.Text;
-            int selectedIndex = dtgvListLS.CurrentRow.Index;
+            int selectedIndex = 0;
+            if (dtgvListLS.CurrentRow != null)
+                selectedIndex = dtgvListLS.CurrentRow.Index;
 
             LOAISACH loaisach = LOAISACHDAO.Instance.GetLoaiSachByID(maLS);
 
-            if (loaisach != null)
+            if (btnActionLS.Text == "THÊM")
             {
-                if (LOAISACHDAO.Instance.UpdateLSByID(maLS, tenLS))
+                if (loaisach == null)
                 {
-                    MessageBox.Show("Cập nhật loại sách thành công!", "Thông báo");
-                    dtgvListLS.Rows[selectedIndex].Cells["Column2"].Value = txbTenLS.Text;
+                    if (LOAISACHDAO.Instance.InsertLS(maLS, tenLS))
+                    {
+                        MessageBox.Show("Thêm loại sách thành công!", "Thông báo");
+                        LoadInfo();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Thêm loại sách thất bại!", "Thông báo");
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Cập nhật loại sách thất bại!", "Thông báo");
+                    MessageBox.Show("Mã loại sách đã tồn tại!", "Thông báo");
                 }
             }
             else
             {
-                MessageBox.Show("Không tồn tại mã loại sách!", "Thông báo");
+                if (loaisach != null)
+                {
+                    if (LOAISACHDAO.Instance.UpdateLSByID(maLS, tenLS))
+                    {
+                        MessageBox.Show("Cập nhật loại sách thành công!", "Thông báo");
+                        dtgvListLS.Rows[selectedIndex].Cells["Column2"].Value = txbTenLS.Text;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Cập nhật loại sách thất bại!", "Thông báo");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Không tồn tại mã loại sách!", "Thông báo");
+                }
             }
         }
-
-        private void btnThoat_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         #endregion
+
+        private void btnActionLS_TextChanged(object sender, EventArgs e)
+        {
+            if (btnActionLS.Text == "CẬP NHẬT")
+                btnXoaLS.Enabled = true;
+            else
+                btnXoaLS.Enabled = false;
+        }
     }
 }

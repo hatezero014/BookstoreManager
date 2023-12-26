@@ -24,14 +24,14 @@ namespace BookstoreManager.DAO
         {
             string query = $"DELETE KHACHHANG WHERE MAKH = '{iD}'";
 
-            return DataProvider.Intstance.ExcuteNonQuery(query) > 0;
+            return DataProvider.Instance.ExcuteNonQuery(query) > 0;
         }
 
         public bool UpdateCustomerByID(string maKH, string hoTen, string diaChi, string soDT)
         {
             string query = $"USP_UpdateCustomer @MAKH , @HOTEN , @DIACHI , @SODT";
 
-            return DataProvider.Intstance.ExcuteNonQuery(query, new object[] { maKH, hoTen, diaChi, soDT }) > 0;
+            return DataProvider.Instance.ExcuteNonQuery(query, new object[] { maKH, hoTen, diaChi, soDT }) > 0;
         }
 
         public KHACHHANG LoadCustomerByID(string maKH)
@@ -40,7 +40,7 @@ namespace BookstoreManager.DAO
 
             KHACHHANG result = null;
 
-            DataTable data = DataProvider.Intstance.ExcuteQuery(query);
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
 
             if (data.Rows.Count > 0)
             {
@@ -54,14 +54,14 @@ namespace BookstoreManager.DAO
         {
             string query = $"INSERT INTO KHACHHANG VALUES ('{maKH}', N'{hoTen}', N'{diaChi}', '{soDT}')";
 
-            return DataProvider.Intstance.ExcuteNonQuery(query) > 0;
+            return DataProvider.Instance.ExcuteNonQuery(query) > 0;
         }
 
         public string GetIDOfCustomer()
         {
             string query = "SELECT TOP 1 * FROM KHACHHANG ORDER BY MAKH DESC";
 
-            DataTable data = DataProvider.Intstance.ExcuteQuery(query);
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
 
             string result = "KH0001";
 
@@ -70,6 +70,50 @@ namespace BookstoreManager.DAO
                 KHACHHANG khachhang = new KHACHHANG(data.Rows[0]);
 
                 result = khachhang.MaKH;
+            }
+
+            return result;
+        }
+
+        public KHACHHANG GetCustomerByID(string id)
+        {
+            string query = $"SELECT * FROM KHACHHANG WHERE MAKH = '{id}'";
+
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
+
+            if (data.Rows.Count > 0)
+            {
+                return new KHACHHANG(data.Rows[0]);
+            }
+
+            return null;
+        }
+
+        public KHACHHANG GetCustomerBySDT(string soDT)
+        {
+            string query = $"SELECT * FROM KHACHHANG WHERE SODT = '{soDT}'";
+
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
+
+            if (data.Rows.Count > 0)
+            {
+                return new KHACHHANG(data.Rows[0]);
+            }
+
+            return null;
+        }
+
+        public List<KHACHHANG> GetListCustomer()
+        {
+            string query = $"SELECT * FROM KHACHHANG";
+
+            List<KHACHHANG> result = new List<KHACHHANG>();
+
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
+
+            foreach (DataRow row in data.Rows)
+            {
+                result.Add(new KHACHHANG(row));
             }
 
             return result;

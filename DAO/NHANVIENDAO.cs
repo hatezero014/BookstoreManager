@@ -24,14 +24,14 @@ namespace BookstoreManager.DAO
         {
             string query = $"DELETE NHANVIEN WHERE MANV = '{iD}'";
 
-            return DataProvider.Intstance.ExcuteNonQuery(query) > 0;
+            return DataProvider.Instance.ExcuteNonQuery(query) > 0;
         }
 
         public bool UpdateStaffByID(string maNV, string tenNV, string diaChi, DateTime ngaySinh, string email, string soDT, string cCCD)
         {
             string query = $"USP_UpdateStaff @MANV , @HOTEN , @DIACHI , @SODT , @EMAIL , @NGAYSINH , @CCCD";
 
-            return DataProvider.Intstance.ExcuteNonQuery(query, new object[] { maNV, tenNV, diaChi, soDT, email, ngaySinh, cCCD }) > 0;
+            return DataProvider.Instance.ExcuteNonQuery(query, new object[] { maNV, tenNV, diaChi, soDT, email, ngaySinh, cCCD }) > 0;
         }
 
         public NHANVIEN LoadStaffByID(string maNV)
@@ -40,7 +40,7 @@ namespace BookstoreManager.DAO
 
             NHANVIEN result = null;
 
-            DataTable data = DataProvider.Intstance.ExcuteQuery(query);
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
 
             if (data.Rows.Count > 0)
             {
@@ -54,7 +54,7 @@ namespace BookstoreManager.DAO
         {
             string query = "SELECT TOP 1 * FROM NHANVIEN ORDER BY MANV DESC";
 
-            DataTable data = DataProvider.Intstance.ExcuteQuery(query);
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
 
             string result = "NV001";
 
@@ -72,7 +72,37 @@ namespace BookstoreManager.DAO
         {
             string query = $"INSERT INTO NHANVIEN VALUES ('{maNV}', N'{hoTen}', N'{diaChi}', '{soDT}', '{email}', '{ngaySinh}', '{cCCD}')";
 
-            return DataProvider.Intstance.ExcuteNonQuery(query) > 0;
+            return DataProvider.Instance.ExcuteNonQuery(query) > 0;
+        }
+
+        public List<NHANVIEN> GetListStaff()
+        {
+            string query = $"SELECT * FROM NHANVIEN";
+
+            List<NHANVIEN> result = new List<NHANVIEN>();
+
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
+
+            foreach (DataRow row in data.Rows)
+            {
+                result.Add(new NHANVIEN(row));
+            }
+
+            return result;
+        }
+
+        public NHANVIEN GetStaffByID(string id)
+        {
+            string query = $"SELECT * FROM NHANVIEN WHERE MANV = '{id}'";
+
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
+
+            if (data.Rows.Count > 0)
+            {
+                return new NHANVIEN(data.Rows[0]);
+            }
+
+            return null;
         }
     }
 }

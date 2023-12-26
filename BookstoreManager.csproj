@@ -70,6 +70,7 @@
     <Compile Include="DAO\HOADONBANHANGDAO.cs" />
     <Compile Include="DAO\HOADONNHAPSACHDAO.cs" />
     <Compile Include="DAO\KHACHHANGDAO.cs" />
+    <Compile Include="KMP.cs" />
     <Compile Include="DAO\LOAISACHDAO.cs" />
     <Compile Include="DAO\NHACUNGCAPDAO.cs" />
     <Compile Include="DAO\NHANVIENDAO.cs" />
@@ -100,6 +101,12 @@
     </Compile>
     <Compile Include="ThemSach.Designer.cs">
       <DependentUpon>ThemSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemTaiKhoan.Designer.cs">
+      <DependentUpon>ThemTaiKhoan.cs</DependentUpon>
     </Compile>
     <Compile Include="XemKhachHang.cs">
       <SubType>Form</SubType>
@@ -142,12 +149,6 @@
     </Compile>
     <Compile Include="Main_Admin.Designer.cs">
       <DependentUpon>Main_Admin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Main_NhanVien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Main_NhanVien.Designer.cs">
-      <DependentUpon>Main_NhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="NhapSach.cs">
       <SubType>Form</SubType>
@@ -199,9 +200,6 @@
     <EmbeddedResource Include="Main_Admin.resx">
       <DependentUpon>Main_Admin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main_NhanVien.resx">
-      <DependentUpon>Main_NhanVien.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ThemGiamGia.resx">
       <DependentUpon>ThemGiamGia.cs</DependentUpon>
     </EmbeddedResource>
@@ -228,6 +226,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ThemSach.resx">
       <DependentUpon>ThemSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemTaiKhoan.resx">
+      <DependentUpon>ThemTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThemTheLoaiSach.resx">
       <DependentUpon>ThemTheLoaiSach.cs</DependentUpon>

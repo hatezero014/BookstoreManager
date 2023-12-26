@@ -24,14 +24,14 @@ namespace BookstoreManager.DAO
         {
             string query = "USP_InsertBook @MASACH , @TENSACH , @TACGIA , @NAMXB , @MOTA , @TENNXB , @LOAISACH";
 
-            return DataProvider.Intstance.ExcuteNonQuery(query, new object[] { maSach, tenSach, tacGia, namXB, moTa, nhaXB, loaiSach }) > 0;
+            return DataProvider.Instance.ExcuteNonQuery(query, new object[] { maSach, tenSach, tacGia, namXB, moTa, nhaXB, loaiSach }) > 0;
         }
 
         public SACH GetBookByID(string maSach)
         {
             string query = $"SELECT * FROM SACH WHERE MASACH = '{maSach}'";
 
-            DataTable data = DataProvider.Intstance.ExcuteQuery(query);
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
 
             SACH result = null;
 
@@ -47,7 +47,7 @@ namespace BookstoreManager.DAO
         {
             string query = "SELECT TOP 1 * FROM SACH ORDER BY MASACH DESC";
 
-            DataTable data = DataProvider.Intstance.ExcuteQuery(query);
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
 
             string result = "MS00001";
 
@@ -65,14 +65,14 @@ namespace BookstoreManager.DAO
         {
             string query = $"DELETE SACH WHERE MASACH = '{iD}'";
 
-            return DataProvider.Intstance.ExcuteNonQuery(query) > 0;
+            return DataProvider.Instance.ExcuteNonQuery(query) > 0;
         }
 
-        public bool UpdateBookByID(string iD, string tenSach, string tacGia, decimal giaSach, short? namXB, string moTa, int soLuong, string tenNXB, string loaiSach)
+        public bool UpdateBookByID(string iD, string tenSach, string tacGia, decimal? giaSach, short? namXB, string moTa, int soLuong, string tenNXB, string loaiSach)
         {
             string query = $"USP_UpdateBook @MASACH , @TENSACH , @TACGIA , @GIASACH , @NAMXB , @MOTA , @SOLUONG , @TENNXB , @MALS";
 
-            return DataProvider.Intstance.ExcuteNonQuery(query, new object[] { iD, tenSach, tacGia, giaSach, namXB, moTa, soLuong, tenNXB, loaiSach }) > 0;
+            return DataProvider.Instance.ExcuteNonQuery(query, new object[] { iD, tenSach, tacGia, giaSach, namXB, moTa, soLuong, tenNXB, loaiSach }) > 0;
         }
 
         public SACH LoadBookByID(string maSach)
@@ -81,7 +81,7 @@ namespace BookstoreManager.DAO
 
             SACH result = null;
 
-            DataTable data = DataProvider.Intstance.ExcuteQuery(query);
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
 
             if (data.Rows.Count > 0)
             {
@@ -97,7 +97,7 @@ namespace BookstoreManager.DAO
 
             List<SACH> result = new List<SACH>();
 
-            DataTable data = DataProvider.Intstance.ExcuteQuery(query);
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
 
             foreach (DataRow row in data.Rows)
             {
@@ -113,7 +113,7 @@ namespace BookstoreManager.DAO
 
             string query = $"SELECT * FROM SACH WHERE TENSACH = N'{tenSach}'";
 
-            DataTable data = DataProvider.Intstance.ExcuteQuery(query);
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
 
             if (data.Rows.Count > 0)
             {

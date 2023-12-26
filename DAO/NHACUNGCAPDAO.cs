@@ -23,7 +23,7 @@ namespace BookstoreManager.DAO
         {
             List<NHACUNGCAP> result = new List<NHACUNGCAP>();
 
-            DataTable data = DataProvider.Intstance.ExcuteQuery("SELECT * FROM NHACUNGCAP");
+            DataTable data = DataProvider.Instance.ExcuteQuery("SELECT * FROM NHACUNGCAP");
 
             foreach (DataRow row in data.Rows)
             {
@@ -37,7 +37,7 @@ namespace BookstoreManager.DAO
         {
             string query = $"SELECT * FROM NHACUNGCAP WHERE MANCC = '{id}'";
 
-            DataTable data = DataProvider.Intstance.ExcuteQuery(query);
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
 
             if (data.Rows.Count > 0)
             {
@@ -51,22 +51,39 @@ namespace BookstoreManager.DAO
         {
             string query = $"DELETE NHACUNGCAP WHERE MANCC = '{maNCC}'";
 
-            return DataProvider.Intstance.ExcuteNonQuery(query) > 0;
+            return DataProvider.Instance.ExcuteNonQuery(query) > 0;
         }
 
         public bool UpdateNCCByID(string maNCC, string tenNCC, string soDT, string diaChi)
         {
             string query = $"UPDATE NHACUNGCAP SET TENNCC = N'{tenNCC}', SODT = N'{soDT}', DIACHI = N'{diaChi}' WHERE MANCC = '{maNCC}'";
 
-            return DataProvider.Intstance.ExcuteNonQuery(query) > 0;
+            return DataProvider.Instance.ExcuteNonQuery(query) > 0;
         }
 
         public bool InsertNCC(string maNCC, string tenNCC, string soDT, string diaChi)
         {
             string query = $"INSERT INTO NHACUNGCAP VALUES ('{maNCC}', N'{tenNCC}', N'{diaChi}', '{soDT}')";
 
-            return DataProvider.Intstance.ExcuteNonQuery(query) > 0;
+            return DataProvider.Instance.ExcuteNonQuery(query) > 0;
         }
 
+        public string GetIDOfNCC()
+        {
+            string query = "SELECT TOP 1 * FROM NHACUNGCAP ORDER BY MANCC DESC";
+
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
+
+            string result = "NCC001";
+
+            if (data != null)
+            {
+                NHACUNGCAP nhaCC = new NHACUNGCAP(data.Rows[0]);
+
+                result = nhaCC.MaNCC;
+            }
+
+            return result;
+        }
     }
 }

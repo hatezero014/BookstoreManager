@@ -37,7 +37,7 @@ namespace BookstoreManager
 
             txbMaNV.Text = nextID.ToString();
             txbHoTen.Text = "";
-            txbEmail.Text = "";
+            txbNgaySinh.Text = "";
             txbSDT.Text = "";
             txbCCCD.Text = "";
             txbDiaChi.Text = "";
@@ -47,15 +47,20 @@ namespace BookstoreManager
         #endregion
 
 
-
         private void btnXoa_Click(object sender, EventArgs e)
         {
+
             txbHoTen.Text = "";
-            txbEmail.Text = "";
+            txbNgaySinh.Text = "";
             txbSDT.Text = "";
             txbCCCD.Text = "";
             txbDiaChi.Text = "";
             txbEmail.Text = "";
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -70,9 +75,9 @@ namespace BookstoreManager
                 MessageBox.Show("Vui lòng nhập số CCCD!", "Thông báo");
                 return;
             }
-            if (txbEmail.Text == "")
+            if (!DateTime.TryParseExact(txbNgaySinh.Text, "dd-MM-yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out _))
             {
-                MessageBox.Show("Vui lòng nhập ngày sinh!", "Thông báo");
+                MessageBox.Show("Ngày tháng không hợp lệ. Vui lòng nhập theo định dạng dd-MM-yyyy.");
                 return;
             }
             if (txbSDT.Text == "")
@@ -93,7 +98,7 @@ namespace BookstoreManager
 
             string maNV = txbMaNV.Text;
             string hoTen = txbHoTen.Text;
-            DateTime parsedDateTime = DateTime.ParseExact(txbEmail.Text, "dd-MM-yyyy", CultureInfo.InvariantCulture);
+            DateTime parsedDateTime = DateTime.ParseExact(txbNgaySinh.Text, "dd-MM-yyyy", CultureInfo.InvariantCulture);
             string ngaySinh = parsedDateTime.ToString("yyyy-MM-dd");
             string soDT = txbSDT.Text;
             string cCCD = txbCCCD.Text;
@@ -111,9 +116,12 @@ namespace BookstoreManager
             LoadInit();
         }
 
-        private void btnThoat_Click(object sender, EventArgs e)
+        private void txbNgaySinh_KeyPress(object sender, KeyPressEventArgs e)
         {
-            this.Close();
+            if (e.KeyChar != '-' && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

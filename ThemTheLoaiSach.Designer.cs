@@ -31,7 +31,7 @@
             this.txbMaLS = new MaterialSkin.Controls.MaterialTextBox();
             this.txbTenLS = new MaterialSkin.Controls.MaterialTextBox();
             this.btnXoaLS = new MaterialSkin.Controls.MaterialButton();
-            this.btnThemLS = new MaterialSkin.Controls.MaterialButton();
+            this.btnActionLS = new MaterialSkin.Controls.MaterialButton();
             this.dtgvListLS = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,12 +48,13 @@
             this.txbMaLS.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txbMaLS.Hint = "Mã thể loại";
             this.txbMaLS.LeadingIcon = null;
-            this.txbMaLS.Location = new System.Drawing.Point(39, 105);
+            this.txbMaLS.Location = new System.Drawing.Point(58, 164);
+            this.txbMaLS.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txbMaLS.MaxLength = 50;
             this.txbMaLS.MouseState = MaterialSkin.MouseState.OUT;
             this.txbMaLS.Multiline = false;
             this.txbMaLS.Name = "txbMaLS";
-            this.txbMaLS.Size = new System.Drawing.Size(318, 50);
+            this.txbMaLS.Size = new System.Drawing.Size(477, 50);
             this.txbMaLS.TabIndex = 1;
             this.txbMaLS.Text = "";
             this.txbMaLS.TrailingIcon = null;
@@ -66,12 +67,13 @@
             this.txbTenLS.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txbTenLS.Hint = "Tên thể loại";
             this.txbTenLS.LeadingIcon = null;
-            this.txbTenLS.Location = new System.Drawing.Point(39, 175);
+            this.txbTenLS.Location = new System.Drawing.Point(58, 273);
+            this.txbTenLS.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txbTenLS.MaxLength = 50;
             this.txbTenLS.MouseState = MaterialSkin.MouseState.OUT;
             this.txbTenLS.Multiline = false;
             this.txbTenLS.Name = "txbTenLS";
-            this.txbTenLS.Size = new System.Drawing.Size(318, 50);
+            this.txbTenLS.Size = new System.Drawing.Size(477, 50);
             this.txbTenLS.TabIndex = 2;
             this.txbTenLS.Text = "";
             this.txbTenLS.TrailingIcon = null;
@@ -86,12 +88,12 @@
             this.btnXoaLS.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoaLS.HighEmphasis = true;
             this.btnXoaLS.Icon = null;
-            this.btnXoaLS.Location = new System.Drawing.Point(87, 254);
-            this.btnXoaLS.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnXoaLS.Location = new System.Drawing.Point(130, 397);
+            this.btnXoaLS.Margin = new System.Windows.Forms.Padding(6, 9, 6, 9);
             this.btnXoaLS.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnXoaLS.Name = "btnXoaLS";
             this.btnXoaLS.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnXoaLS.Size = new System.Drawing.Size(70, 36);
+            this.btnXoaLS.Size = new System.Drawing.Size(105, 56);
             this.btnXoaLS.TabIndex = 25;
             this.btnXoaLS.Text = "Xoá";
             this.btnXoaLS.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
@@ -99,26 +101,27 @@
             this.btnXoaLS.UseVisualStyleBackColor = true;
             this.btnXoaLS.Click += new System.EventHandler(this.btnXoaLS_Click);
             // 
-            // btnThemLS
+            // btnActionLS
             // 
-            this.btnThemLS.AutoSize = false;
-            this.btnThemLS.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnThemLS.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnThemLS.Depth = 0;
-            this.btnThemLS.HighEmphasis = true;
-            this.btnThemLS.Icon = null;
-            this.btnThemLS.Location = new System.Drawing.Point(267, 254);
-            this.btnThemLS.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnThemLS.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnThemLS.Name = "btnThemLS";
-            this.btnThemLS.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnThemLS.Size = new System.Drawing.Size(90, 36);
-            this.btnThemLS.TabIndex = 29;
-            this.btnThemLS.Text = "Thêm";
-            this.btnThemLS.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnThemLS.UseAccentColor = false;
-            this.btnThemLS.UseVisualStyleBackColor = true;
-            this.btnThemLS.Click += new System.EventHandler(this.btnThemLS_Click);
+            this.btnActionLS.AutoSize = false;
+            this.btnActionLS.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnActionLS.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnActionLS.Depth = 0;
+            this.btnActionLS.HighEmphasis = true;
+            this.btnActionLS.Icon = null;
+            this.btnActionLS.Location = new System.Drawing.Point(400, 397);
+            this.btnActionLS.Margin = new System.Windows.Forms.Padding(6, 9, 6, 9);
+            this.btnActionLS.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnActionLS.Name = "btnActionLS";
+            this.btnActionLS.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnActionLS.Size = new System.Drawing.Size(135, 56);
+            this.btnActionLS.TabIndex = 29;
+            this.btnActionLS.Text = "Cập nhật";
+            this.btnActionLS.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnActionLS.UseAccentColor = false;
+            this.btnActionLS.UseVisualStyleBackColor = true;
+            this.btnActionLS.TextChanged += new System.EventHandler(this.btnActionLS_TextChanged);
+            this.btnActionLS.Click += new System.EventHandler(this.btnActionLS_Click);
             // 
             // dtgvListLS
             // 
@@ -127,14 +130,15 @@
             this.dtgvListLS.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2});
-            this.dtgvListLS.Location = new System.Drawing.Point(407, 105);
+            this.dtgvListLS.Location = new System.Drawing.Point(610, 164);
+            this.dtgvListLS.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dtgvListLS.MultiSelect = false;
             this.dtgvListLS.Name = "dtgvListLS";
             this.dtgvListLS.ReadOnly = true;
             this.dtgvListLS.RowHeadersWidth = 51;
             this.dtgvListLS.RowTemplate.Height = 24;
             this.dtgvListLS.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgvListLS.Size = new System.Drawing.Size(454, 370);
+            this.dtgvListLS.Size = new System.Drawing.Size(681, 578);
             this.dtgvListLS.TabIndex = 3;
             this.dtgvListLS.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvListLS_CellClick);
             // 
@@ -165,12 +169,12 @@
             this.btnHuyChonLS.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHuyChonLS.HighEmphasis = true;
             this.btnHuyChonLS.Icon = null;
-            this.btnHuyChonLS.Location = new System.Drawing.Point(172, 254);
-            this.btnHuyChonLS.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnHuyChonLS.Location = new System.Drawing.Point(258, 397);
+            this.btnHuyChonLS.Margin = new System.Windows.Forms.Padding(6, 9, 6, 9);
             this.btnHuyChonLS.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnHuyChonLS.Name = "btnHuyChonLS";
             this.btnHuyChonLS.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnHuyChonLS.Size = new System.Drawing.Size(80, 36);
+            this.btnHuyChonLS.Size = new System.Drawing.Size(120, 56);
             this.btnHuyChonLS.TabIndex = 31;
             this.btnHuyChonLS.Text = "Hủy chọn";
             this.btnHuyChonLS.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
@@ -180,18 +184,19 @@
             // 
             // ThemTheLoaiSach
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(904, 513);
+            this.ClientSize = new System.Drawing.Size(1356, 802);
             this.Controls.Add(this.btnHuyChonLS);
             this.Controls.Add(this.dtgvListLS);
-            this.Controls.Add(this.btnThemLS);
+            this.Controls.Add(this.btnActionLS);
             this.Controls.Add(this.txbMaLS);
             this.Controls.Add(this.txbTenLS);
             this.Controls.Add(this.btnXoaLS);
             this.FormStyle = MaterialSkin.Controls.MaterialForm.FormStyles.ActionBar_48;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ThemTheLoaiSach";
-            this.Padding = new System.Windows.Forms.Padding(3, 72, 3, 3);
+            this.Padding = new System.Windows.Forms.Padding(4, 112, 4, 5);
             this.Text = "Thể loại sách";
             ((System.ComponentModel.ISupportInitialize)(this.dtgvListLS)).EndInit();
             this.ResumeLayout(false);
@@ -202,7 +207,7 @@
         private MaterialSkin.Controls.MaterialTextBox txbMaLS;
         private MaterialSkin.Controls.MaterialTextBox txbTenLS;
         private MaterialSkin.Controls.MaterialButton btnXoaLS;
-        private MaterialSkin.Controls.MaterialButton btnThemLS;
+        private MaterialSkin.Controls.MaterialButton btnActionLS;
         private System.Windows.Forms.DataGridView dtgvListLS;
         private MaterialSkin.Controls.MaterialButton btnHuyChonLS;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;

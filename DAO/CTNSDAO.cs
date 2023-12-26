@@ -26,7 +26,7 @@ namespace BookstoreManager.DAO
 
             List<CTNS> result = new List<CTNS>();
 
-            DataTable data = DataProvider.Intstance.ExcuteQuery(query);
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
 
             foreach (DataRow row in data.Rows)
             {
@@ -42,7 +42,7 @@ namespace BookstoreManager.DAO
 
             CTNS result = null;
 
-            DataTable data = DataProvider.Intstance.ExcuteQuery(query);
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
 
             if (data.Rows.Count > 0)
             {
@@ -56,7 +56,7 @@ namespace BookstoreManager.DAO
         {
             string query = $"DELETE CTNS WHERE MANS = '{maNS}' AND MASACH = '{maSach}'";
 
-            return DataProvider.Intstance.ExcuteNonQuery(query) > 0;
+            return DataProvider.Instance.ExcuteNonQuery(query) > 0;
         }
 
         public bool InsertCTNS(string maNS, string maSach, decimal giaNhap, int soLuong, decimal tongTien)
@@ -64,7 +64,7 @@ namespace BookstoreManager.DAO
             string query = $"INSERT INTO CTNS " +
                             $"VALUES ('{maNS}', '{maSach}', {giaNhap}, {soLuong}, {tongTien})";
 
-            return DataProvider.Intstance.ExcuteNonQuery(query) > 0;
+            return DataProvider.Instance.ExcuteNonQuery(query) > 0;
         }
     }
 }

@@ -24,7 +24,7 @@ namespace BookstoreManager.DAO
         {
             List<NHAXUATBAN> result = new List<NHAXUATBAN>();
 
-            DataTable data = DataProvider.Intstance.ExcuteQuery("SELECT * FROM NHAXUATBAN");
+            DataTable data = DataProvider.Instance.ExcuteQuery("SELECT * FROM NHAXUATBAN");
 
             foreach (DataRow row in data.Rows)
             {
@@ -38,7 +38,7 @@ namespace BookstoreManager.DAO
         {
             string query = $"SELECT * FROM NHAXUATBAN WHERE MANXB = '{id}'";
 
-            DataTable data = DataProvider.Intstance.ExcuteQuery(query);
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
 
             if (data.Rows.Count > 0)
             {
@@ -52,21 +52,38 @@ namespace BookstoreManager.DAO
         {
             string query = $"DELETE NHAXUATBAN WHERE MANXB = '{maNXB}'";
 
-            return DataProvider.Intstance.ExcuteNonQuery(query) > 0;
+            return DataProvider.Instance.ExcuteNonQuery(query) > 0;
         }
 
         public bool UpdateNXBByID(string maNXB, string tenNXB)
         {
             string query = $"UPDATE NHAXUATBAN SET TENNXB = N'{tenNXB}' WHERE MANXB = '{maNXB}'";
 
-            return DataProvider.Intstance.ExcuteNonQuery(query) > 0;
+            return DataProvider.Instance.ExcuteNonQuery(query) > 0;
         }
 
         public bool InsertNXB(string maNXB, string tenNXB)
         {
             string query = $"INSERT INTO NHAXUATBAN VALUES ('{maNXB}', N'{tenNXB}')";
 
-            return DataProvider.Intstance.ExcuteNonQuery(query) > 0;
+            return DataProvider.Instance.ExcuteNonQuery(query) > 0;
+        }
+        public string GetIDOfNXB()
+        {
+            string query = "SELECT TOP 1 * FROM NHAXUATBAN ORDER BY MANXB DESC";
+
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
+
+            string result = "NXB001";
+
+            if (data != null)
+            {
+                NHAXUATBAN nhaXB = new NHAXUATBAN(data.Rows[0]);
+
+                result = nhaXB.MaNXB;
+            }
+
+            return result;
         }
     }
 }

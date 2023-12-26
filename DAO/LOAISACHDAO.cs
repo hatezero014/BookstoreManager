@@ -26,7 +26,7 @@ namespace BookstoreManager.DAO
 
             List<LOAISACH> result = new List<LOAISACH>();
 
-            DataTable data = DataProvider.Intstance.ExcuteQuery(query);
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
 
             foreach (DataRow row in data.Rows)
             {
@@ -40,7 +40,7 @@ namespace BookstoreManager.DAO
         {
             string query = $"SELECT * FROM LOAISACH WHERE MALS = '{maLS}'";
 
-            DataTable data = DataProvider.Intstance.ExcuteQuery(query);
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
 
             LOAISACH result = null;
 
@@ -56,21 +56,39 @@ namespace BookstoreManager.DAO
         {
             string query = $"DELETE LOAISACH WHERE MALS = '{maLS}'";
 
-            return DataProvider.Intstance.ExcuteNonQuery(query) > 0;
+            return DataProvider.Instance.ExcuteNonQuery(query) > 0;
         }
 
         public bool UpdateLSByID(string maLS, string tenLS)
         {
             string query = $"UPDATE LOAISACH SET TENLS = N'{tenLS}' WHERE MALS = '{maLS}'";
 
-            return DataProvider.Intstance.ExcuteNonQuery(query) > 0;
+            return DataProvider.Instance.ExcuteNonQuery(query) > 0;
         }
 
         public bool InsertLS(string maLS, string tenLS)
         {
             string query = $"INSERT INTO LOAISACH VALUES ('{maLS}', N'{tenLS}')";
 
-            return DataProvider.Intstance.ExcuteNonQuery(query) > 0;
+            return DataProvider.Instance.ExcuteNonQuery(query) > 0;
+        }
+
+        public string GetIDOfLS()
+        {
+            string query = "SELECT TOP 1 * FROM LOAISACH ORDER BY MALS DESC";
+
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
+
+            string result = "LS001";
+
+            if (data != null)
+            {
+                LOAISACH loaiSach = new LOAISACH(data.Rows[0]);
+
+                result = loaiSach.MaLS;
+            }
+
+            return result;
         }
     }
 }

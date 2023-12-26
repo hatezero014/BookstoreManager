@@ -30,21 +30,16 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main_Admin));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle121 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle122 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle123 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle124 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle125 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle126 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle127 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle128 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle129 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle130 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle131 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle132 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle133 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle134 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle135 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.materialCheckbox1 = new MaterialSkin.Controls.MaterialCheckbox();
             this.materialCheckbox2 = new MaterialSkin.Controls.MaterialCheckbox();
@@ -57,114 +52,121 @@
             this.materialCheckbox9 = new MaterialSkin.Controls.MaterialCheckbox();
             this.materialCheckbox10 = new MaterialSkin.Controls.MaterialCheckbox();
             this.materialCheckbox11 = new MaterialSkin.Controls.MaterialCheckbox();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.AccountTab = new System.Windows.Forms.TabPage();
             this.EmployeeTab = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
             this.linkLabel14 = new System.Windows.Forms.LinkLabel();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgvNhanVien = new System.Windows.Forms.DataGridView();
+            this.clNV1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clNV2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clNV3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.materialTextBox24 = new MaterialSkin.Controls.MaterialTextBox2();
-            this.materialButton3 = new MaterialSkin.Controls.MaterialButton();
+            this.txbTimKiemNV = new MaterialSkin.Controls.MaterialTextBox2();
+            this.btnTimKiemNV = new MaterialSkin.Controls.MaterialButton();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.materialRadioButton2 = new MaterialSkin.Controls.MaterialRadioButton();
-            this.materialRadioButton5 = new MaterialSkin.Controls.MaterialRadioButton();
-            this.materialRadioButton6 = new MaterialSkin.Controls.MaterialRadioButton();
+            this.rBtnMaNV = new MaterialSkin.Controls.MaterialRadioButton();
+            this.rBtnSDTNV = new MaterialSkin.Controls.MaterialRadioButton();
+            this.rBtnTenNV = new MaterialSkin.Controls.MaterialRadioButton();
             this.materialLabel9 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel11 = new MaterialSkin.Controls.MaterialLabel();
             this.CustomerTab = new System.Windows.Forms.TabPage();
             this.Customer_DataPanel = new System.Windows.Forms.TableLayoutPanel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.linkLabel11 = new System.Windows.Forms.LinkLabel();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn42 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn43 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn44 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgvKhachHang = new System.Windows.Forms.DataGridView();
+            this.clKH1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clKH2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clKH3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn47 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.materialTextBox23 = new MaterialSkin.Controls.MaterialTextBox2();
-            this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
+            this.txbTimKiemKH = new MaterialSkin.Controls.MaterialTextBox2();
+            this.btnTimKiemKH = new MaterialSkin.Controls.MaterialButton();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.materialRadioButton1 = new MaterialSkin.Controls.MaterialRadioButton();
-            this.materialRadioButton4 = new MaterialSkin.Controls.MaterialRadioButton();
-            this.materialRadioButton3 = new MaterialSkin.Controls.MaterialRadioButton();
+            this.rBtnMaKH = new MaterialSkin.Controls.MaterialRadioButton();
+            this.rBtnSDTKH = new MaterialSkin.Controls.MaterialRadioButton();
+            this.rBtnTenKH = new MaterialSkin.Controls.MaterialRadioButton();
             this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel12 = new MaterialSkin.Controls.MaterialLabel();
             this.ImportTab = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.linkLabel10 = new System.Windows.Forms.LinkLabel();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgvNhapSach = new System.Windows.Forms.DataGridView();
+            this.clNS1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clNS2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clNS3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clNS4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn40 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.materialTextBox25 = new MaterialSkin.Controls.MaterialTextBox2();
-            this.materialButton4 = new MaterialSkin.Controls.MaterialButton();
+            this.txbTimKiemNS = new MaterialSkin.Controls.MaterialTextBox2();
+            this.btnTimKiemNS = new MaterialSkin.Controls.MaterialButton();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.materialRadioButton12 = new MaterialSkin.Controls.MaterialRadioButton();
-            this.materialRadioButton13 = new MaterialSkin.Controls.MaterialRadioButton();
-            this.materialRadioButton14 = new MaterialSkin.Controls.MaterialRadioButton();
+            this.rBtnNgayTaoNS = new MaterialSkin.Controls.MaterialRadioButton();
+            this.rBtnMaNVNS = new MaterialSkin.Controls.MaterialRadioButton();
+            this.rBtnMaNS = new MaterialSkin.Controls.MaterialRadioButton();
+            this.rBtnMaNCC = new MaterialSkin.Controls.MaterialRadioButton();
             this.materialLabel10 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel16 = new MaterialSkin.Controls.MaterialLabel();
             this.ReceiptTab = new System.Windows.Forms.TabPage();
             this.Selling_DataPanel = new System.Windows.Forms.TableLayoutPanel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.linkLabel9 = new System.Windows.Forms.LinkLabel();
-            this.dataGridView6 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgvBanHang = new System.Windows.Forms.DataGridView();
+            this.clBH1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clBH123 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clBH2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clBH3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clBH4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
-            this.materialTextBox21 = new MaterialSkin.Controls.MaterialTextBox2();
-            this.materialButton6 = new MaterialSkin.Controls.MaterialButton();
+            this.txbTimKiemBH = new MaterialSkin.Controls.MaterialTextBox2();
+            this.btnTimKiemBH = new MaterialSkin.Controls.MaterialButton();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.materialRadioButton9 = new MaterialSkin.Controls.MaterialRadioButton();
-            this.materialRadioButton10 = new MaterialSkin.Controls.MaterialRadioButton();
-            this.materialRadioButton11 = new MaterialSkin.Controls.MaterialRadioButton();
+            this.rBtnSDTKHBH = new MaterialSkin.Controls.MaterialRadioButton();
+            this.rBtnMaNVBH = new MaterialSkin.Controls.MaterialRadioButton();
+            this.rBtnMaBH = new MaterialSkin.Controls.MaterialRadioButton();
+            this.rBtnNgayTaoBH = new MaterialSkin.Controls.MaterialRadioButton();
             this.materialLabel15 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel14 = new MaterialSkin.Controls.MaterialLabel();
             this.BookTab = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel7 = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgvSach = new System.Windows.Forms.DataGridView();
+            this.clSach1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clSach2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
-            this.materialTextBox22 = new MaterialSkin.Controls.MaterialTextBox2();
-            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
+            this.txbTimKiemSach = new MaterialSkin.Controls.MaterialTextBox2();
+            this.btnTimKiemSach = new MaterialSkin.Controls.MaterialButton();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.materialRadioButton7 = new MaterialSkin.Controls.MaterialRadioButton();
-            this.materialRadioButton8 = new MaterialSkin.Controls.MaterialRadioButton();
+            this.rBtnSachMS = new MaterialSkin.Controls.MaterialRadioButton();
+            this.rBtnSachTS = new MaterialSkin.Controls.MaterialRadioButton();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
             this.HomepageTab = new System.Windows.Forms.TabPage();
             this.Homepage_Panel = new System.Windows.Forms.TableLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.linkLabel8 = new System.Windows.Forms.LinkLabel();
             this.linkLabel12 = new System.Windows.Forms.LinkLabel();
             this.linkLabel13 = new System.Windows.Forms.LinkLabel();
             this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
@@ -185,36 +187,34 @@
             this.Homepage_BookLink = new System.Windows.Forms.LinkLabel();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.AdminTabControl = new MaterialSkin.Controls.MaterialTabControl();
-            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel7 = new System.Windows.Forms.LinkLabel();
             this.EmployeeTab.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvNhanVien)).BeginInit();
             this.tableLayoutPanel5.SuspendLayout();
             this.panel16.SuspendLayout();
             this.CustomerTab.SuspendLayout();
             this.Customer_DataPanel.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvKhachHang)).BeginInit();
             this.tableLayoutPanel8.SuspendLayout();
             this.panel15.SuspendLayout();
             this.ImportTab.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvNhapSach)).BeginInit();
             this.tableLayoutPanel7.SuspendLayout();
             this.panel14.SuspendLayout();
             this.ReceiptTab.SuspendLayout();
             this.Selling_DataPanel.SuspendLayout();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvBanHang)).BeginInit();
             this.tableLayoutPanel10.SuspendLayout();
             this.panel6.SuspendLayout();
             this.BookTab.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvSach)).BeginInit();
             this.tableLayoutPanel11.SuspendLayout();
             this.panel13.SuspendLayout();
             this.HomepageTab.SuspendLayout();
@@ -404,15 +404,15 @@
             this.materialCheckbox11.Text = "materialCheckbox11";
             this.materialCheckbox11.UseVisualStyleBackColor = true;
             // 
-            // tabPage1
+            // AccountTab
             // 
-            this.tabPage1.ImageKey = "manage_accounts_FILL0_wght400_GRAD0_opsz24.png";
-            this.tabPage1.Location = new System.Drawing.Point(4, 46);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(1465, 675);
-            this.tabPage1.TabIndex = 6;
-            this.tabPage1.Text = "Tài khoản";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.AccountTab.ImageKey = "manage_accounts_FILL0_wght400_GRAD0_opsz24.png";
+            this.AccountTab.Location = new System.Drawing.Point(4, 46);
+            this.AccountTab.Name = "AccountTab";
+            this.AccountTab.Size = new System.Drawing.Size(1722, 572);
+            this.AccountTab.TabIndex = 6;
+            this.AccountTab.Text = "Tài khoản";
+            this.AccountTab.UseVisualStyleBackColor = true;
             // 
             // EmployeeTab
             // 
@@ -421,7 +421,7 @@
             this.EmployeeTab.Location = new System.Drawing.Point(4, 46);
             this.EmployeeTab.Name = "EmployeeTab";
             this.EmployeeTab.Padding = new System.Windows.Forms.Padding(3);
-            this.EmployeeTab.Size = new System.Drawing.Size(1465, 675);
+            this.EmployeeTab.Size = new System.Drawing.Size(1722, 572);
             this.EmployeeTab.TabIndex = 5;
             this.EmployeeTab.Text = "Nhân viên";
             this.EmployeeTab.UseVisualStyleBackColor = true;
@@ -429,9 +429,9 @@
             // tableLayoutPanel4
             // 
             this.tableLayoutPanel4.ColumnCount = 1;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 1459F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 1716F));
             this.tableLayoutPanel4.Controls.Add(this.panel5, 0, 3);
-            this.tableLayoutPanel4.Controls.Add(this.dataGridView4, 0, 2);
+            this.tableLayoutPanel4.Controls.Add(this.dtgvNhanVien, 0, 2);
             this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel5, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.panel16, 0, 1);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -442,7 +442,7 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(1459, 669);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(1716, 566);
             this.tableLayoutPanel4.TabIndex = 9;
             // 
             // panel5
@@ -450,92 +450,99 @@
             this.panel5.Controls.Add(this.linkLabel4);
             this.panel5.Controls.Add(this.linkLabel14);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(3, 631);
+            this.panel5.Location = new System.Drawing.Point(3, 528);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1453, 35);
+            this.panel5.Size = new System.Drawing.Size(1710, 35);
             this.panel5.TabIndex = 6;
+            // 
+            // linkLabel4
+            // 
+            this.linkLabel4.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.linkLabel4.AutoSize = true;
+            this.linkLabel4.Location = new System.Drawing.Point(1396, 8);
+            this.linkLabel4.Name = "linkLabel4";
+            this.linkLabel4.Size = new System.Drawing.Size(105, 16);
+            this.linkLabel4.TabIndex = 1;
+            this.linkLabel4.TabStop = true;
+            this.linkLabel4.Text = "Quản lí tài khoản\r\n";
+            this.linkLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel4_LinkClicked);
             // 
             // linkLabel14
             // 
             this.linkLabel14.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.linkLabel14.AutoSize = true;
-            this.linkLabel14.Location = new System.Drawing.Point(1278, 8);
+            this.linkLabel14.Location = new System.Drawing.Point(1535, 8);
             this.linkLabel14.Name = "linkLabel14";
             this.linkLabel14.Size = new System.Drawing.Size(154, 16);
             this.linkLabel14.TabIndex = 1;
             this.linkLabel14.TabStop = true;
             this.linkLabel14.Text = "Thêm thông tin nhân viên";
+            this.linkLabel14.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel14_LinkClicked);
             // 
-            // dataGridView4
+            // dtgvNhanVien
             // 
-            this.dataGridView4.AllowUserToAddRows = false;
-            this.dataGridView4.AllowUserToDeleteRows = false;
-            this.dataGridView4.AllowUserToResizeRows = false;
-            dataGridViewCellStyle121.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle121.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle121.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle121.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle121.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle121.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle121.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView4.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle121;
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
+            this.dtgvNhanVien.AllowUserToAddRows = false;
+            this.dtgvNhanVien.AllowUserToDeleteRows = false;
+            this.dtgvNhanVien.AllowUserToResizeRows = false;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvNhanVien.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            this.dtgvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvNhanVien.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.clNV1,
+            this.clNV2,
+            this.clNV3,
             this.dataGridViewTextBoxColumn9,
             this.dataGridViewTextBoxColumn10,
             this.Column1,
             this.Column2});
-            dataGridViewCellStyle122.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle122.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle122.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle122.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle122.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle122.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle122.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView4.DefaultCellStyle = dataGridViewCellStyle122;
-            this.dataGridView4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView4.Location = new System.Drawing.Point(3, 110);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.ReadOnly = true;
-            dataGridViewCellStyle123.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle123.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle123.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle123.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle123.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle123.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle123.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView4.RowHeadersDefaultCellStyle = dataGridViewCellStyle123;
-            this.dataGridView4.RowHeadersWidth = 51;
-            this.dataGridView4.RowTemplate.Height = 24;
-            this.dataGridView4.Size = new System.Drawing.Size(1453, 515);
-            this.dataGridView4.TabIndex = 4;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvNhanVien.DefaultCellStyle = dataGridViewCellStyle12;
+            this.dtgvNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtgvNhanVien.Location = new System.Drawing.Point(3, 110);
+            this.dtgvNhanVien.Name = "dtgvNhanVien";
+            this.dtgvNhanVien.ReadOnly = true;
+            this.dtgvNhanVien.RowHeadersWidth = 51;
+            this.dtgvNhanVien.RowTemplate.Height = 24;
+            this.dtgvNhanVien.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgvNhanVien.Size = new System.Drawing.Size(1710, 412);
+            this.dtgvNhanVien.TabIndex = 4;
+            this.dtgvNhanVien.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvNhanVien_CellClick);
             // 
-            // dataGridViewTextBoxColumn6
+            // clNV1
             // 
-            this.dataGridViewTextBoxColumn6.HeaderText = "Mã NV";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            this.dataGridViewTextBoxColumn6.Width = 125;
+            this.clNV1.HeaderText = "Mã NV";
+            this.clNV1.MinimumWidth = 6;
+            this.clNV1.Name = "clNV1";
+            this.clNV1.ReadOnly = true;
+            this.clNV1.Width = 125;
             // 
-            // dataGridViewTextBoxColumn7
+            // clNV2
             // 
-            this.dataGridViewTextBoxColumn7.HeaderText = "Họ tên";
-            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            this.dataGridViewTextBoxColumn7.Width = 350;
+            this.clNV2.HeaderText = "Họ tên";
+            this.clNV2.MinimumWidth = 6;
+            this.clNV2.Name = "clNV2";
+            this.clNV2.ReadOnly = true;
+            this.clNV2.Width = 350;
             // 
-            // dataGridViewTextBoxColumn8
+            // clNV3
             // 
-            this.dataGridViewTextBoxColumn8.HeaderText = "Số điện thoại";
-            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.ReadOnly = true;
-            this.dataGridViewTextBoxColumn8.Width = 175;
+            this.clNV3.HeaderText = "Số điện thoại";
+            this.clNV3.MinimumWidth = 6;
+            this.clNV3.Name = "clNV3";
+            this.clNV3.ReadOnly = true;
+            this.clNV3.Width = 175;
             // 
             // dataGridViewTextBoxColumn9
             // 
@@ -574,130 +581,132 @@
             this.tableLayoutPanel5.ColumnCount = 2;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 86.66128F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 135F));
-            this.tableLayoutPanel5.Controls.Add(this.materialTextBox24, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.materialButton3, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.txbTimKiemNV, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.btnTimKiemNV, 1, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 56F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(1453, 56);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(1710, 56);
             this.tableLayoutPanel5.TabIndex = 1;
             // 
-            // materialTextBox24
+            // txbTimKiemNV
             // 
-            this.materialTextBox24.AnimateReadOnly = true;
-            this.materialTextBox24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialTextBox24.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.materialTextBox24.Depth = 0;
-            this.materialTextBox24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialTextBox24.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox24.HideSelection = true;
-            this.materialTextBox24.Hint = "Nhập để tìm kiếm...";
-            this.materialTextBox24.LeadingIcon = null;
-            this.materialTextBox24.Location = new System.Drawing.Point(3, 3);
-            this.materialTextBox24.MaxLength = 32767;
-            this.materialTextBox24.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox24.Name = "materialTextBox24";
-            this.materialTextBox24.PasswordChar = '\0';
-            this.materialTextBox24.PrefixSuffixText = null;
-            this.materialTextBox24.ReadOnly = false;
-            this.materialTextBox24.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialTextBox24.SelectedText = "";
-            this.materialTextBox24.SelectionLength = 0;
-            this.materialTextBox24.SelectionStart = 0;
-            this.materialTextBox24.ShortcutsEnabled = true;
-            this.materialTextBox24.Size = new System.Drawing.Size(1312, 48);
-            this.materialTextBox24.TabIndex = 3;
-            this.materialTextBox24.TabStop = false;
-            this.materialTextBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialTextBox24.TrailingIcon = null;
-            this.materialTextBox24.UseSystemPasswordChar = false;
+            this.txbTimKiemNV.AnimateReadOnly = true;
+            this.txbTimKiemNV.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txbTimKiemNV.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txbTimKiemNV.Depth = 0;
+            this.txbTimKiemNV.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txbTimKiemNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txbTimKiemNV.HideSelection = true;
+            this.txbTimKiemNV.Hint = "Nhập để tìm kiếm...";
+            this.txbTimKiemNV.LeadingIcon = null;
+            this.txbTimKiemNV.Location = new System.Drawing.Point(3, 3);
+            this.txbTimKiemNV.MaxLength = 32767;
+            this.txbTimKiemNV.MouseState = MaterialSkin.MouseState.OUT;
+            this.txbTimKiemNV.Name = "txbTimKiemNV";
+            this.txbTimKiemNV.PasswordChar = '\0';
+            this.txbTimKiemNV.PrefixSuffixText = null;
+            this.txbTimKiemNV.ReadOnly = false;
+            this.txbTimKiemNV.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txbTimKiemNV.SelectedText = "";
+            this.txbTimKiemNV.SelectionLength = 0;
+            this.txbTimKiemNV.SelectionStart = 0;
+            this.txbTimKiemNV.ShortcutsEnabled = true;
+            this.txbTimKiemNV.Size = new System.Drawing.Size(1569, 48);
+            this.txbTimKiemNV.TabIndex = 3;
+            this.txbTimKiemNV.TabStop = false;
+            this.txbTimKiemNV.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txbTimKiemNV.TrailingIcon = null;
+            this.txbTimKiemNV.UseSystemPasswordChar = false;
             // 
-            // materialButton3
+            // btnTimKiemNV
             // 
-            this.materialButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton3.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton3.Depth = 0;
-            this.materialButton3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialButton3.HighEmphasis = true;
-            this.materialButton3.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton3.Icon")));
-            this.materialButton3.Location = new System.Drawing.Point(1322, 2);
-            this.materialButton3.Margin = new System.Windows.Forms.Padding(4, 2, 0, 6);
-            this.materialButton3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton3.Name = "materialButton3";
-            this.materialButton3.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton3.Size = new System.Drawing.Size(131, 48);
-            this.materialButton3.TabIndex = 4;
-            this.materialButton3.Text = "Tìm kiếm";
-            this.materialButton3.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton3.UseAccentColor = false;
-            this.materialButton3.UseVisualStyleBackColor = true;
+            this.btnTimKiemNV.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnTimKiemNV.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnTimKiemNV.Depth = 0;
+            this.btnTimKiemNV.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnTimKiemNV.HighEmphasis = true;
+            this.btnTimKiemNV.Icon = ((System.Drawing.Image)(resources.GetObject("btnTimKiemNV.Icon")));
+            this.btnTimKiemNV.Location = new System.Drawing.Point(1579, 2);
+            this.btnTimKiemNV.Margin = new System.Windows.Forms.Padding(4, 2, 0, 6);
+            this.btnTimKiemNV.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnTimKiemNV.Name = "btnTimKiemNV";
+            this.btnTimKiemNV.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnTimKiemNV.Size = new System.Drawing.Size(131, 48);
+            this.btnTimKiemNV.TabIndex = 4;
+            this.btnTimKiemNV.Text = "Tìm kiếm";
+            this.btnTimKiemNV.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnTimKiemNV.UseAccentColor = false;
+            this.btnTimKiemNV.UseVisualStyleBackColor = true;
+            this.btnTimKiemNV.Click += new System.EventHandler(this.btnTimKiemNV_Click);
             // 
             // panel16
             // 
-            this.panel16.Controls.Add(this.materialRadioButton2);
-            this.panel16.Controls.Add(this.materialRadioButton5);
-            this.panel16.Controls.Add(this.materialRadioButton6);
+            this.panel16.Controls.Add(this.rBtnMaNV);
+            this.panel16.Controls.Add(this.rBtnSDTNV);
+            this.panel16.Controls.Add(this.rBtnTenNV);
             this.panel16.Controls.Add(this.materialLabel9);
             this.panel16.Controls.Add(this.materialLabel11);
             this.panel16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel16.Location = new System.Drawing.Point(3, 65);
             this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(1453, 39);
+            this.panel16.Size = new System.Drawing.Size(1710, 39);
             this.panel16.TabIndex = 3;
             // 
-            // materialRadioButton2
+            // rBtnMaNV
             // 
-            this.materialRadioButton2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.materialRadioButton2.AutoSize = true;
-            this.materialRadioButton2.Depth = 0;
-            this.materialRadioButton2.Location = new System.Drawing.Point(1036, 1);
-            this.materialRadioButton2.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton2.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton2.Name = "materialRadioButton2";
-            this.materialRadioButton2.Ripple = true;
-            this.materialRadioButton2.Size = new System.Drawing.Size(83, 37);
-            this.materialRadioButton2.TabIndex = 6;
-            this.materialRadioButton2.TabStop = true;
-            this.materialRadioButton2.Text = "Mã NV";
-            this.materialRadioButton2.UseVisualStyleBackColor = true;
+            this.rBtnMaNV.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.rBtnMaNV.AutoSize = true;
+            this.rBtnMaNV.Checked = true;
+            this.rBtnMaNV.Depth = 0;
+            this.rBtnMaNV.Location = new System.Drawing.Point(1292, 1);
+            this.rBtnMaNV.Margin = new System.Windows.Forms.Padding(0);
+            this.rBtnMaNV.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.rBtnMaNV.MouseState = MaterialSkin.MouseState.HOVER;
+            this.rBtnMaNV.Name = "rBtnMaNV";
+            this.rBtnMaNV.Ripple = true;
+            this.rBtnMaNV.Size = new System.Drawing.Size(83, 37);
+            this.rBtnMaNV.TabIndex = 6;
+            this.rBtnMaNV.TabStop = true;
+            this.rBtnMaNV.Text = "Mã NV";
+            this.rBtnMaNV.UseVisualStyleBackColor = true;
             // 
-            // materialRadioButton5
+            // rBtnSDTNV
             // 
-            this.materialRadioButton5.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.materialRadioButton5.AutoSize = true;
-            this.materialRadioButton5.Depth = 0;
-            this.materialRadioButton5.Location = new System.Drawing.Point(1249, 1);
-            this.materialRadioButton5.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton5.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton5.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton5.Name = "materialRadioButton5";
-            this.materialRadioButton5.Ripple = true;
-            this.materialRadioButton5.Size = new System.Drawing.Size(66, 37);
-            this.materialRadioButton5.TabIndex = 6;
-            this.materialRadioButton5.TabStop = true;
-            this.materialRadioButton5.Text = "SĐT";
-            this.materialRadioButton5.UseVisualStyleBackColor = true;
+            this.rBtnSDTNV.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.rBtnSDTNV.AutoSize = true;
+            this.rBtnSDTNV.Depth = 0;
+            this.rBtnSDTNV.Location = new System.Drawing.Point(1506, 1);
+            this.rBtnSDTNV.Margin = new System.Windows.Forms.Padding(0);
+            this.rBtnSDTNV.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.rBtnSDTNV.MouseState = MaterialSkin.MouseState.HOVER;
+            this.rBtnSDTNV.Name = "rBtnSDTNV";
+            this.rBtnSDTNV.Ripple = true;
+            this.rBtnSDTNV.Size = new System.Drawing.Size(66, 37);
+            this.rBtnSDTNV.TabIndex = 6;
+            this.rBtnSDTNV.TabStop = true;
+            this.rBtnSDTNV.Text = "SĐT";
+            this.rBtnSDTNV.UseVisualStyleBackColor = true;
             // 
-            // materialRadioButton6
+            // rBtnTenNV
             // 
-            this.materialRadioButton6.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.materialRadioButton6.AutoSize = true;
-            this.materialRadioButton6.Depth = 0;
-            this.materialRadioButton6.Location = new System.Drawing.Point(1140, 1);
-            this.materialRadioButton6.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton6.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton6.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton6.Name = "materialRadioButton6";
-            this.materialRadioButton6.Ripple = true;
-            this.materialRadioButton6.Size = new System.Drawing.Size(87, 37);
-            this.materialRadioButton6.TabIndex = 6;
-            this.materialRadioButton6.TabStop = true;
-            this.materialRadioButton6.Text = "Tên NV";
-            this.materialRadioButton6.UseVisualStyleBackColor = true;
+            this.rBtnTenNV.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.rBtnTenNV.AutoSize = true;
+            this.rBtnTenNV.Depth = 0;
+            this.rBtnTenNV.Location = new System.Drawing.Point(1397, 1);
+            this.rBtnTenNV.Margin = new System.Windows.Forms.Padding(0);
+            this.rBtnTenNV.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.rBtnTenNV.MouseState = MaterialSkin.MouseState.HOVER;
+            this.rBtnTenNV.Name = "rBtnTenNV";
+            this.rBtnTenNV.Ripple = true;
+            this.rBtnTenNV.Size = new System.Drawing.Size(87, 37);
+            this.rBtnTenNV.TabIndex = 6;
+            this.rBtnTenNV.TabStop = true;
+            this.rBtnTenNV.Text = "Tên NV";
+            this.rBtnTenNV.UseVisualStyleBackColor = true;
             // 
             // materialLabel9
             // 
@@ -705,7 +714,7 @@
             this.materialLabel9.AutoSize = true;
             this.materialLabel9.Depth = 0;
             this.materialLabel9.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel9.Location = new System.Drawing.Point(905, 10);
+            this.materialLabel9.Location = new System.Drawing.Point(1162, 10);
             this.materialLabel9.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel9.Name = "materialLabel9";
             this.materialLabel9.Size = new System.Drawing.Size(106, 19);
@@ -733,7 +742,7 @@
             this.CustomerTab.Location = new System.Drawing.Point(4, 46);
             this.CustomerTab.Name = "CustomerTab";
             this.CustomerTab.Padding = new System.Windows.Forms.Padding(3);
-            this.CustomerTab.Size = new System.Drawing.Size(1465, 675);
+            this.CustomerTab.Size = new System.Drawing.Size(1722, 572);
             this.CustomerTab.TabIndex = 2;
             this.CustomerTab.Text = "Khách hàng";
             this.CustomerTab.UseVisualStyleBackColor = true;
@@ -741,9 +750,9 @@
             // Customer_DataPanel
             // 
             this.Customer_DataPanel.ColumnCount = 1;
-            this.Customer_DataPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 1459F));
+            this.Customer_DataPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 1716F));
             this.Customer_DataPanel.Controls.Add(this.panel4, 0, 3);
-            this.Customer_DataPanel.Controls.Add(this.dataGridView2, 0, 2);
+            this.Customer_DataPanel.Controls.Add(this.dtgvKhachHang, 0, 2);
             this.Customer_DataPanel.Controls.Add(this.tableLayoutPanel8, 0, 0);
             this.Customer_DataPanel.Controls.Add(this.panel15, 0, 1);
             this.Customer_DataPanel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -754,105 +763,91 @@
             this.Customer_DataPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
             this.Customer_DataPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.Customer_DataPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.Customer_DataPanel.Size = new System.Drawing.Size(1459, 669);
+            this.Customer_DataPanel.Size = new System.Drawing.Size(1716, 566);
             this.Customer_DataPanel.TabIndex = 8;
             // 
             // panel4
             // 
             this.panel4.Controls.Add(this.linkLabel11);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(3, 631);
+            this.panel4.Location = new System.Drawing.Point(3, 528);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1453, 35);
+            this.panel4.Size = new System.Drawing.Size(1710, 35);
             this.panel4.TabIndex = 6;
             // 
             // linkLabel11
             // 
             this.linkLabel11.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.linkLabel11.AutoSize = true;
-            this.linkLabel11.Location = new System.Drawing.Point(1267, 8);
+            this.linkLabel11.Location = new System.Drawing.Point(1524, 8);
             this.linkLabel11.Name = "linkLabel11";
             this.linkLabel11.Size = new System.Drawing.Size(166, 16);
             this.linkLabel11.TabIndex = 1;
             this.linkLabel11.TabStop = true;
             this.linkLabel11.Text = "Thêm thông tin khách hàng";
+            this.linkLabel11.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel11_LinkClicked);
             // 
-            // dataGridView2
+            // dtgvKhachHang
             // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.AllowUserToDeleteRows = false;
-            this.dataGridView2.AllowUserToResizeRows = false;
-            dataGridViewCellStyle124.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle124.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle124.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle124.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle124.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle124.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle124.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle124;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn41,
-            this.dataGridViewTextBoxColumn42,
-            this.dataGridViewTextBoxColumn43,
-            this.dataGridViewTextBoxColumn44,
+            this.dtgvKhachHang.AllowUserToAddRows = false;
+            this.dtgvKhachHang.AllowUserToDeleteRows = false;
+            this.dtgvKhachHang.AllowUserToResizeRows = false;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvKhachHang.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            this.dtgvKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvKhachHang.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.clKH1,
+            this.clKH2,
+            this.clKH3,
             this.dataGridViewTextBoxColumn47});
-            dataGridViewCellStyle125.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle125.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle125.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle125.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle125.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle125.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle125.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle125;
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 110);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            dataGridViewCellStyle126.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle126.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle126.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle126.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle126.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle126.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle126.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle126;
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(1453, 515);
-            this.dataGridView2.TabIndex = 4;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvKhachHang.DefaultCellStyle = dataGridViewCellStyle14;
+            this.dtgvKhachHang.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtgvKhachHang.Location = new System.Drawing.Point(3, 110);
+            this.dtgvKhachHang.Name = "dtgvKhachHang";
+            this.dtgvKhachHang.ReadOnly = true;
+            this.dtgvKhachHang.RowHeadersWidth = 51;
+            this.dtgvKhachHang.RowTemplate.Height = 24;
+            this.dtgvKhachHang.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgvKhachHang.Size = new System.Drawing.Size(1710, 412);
+            this.dtgvKhachHang.TabIndex = 4;
+            this.dtgvKhachHang.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvKhachHang_CellClick);
             // 
-            // dataGridViewTextBoxColumn41
+            // clKH1
             // 
-            this.dataGridViewTextBoxColumn41.HeaderText = "Mã KH";
-            this.dataGridViewTextBoxColumn41.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn41.Name = "dataGridViewTextBoxColumn41";
-            this.dataGridViewTextBoxColumn41.ReadOnly = true;
-            this.dataGridViewTextBoxColumn41.Width = 125;
+            this.clKH1.HeaderText = "Mã KH";
+            this.clKH1.MinimumWidth = 6;
+            this.clKH1.Name = "clKH1";
+            this.clKH1.ReadOnly = true;
+            this.clKH1.Width = 125;
             // 
-            // dataGridViewTextBoxColumn42
+            // clKH2
             // 
-            this.dataGridViewTextBoxColumn42.HeaderText = "Họ tên";
-            this.dataGridViewTextBoxColumn42.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn42.Name = "dataGridViewTextBoxColumn42";
-            this.dataGridViewTextBoxColumn42.ReadOnly = true;
-            this.dataGridViewTextBoxColumn42.Width = 450;
+            this.clKH2.HeaderText = "Họ tên";
+            this.clKH2.MinimumWidth = 6;
+            this.clKH2.Name = "clKH2";
+            this.clKH2.ReadOnly = true;
+            this.clKH2.Width = 450;
             // 
-            // dataGridViewTextBoxColumn43
+            // clKH3
             // 
-            this.dataGridViewTextBoxColumn43.HeaderText = "Số điện thoại";
-            this.dataGridViewTextBoxColumn43.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn43.Name = "dataGridViewTextBoxColumn43";
-            this.dataGridViewTextBoxColumn43.ReadOnly = true;
-            this.dataGridViewTextBoxColumn43.Width = 250;
-            // 
-            // dataGridViewTextBoxColumn44
-            // 
-            this.dataGridViewTextBoxColumn44.HeaderText = "Email";
-            this.dataGridViewTextBoxColumn44.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn44.Name = "dataGridViewTextBoxColumn44";
-            this.dataGridViewTextBoxColumn44.ReadOnly = true;
-            this.dataGridViewTextBoxColumn44.Width = 350;
+            this.clKH3.HeaderText = "Số điện thoại";
+            this.clKH3.MinimumWidth = 6;
+            this.clKH3.Name = "clKH3";
+            this.clKH3.ReadOnly = true;
+            this.clKH3.Width = 250;
             // 
             // dataGridViewTextBoxColumn47
             // 
@@ -867,130 +862,132 @@
             this.tableLayoutPanel8.ColumnCount = 2;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 86.66128F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 135F));
-            this.tableLayoutPanel8.Controls.Add(this.materialTextBox23, 0, 0);
-            this.tableLayoutPanel8.Controls.Add(this.materialButton2, 1, 0);
+            this.tableLayoutPanel8.Controls.Add(this.txbTimKiemKH, 0, 0);
+            this.tableLayoutPanel8.Controls.Add(this.btnTimKiemKH, 1, 0);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel8.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 1;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 56F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(1453, 56);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(1710, 56);
             this.tableLayoutPanel8.TabIndex = 1;
             // 
-            // materialTextBox23
+            // txbTimKiemKH
             // 
-            this.materialTextBox23.AnimateReadOnly = true;
-            this.materialTextBox23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialTextBox23.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.materialTextBox23.Depth = 0;
-            this.materialTextBox23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialTextBox23.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox23.HideSelection = true;
-            this.materialTextBox23.Hint = "Nhập để tìm kiếm...";
-            this.materialTextBox23.LeadingIcon = null;
-            this.materialTextBox23.Location = new System.Drawing.Point(3, 3);
-            this.materialTextBox23.MaxLength = 32767;
-            this.materialTextBox23.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox23.Name = "materialTextBox23";
-            this.materialTextBox23.PasswordChar = '\0';
-            this.materialTextBox23.PrefixSuffixText = null;
-            this.materialTextBox23.ReadOnly = false;
-            this.materialTextBox23.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialTextBox23.SelectedText = "";
-            this.materialTextBox23.SelectionLength = 0;
-            this.materialTextBox23.SelectionStart = 0;
-            this.materialTextBox23.ShortcutsEnabled = true;
-            this.materialTextBox23.Size = new System.Drawing.Size(1312, 48);
-            this.materialTextBox23.TabIndex = 3;
-            this.materialTextBox23.TabStop = false;
-            this.materialTextBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialTextBox23.TrailingIcon = null;
-            this.materialTextBox23.UseSystemPasswordChar = false;
+            this.txbTimKiemKH.AnimateReadOnly = true;
+            this.txbTimKiemKH.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txbTimKiemKH.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txbTimKiemKH.Depth = 0;
+            this.txbTimKiemKH.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txbTimKiemKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txbTimKiemKH.HideSelection = true;
+            this.txbTimKiemKH.Hint = "Nhập để tìm kiếm...";
+            this.txbTimKiemKH.LeadingIcon = null;
+            this.txbTimKiemKH.Location = new System.Drawing.Point(3, 3);
+            this.txbTimKiemKH.MaxLength = 32767;
+            this.txbTimKiemKH.MouseState = MaterialSkin.MouseState.OUT;
+            this.txbTimKiemKH.Name = "txbTimKiemKH";
+            this.txbTimKiemKH.PasswordChar = '\0';
+            this.txbTimKiemKH.PrefixSuffixText = null;
+            this.txbTimKiemKH.ReadOnly = false;
+            this.txbTimKiemKH.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txbTimKiemKH.SelectedText = "";
+            this.txbTimKiemKH.SelectionLength = 0;
+            this.txbTimKiemKH.SelectionStart = 0;
+            this.txbTimKiemKH.ShortcutsEnabled = true;
+            this.txbTimKiemKH.Size = new System.Drawing.Size(1569, 48);
+            this.txbTimKiemKH.TabIndex = 3;
+            this.txbTimKiemKH.TabStop = false;
+            this.txbTimKiemKH.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txbTimKiemKH.TrailingIcon = null;
+            this.txbTimKiemKH.UseSystemPasswordChar = false;
             // 
-            // materialButton2
+            // btnTimKiemKH
             // 
-            this.materialButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton2.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton2.Depth = 0;
-            this.materialButton2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialButton2.HighEmphasis = true;
-            this.materialButton2.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton2.Icon")));
-            this.materialButton2.Location = new System.Drawing.Point(1322, 2);
-            this.materialButton2.Margin = new System.Windows.Forms.Padding(4, 2, 0, 6);
-            this.materialButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton2.Name = "materialButton2";
-            this.materialButton2.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton2.Size = new System.Drawing.Size(131, 48);
-            this.materialButton2.TabIndex = 4;
-            this.materialButton2.Text = "Tìm kiếm";
-            this.materialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton2.UseAccentColor = false;
-            this.materialButton2.UseVisualStyleBackColor = true;
+            this.btnTimKiemKH.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnTimKiemKH.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnTimKiemKH.Depth = 0;
+            this.btnTimKiemKH.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnTimKiemKH.HighEmphasis = true;
+            this.btnTimKiemKH.Icon = ((System.Drawing.Image)(resources.GetObject("btnTimKiemKH.Icon")));
+            this.btnTimKiemKH.Location = new System.Drawing.Point(1579, 2);
+            this.btnTimKiemKH.Margin = new System.Windows.Forms.Padding(4, 2, 0, 6);
+            this.btnTimKiemKH.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnTimKiemKH.Name = "btnTimKiemKH";
+            this.btnTimKiemKH.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnTimKiemKH.Size = new System.Drawing.Size(131, 48);
+            this.btnTimKiemKH.TabIndex = 4;
+            this.btnTimKiemKH.Text = "Tìm kiếm";
+            this.btnTimKiemKH.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnTimKiemKH.UseAccentColor = false;
+            this.btnTimKiemKH.UseVisualStyleBackColor = true;
+            this.btnTimKiemKH.Click += new System.EventHandler(this.btnTimKiemKH_Click);
             // 
             // panel15
             // 
-            this.panel15.Controls.Add(this.materialRadioButton1);
-            this.panel15.Controls.Add(this.materialRadioButton4);
-            this.panel15.Controls.Add(this.materialRadioButton3);
+            this.panel15.Controls.Add(this.rBtnMaKH);
+            this.panel15.Controls.Add(this.rBtnSDTKH);
+            this.panel15.Controls.Add(this.rBtnTenKH);
             this.panel15.Controls.Add(this.materialLabel8);
             this.panel15.Controls.Add(this.materialLabel12);
             this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel15.Location = new System.Drawing.Point(3, 65);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(1453, 39);
+            this.panel15.Size = new System.Drawing.Size(1710, 39);
             this.panel15.TabIndex = 3;
             // 
-            // materialRadioButton1
+            // rBtnMaKH
             // 
-            this.materialRadioButton1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.materialRadioButton1.AutoSize = true;
-            this.materialRadioButton1.Depth = 0;
-            this.materialRadioButton1.Location = new System.Drawing.Point(1036, 1);
-            this.materialRadioButton1.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton1.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton1.Name = "materialRadioButton1";
-            this.materialRadioButton1.Ripple = true;
-            this.materialRadioButton1.Size = new System.Drawing.Size(83, 37);
-            this.materialRadioButton1.TabIndex = 6;
-            this.materialRadioButton1.TabStop = true;
-            this.materialRadioButton1.Text = "Mã KH";
-            this.materialRadioButton1.UseVisualStyleBackColor = true;
+            this.rBtnMaKH.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.rBtnMaKH.AutoSize = true;
+            this.rBtnMaKH.Checked = true;
+            this.rBtnMaKH.Depth = 0;
+            this.rBtnMaKH.Location = new System.Drawing.Point(1292, 1);
+            this.rBtnMaKH.Margin = new System.Windows.Forms.Padding(0);
+            this.rBtnMaKH.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.rBtnMaKH.MouseState = MaterialSkin.MouseState.HOVER;
+            this.rBtnMaKH.Name = "rBtnMaKH";
+            this.rBtnMaKH.Ripple = true;
+            this.rBtnMaKH.Size = new System.Drawing.Size(83, 37);
+            this.rBtnMaKH.TabIndex = 6;
+            this.rBtnMaKH.TabStop = true;
+            this.rBtnMaKH.Text = "Mã KH";
+            this.rBtnMaKH.UseVisualStyleBackColor = true;
             // 
-            // materialRadioButton4
+            // rBtnSDTKH
             // 
-            this.materialRadioButton4.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.materialRadioButton4.AutoSize = true;
-            this.materialRadioButton4.Depth = 0;
-            this.materialRadioButton4.Location = new System.Drawing.Point(1249, 1);
-            this.materialRadioButton4.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton4.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton4.Name = "materialRadioButton4";
-            this.materialRadioButton4.Ripple = true;
-            this.materialRadioButton4.Size = new System.Drawing.Size(66, 37);
-            this.materialRadioButton4.TabIndex = 6;
-            this.materialRadioButton4.TabStop = true;
-            this.materialRadioButton4.Text = "SĐT";
-            this.materialRadioButton4.UseVisualStyleBackColor = true;
+            this.rBtnSDTKH.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.rBtnSDTKH.AutoSize = true;
+            this.rBtnSDTKH.Depth = 0;
+            this.rBtnSDTKH.Location = new System.Drawing.Point(1506, 1);
+            this.rBtnSDTKH.Margin = new System.Windows.Forms.Padding(0);
+            this.rBtnSDTKH.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.rBtnSDTKH.MouseState = MaterialSkin.MouseState.HOVER;
+            this.rBtnSDTKH.Name = "rBtnSDTKH";
+            this.rBtnSDTKH.Ripple = true;
+            this.rBtnSDTKH.Size = new System.Drawing.Size(66, 37);
+            this.rBtnSDTKH.TabIndex = 6;
+            this.rBtnSDTKH.TabStop = true;
+            this.rBtnSDTKH.Text = "SĐT";
+            this.rBtnSDTKH.UseVisualStyleBackColor = true;
             // 
-            // materialRadioButton3
+            // rBtnTenKH
             // 
-            this.materialRadioButton3.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.materialRadioButton3.AutoSize = true;
-            this.materialRadioButton3.Depth = 0;
-            this.materialRadioButton3.Location = new System.Drawing.Point(1140, 1);
-            this.materialRadioButton3.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton3.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton3.Name = "materialRadioButton3";
-            this.materialRadioButton3.Ripple = true;
-            this.materialRadioButton3.Size = new System.Drawing.Size(87, 37);
-            this.materialRadioButton3.TabIndex = 6;
-            this.materialRadioButton3.TabStop = true;
-            this.materialRadioButton3.Text = "Tên KH";
-            this.materialRadioButton3.UseVisualStyleBackColor = true;
+            this.rBtnTenKH.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.rBtnTenKH.AutoSize = true;
+            this.rBtnTenKH.Depth = 0;
+            this.rBtnTenKH.Location = new System.Drawing.Point(1397, 1);
+            this.rBtnTenKH.Margin = new System.Windows.Forms.Padding(0);
+            this.rBtnTenKH.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.rBtnTenKH.MouseState = MaterialSkin.MouseState.HOVER;
+            this.rBtnTenKH.Name = "rBtnTenKH";
+            this.rBtnTenKH.Ripple = true;
+            this.rBtnTenKH.Size = new System.Drawing.Size(87, 37);
+            this.rBtnTenKH.TabIndex = 6;
+            this.rBtnTenKH.TabStop = true;
+            this.rBtnTenKH.Text = "Tên KH";
+            this.rBtnTenKH.UseVisualStyleBackColor = true;
             // 
             // materialLabel8
             // 
@@ -998,7 +995,7 @@
             this.materialLabel8.AutoSize = true;
             this.materialLabel8.Depth = 0;
             this.materialLabel8.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel8.Location = new System.Drawing.Point(905, 10);
+            this.materialLabel8.Location = new System.Drawing.Point(1162, 10);
             this.materialLabel8.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel8.Name = "materialLabel8";
             this.materialLabel8.Size = new System.Drawing.Size(106, 19);
@@ -1026,7 +1023,7 @@
             this.ImportTab.Location = new System.Drawing.Point(4, 46);
             this.ImportTab.Name = "ImportTab";
             this.ImportTab.Padding = new System.Windows.Forms.Padding(3);
-            this.ImportTab.Size = new System.Drawing.Size(1465, 675);
+            this.ImportTab.Size = new System.Drawing.Size(1722, 572);
             this.ImportTab.TabIndex = 3;
             this.ImportTab.Text = "Nhập sách";
             this.ImportTab.UseVisualStyleBackColor = true;
@@ -1034,9 +1031,9 @@
             // tableLayoutPanel6
             // 
             this.tableLayoutPanel6.ColumnCount = 1;
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 1459F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 1716F));
             this.tableLayoutPanel6.Controls.Add(this.panel8, 0, 3);
-            this.tableLayoutPanel6.Controls.Add(this.dataGridView3, 0, 2);
+            this.tableLayoutPanel6.Controls.Add(this.dtgvNhapSach, 0, 2);
             this.tableLayoutPanel6.Controls.Add(this.tableLayoutPanel7, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.panel14, 0, 1);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1052,91 +1049,86 @@
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(1459, 669);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(1716, 566);
             this.tableLayoutPanel6.TabIndex = 8;
             // 
             // panel8
             // 
             this.panel8.Controls.Add(this.linkLabel10);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(3, 631);
+            this.panel8.Location = new System.Drawing.Point(3, 528);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1453, 35);
+            this.panel8.Size = new System.Drawing.Size(1710, 35);
             this.panel8.TabIndex = 6;
             // 
             // linkLabel10
             // 
             this.linkLabel10.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.linkLabel10.AutoSize = true;
-            this.linkLabel10.Location = new System.Drawing.Point(1285, 8);
+            this.linkLabel10.Location = new System.Drawing.Point(1542, 8);
             this.linkLabel10.Name = "linkLabel10";
             this.linkLabel10.Size = new System.Drawing.Size(149, 16);
             this.linkLabel10.TabIndex = 1;
             this.linkLabel10.TabStop = true;
             this.linkLabel10.Text = "Tạo hoá đơn nhập sách";
+            this.linkLabel10.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel10_LinkClicked);
             // 
-            // dataGridView3
+            // dtgvNhapSach
             // 
-            this.dataGridView3.AllowUserToAddRows = false;
-            this.dataGridView3.AllowUserToDeleteRows = false;
-            this.dataGridView3.AllowUserToResizeRows = false;
-            dataGridViewCellStyle127.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle127.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle127.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle127.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle127.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle127.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle127.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle127;
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
+            this.dtgvNhapSach.AllowUserToAddRows = false;
+            this.dtgvNhapSach.AllowUserToDeleteRows = false;
+            this.dtgvNhapSach.AllowUserToResizeRows = false;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvNhapSach.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            this.dtgvNhapSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvNhapSach.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.clNS1,
+            this.clNS2,
             this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
+            this.clNS3,
             this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn39,
+            this.clNS4,
             this.dataGridViewTextBoxColumn40});
-            dataGridViewCellStyle128.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle128.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle128.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle128.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle128.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle128.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle128.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView3.DefaultCellStyle = dataGridViewCellStyle128;
-            this.dataGridView3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView3.Location = new System.Drawing.Point(3, 110);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.ReadOnly = true;
-            dataGridViewCellStyle129.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle129.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle129.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle129.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle129.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle129.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle129.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView3.RowHeadersDefaultCellStyle = dataGridViewCellStyle129;
-            this.dataGridView3.RowHeadersWidth = 51;
-            this.dataGridView3.RowTemplate.Height = 24;
-            this.dataGridView3.Size = new System.Drawing.Size(1453, 515);
-            this.dataGridView3.TabIndex = 4;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvNhapSach.DefaultCellStyle = dataGridViewCellStyle16;
+            this.dtgvNhapSach.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtgvNhapSach.Location = new System.Drawing.Point(3, 110);
+            this.dtgvNhapSach.Name = "dtgvNhapSach";
+            this.dtgvNhapSach.ReadOnly = true;
+            this.dtgvNhapSach.RowHeadersWidth = 51;
+            this.dtgvNhapSach.RowTemplate.Height = 24;
+            this.dtgvNhapSach.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgvNhapSach.Size = new System.Drawing.Size(1710, 412);
+            this.dtgvNhapSach.TabIndex = 4;
+            this.dtgvNhapSach.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvNhapSach_CellClick);
             // 
-            // dataGridViewTextBoxColumn1
+            // clNS1
             // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Mã NS";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 150;
+            this.clNS1.HeaderText = "Mã NS";
+            this.clNS1.MinimumWidth = 6;
+            this.clNS1.Name = "clNS1";
+            this.clNS1.ReadOnly = true;
+            this.clNS1.Width = 150;
             // 
-            // dataGridViewTextBoxColumn2
+            // clNS2
             // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Mã NCC";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 150;
+            this.clNS2.HeaderText = "Mã NCC";
+            this.clNS2.MinimumWidth = 6;
+            this.clNS2.Name = "clNS2";
+            this.clNS2.ReadOnly = true;
+            this.clNS2.Width = 150;
             // 
             // dataGridViewTextBoxColumn3
             // 
@@ -1146,13 +1138,13 @@
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
             this.dataGridViewTextBoxColumn3.Width = 300;
             // 
-            // dataGridViewTextBoxColumn4
+            // clNS3
             // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "Mã NV";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            this.dataGridViewTextBoxColumn4.Width = 150;
+            this.clNS3.HeaderText = "Mã NV";
+            this.clNS3.MinimumWidth = 6;
+            this.clNS3.Name = "clNS3";
+            this.clNS3.ReadOnly = true;
+            this.clNS3.Width = 150;
             // 
             // dataGridViewTextBoxColumn5
             // 
@@ -1162,13 +1154,13 @@
             this.dataGridViewTextBoxColumn5.ReadOnly = true;
             this.dataGridViewTextBoxColumn5.Width = 300;
             // 
-            // dataGridViewTextBoxColumn39
+            // clNS4
             // 
-            this.dataGridViewTextBoxColumn39.HeaderText = "Ngày tạo";
-            this.dataGridViewTextBoxColumn39.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn39.Name = "dataGridViewTextBoxColumn39";
-            this.dataGridViewTextBoxColumn39.ReadOnly = true;
-            this.dataGridViewTextBoxColumn39.Width = 160;
+            this.clNS4.HeaderText = "Ngày tạo";
+            this.clNS4.MinimumWidth = 6;
+            this.clNS4.Name = "clNS4";
+            this.clNS4.ReadOnly = true;
+            this.clNS4.Width = 160;
             // 
             // dataGridViewTextBoxColumn40
             // 
@@ -1183,130 +1175,150 @@
             this.tableLayoutPanel7.ColumnCount = 2;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 86.66128F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 135F));
-            this.tableLayoutPanel7.Controls.Add(this.materialTextBox25, 0, 0);
-            this.tableLayoutPanel7.Controls.Add(this.materialButton4, 1, 0);
+            this.tableLayoutPanel7.Controls.Add(this.txbTimKiemNS, 0, 0);
+            this.tableLayoutPanel7.Controls.Add(this.btnTimKiemNS, 1, 0);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 1;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 56F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(1453, 56);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(1710, 56);
             this.tableLayoutPanel7.TabIndex = 1;
             // 
-            // materialTextBox25
+            // txbTimKiemNS
             // 
-            this.materialTextBox25.AnimateReadOnly = true;
-            this.materialTextBox25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialTextBox25.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.materialTextBox25.Depth = 0;
-            this.materialTextBox25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialTextBox25.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox25.HideSelection = true;
-            this.materialTextBox25.Hint = "Nhập để tìm kiếm...";
-            this.materialTextBox25.LeadingIcon = null;
-            this.materialTextBox25.Location = new System.Drawing.Point(3, 3);
-            this.materialTextBox25.MaxLength = 32767;
-            this.materialTextBox25.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox25.Name = "materialTextBox25";
-            this.materialTextBox25.PasswordChar = '\0';
-            this.materialTextBox25.PrefixSuffixText = null;
-            this.materialTextBox25.ReadOnly = false;
-            this.materialTextBox25.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialTextBox25.SelectedText = "";
-            this.materialTextBox25.SelectionLength = 0;
-            this.materialTextBox25.SelectionStart = 0;
-            this.materialTextBox25.ShortcutsEnabled = true;
-            this.materialTextBox25.Size = new System.Drawing.Size(1312, 48);
-            this.materialTextBox25.TabIndex = 3;
-            this.materialTextBox25.TabStop = false;
-            this.materialTextBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialTextBox25.TrailingIcon = null;
-            this.materialTextBox25.UseSystemPasswordChar = false;
+            this.txbTimKiemNS.AnimateReadOnly = true;
+            this.txbTimKiemNS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txbTimKiemNS.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txbTimKiemNS.Depth = 0;
+            this.txbTimKiemNS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txbTimKiemNS.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txbTimKiemNS.HideSelection = true;
+            this.txbTimKiemNS.Hint = "Nhập để tìm kiếm...";
+            this.txbTimKiemNS.LeadingIcon = null;
+            this.txbTimKiemNS.Location = new System.Drawing.Point(3, 3);
+            this.txbTimKiemNS.MaxLength = 32767;
+            this.txbTimKiemNS.MouseState = MaterialSkin.MouseState.OUT;
+            this.txbTimKiemNS.Name = "txbTimKiemNS";
+            this.txbTimKiemNS.PasswordChar = '\0';
+            this.txbTimKiemNS.PrefixSuffixText = null;
+            this.txbTimKiemNS.ReadOnly = false;
+            this.txbTimKiemNS.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txbTimKiemNS.SelectedText = "";
+            this.txbTimKiemNS.SelectionLength = 0;
+            this.txbTimKiemNS.SelectionStart = 0;
+            this.txbTimKiemNS.ShortcutsEnabled = true;
+            this.txbTimKiemNS.Size = new System.Drawing.Size(1569, 48);
+            this.txbTimKiemNS.TabIndex = 3;
+            this.txbTimKiemNS.TabStop = false;
+            this.txbTimKiemNS.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txbTimKiemNS.TrailingIcon = null;
+            this.txbTimKiemNS.UseSystemPasswordChar = false;
             // 
-            // materialButton4
+            // btnTimKiemNS
             // 
-            this.materialButton4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton4.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton4.Depth = 0;
-            this.materialButton4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialButton4.HighEmphasis = true;
-            this.materialButton4.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton4.Icon")));
-            this.materialButton4.Location = new System.Drawing.Point(1322, 2);
-            this.materialButton4.Margin = new System.Windows.Forms.Padding(4, 2, 0, 6);
-            this.materialButton4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton4.Name = "materialButton4";
-            this.materialButton4.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton4.Size = new System.Drawing.Size(131, 48);
-            this.materialButton4.TabIndex = 4;
-            this.materialButton4.Text = "Tìm kiếm";
-            this.materialButton4.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton4.UseAccentColor = false;
-            this.materialButton4.UseVisualStyleBackColor = true;
+            this.btnTimKiemNS.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnTimKiemNS.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnTimKiemNS.Depth = 0;
+            this.btnTimKiemNS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnTimKiemNS.HighEmphasis = true;
+            this.btnTimKiemNS.Icon = ((System.Drawing.Image)(resources.GetObject("btnTimKiemNS.Icon")));
+            this.btnTimKiemNS.Location = new System.Drawing.Point(1579, 2);
+            this.btnTimKiemNS.Margin = new System.Windows.Forms.Padding(4, 2, 0, 6);
+            this.btnTimKiemNS.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnTimKiemNS.Name = "btnTimKiemNS";
+            this.btnTimKiemNS.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnTimKiemNS.Size = new System.Drawing.Size(131, 48);
+            this.btnTimKiemNS.TabIndex = 4;
+            this.btnTimKiemNS.Text = "Tìm kiếm";
+            this.btnTimKiemNS.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnTimKiemNS.UseAccentColor = false;
+            this.btnTimKiemNS.UseVisualStyleBackColor = true;
+            this.btnTimKiemNS.Click += new System.EventHandler(this.btnTimKiemNS_Click);
             // 
             // panel14
             // 
-            this.panel14.Controls.Add(this.materialRadioButton12);
-            this.panel14.Controls.Add(this.materialRadioButton13);
-            this.panel14.Controls.Add(this.materialRadioButton14);
+            this.panel14.Controls.Add(this.rBtnNgayTaoNS);
+            this.panel14.Controls.Add(this.rBtnMaNVNS);
+            this.panel14.Controls.Add(this.rBtnMaNS);
+            this.panel14.Controls.Add(this.rBtnMaNCC);
             this.panel14.Controls.Add(this.materialLabel10);
             this.panel14.Controls.Add(this.materialLabel16);
             this.panel14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel14.Location = new System.Drawing.Point(3, 65);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(1453, 39);
+            this.panel14.Size = new System.Drawing.Size(1710, 39);
             this.panel14.TabIndex = 7;
             // 
-            // materialRadioButton12
+            // rBtnNgayTaoNS
             // 
-            this.materialRadioButton12.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.materialRadioButton12.AutoSize = true;
-            this.materialRadioButton12.Depth = 0;
-            this.materialRadioButton12.Location = new System.Drawing.Point(1235, -1);
-            this.materialRadioButton12.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton12.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton12.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton12.Name = "materialRadioButton12";
-            this.materialRadioButton12.Ripple = true;
-            this.materialRadioButton12.Size = new System.Drawing.Size(83, 37);
-            this.materialRadioButton12.TabIndex = 10;
-            this.materialRadioButton12.TabStop = true;
-            this.materialRadioButton12.Text = "Mã NV";
-            this.materialRadioButton12.UseVisualStyleBackColor = true;
+            this.rBtnNgayTaoNS.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.rBtnNgayTaoNS.AutoSize = true;
+            this.rBtnNgayTaoNS.Depth = 0;
+            this.rBtnNgayTaoNS.Location = new System.Drawing.Point(1473, 1);
+            this.rBtnNgayTaoNS.Margin = new System.Windows.Forms.Padding(0);
+            this.rBtnNgayTaoNS.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.rBtnNgayTaoNS.MouseState = MaterialSkin.MouseState.HOVER;
+            this.rBtnNgayTaoNS.Name = "rBtnNgayTaoNS";
+            this.rBtnNgayTaoNS.Ripple = true;
+            this.rBtnNgayTaoNS.Size = new System.Drawing.Size(99, 37);
+            this.rBtnNgayTaoNS.TabIndex = 13;
+            this.rBtnNgayTaoNS.TabStop = true;
+            this.rBtnNgayTaoNS.Text = "Ngày tạo";
+            this.rBtnNgayTaoNS.UseVisualStyleBackColor = true;
             // 
-            // materialRadioButton13
+            // rBtnMaNVNS
             // 
-            this.materialRadioButton13.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.materialRadioButton13.AutoSize = true;
-            this.materialRadioButton13.Depth = 0;
-            this.materialRadioButton13.Location = new System.Drawing.Point(1025, 0);
-            this.materialRadioButton13.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton13.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton13.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton13.Name = "materialRadioButton13";
-            this.materialRadioButton13.Ripple = true;
-            this.materialRadioButton13.Size = new System.Drawing.Size(83, 37);
-            this.materialRadioButton13.TabIndex = 11;
-            this.materialRadioButton13.TabStop = true;
-            this.materialRadioButton13.Text = "Mã NS";
-            this.materialRadioButton13.UseVisualStyleBackColor = true;
+            this.rBtnMaNVNS.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.rBtnMaNVNS.AutoSize = true;
+            this.rBtnMaNVNS.Depth = 0;
+            this.rBtnMaNVNS.Location = new System.Drawing.Point(1369, 1);
+            this.rBtnMaNVNS.Margin = new System.Windows.Forms.Padding(0);
+            this.rBtnMaNVNS.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.rBtnMaNVNS.MouseState = MaterialSkin.MouseState.HOVER;
+            this.rBtnMaNVNS.Name = "rBtnMaNVNS";
+            this.rBtnMaNVNS.Ripple = true;
+            this.rBtnMaNVNS.Size = new System.Drawing.Size(83, 37);
+            this.rBtnMaNVNS.TabIndex = 10;
+            this.rBtnMaNVNS.TabStop = true;
+            this.rBtnMaNVNS.Text = "Mã NV";
+            this.rBtnMaNVNS.UseVisualStyleBackColor = true;
             // 
-            // materialRadioButton14
+            // rBtnMaNS
             // 
-            this.materialRadioButton14.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.materialRadioButton14.AutoSize = true;
-            this.materialRadioButton14.Depth = 0;
-            this.materialRadioButton14.Location = new System.Drawing.Point(1129, -1);
-            this.materialRadioButton14.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton14.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton14.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton14.Name = "materialRadioButton14";
-            this.materialRadioButton14.Ripple = true;
-            this.materialRadioButton14.Size = new System.Drawing.Size(83, 37);
-            this.materialRadioButton14.TabIndex = 12;
-            this.materialRadioButton14.TabStop = true;
-            this.materialRadioButton14.Text = "Mã KH";
-            this.materialRadioButton14.UseVisualStyleBackColor = true;
+            this.rBtnMaNS.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.rBtnMaNS.AutoSize = true;
+            this.rBtnMaNS.Checked = true;
+            this.rBtnMaNS.Depth = 0;
+            this.rBtnMaNS.Location = new System.Drawing.Point(1161, 1);
+            this.rBtnMaNS.Margin = new System.Windows.Forms.Padding(0);
+            this.rBtnMaNS.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.rBtnMaNS.MouseState = MaterialSkin.MouseState.HOVER;
+            this.rBtnMaNS.Name = "rBtnMaNS";
+            this.rBtnMaNS.Ripple = true;
+            this.rBtnMaNS.Size = new System.Drawing.Size(83, 37);
+            this.rBtnMaNS.TabIndex = 11;
+            this.rBtnMaNS.TabStop = true;
+            this.rBtnMaNS.Text = "Mã NS";
+            this.rBtnMaNS.UseVisualStyleBackColor = true;
+            // 
+            // rBtnMaNCC
+            // 
+            this.rBtnMaNCC.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.rBtnMaNCC.AutoSize = true;
+            this.rBtnMaNCC.Depth = 0;
+            this.rBtnMaNCC.Location = new System.Drawing.Point(1265, 1);
+            this.rBtnMaNCC.Margin = new System.Windows.Forms.Padding(0);
+            this.rBtnMaNCC.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.rBtnMaNCC.MouseState = MaterialSkin.MouseState.HOVER;
+            this.rBtnMaNCC.Name = "rBtnMaNCC";
+            this.rBtnMaNCC.Ripple = true;
+            this.rBtnMaNCC.Size = new System.Drawing.Size(83, 37);
+            this.rBtnMaNCC.TabIndex = 12;
+            this.rBtnMaNCC.TabStop = true;
+            this.rBtnMaNCC.Text = "Mã KH";
+            this.rBtnMaNCC.UseVisualStyleBackColor = true;
             // 
             // materialLabel10
             // 
@@ -1314,7 +1326,7 @@
             this.materialLabel10.AutoSize = true;
             this.materialLabel10.Depth = 0;
             this.materialLabel10.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel10.Location = new System.Drawing.Point(900, 9);
+            this.materialLabel10.Location = new System.Drawing.Point(1028, 10);
             this.materialLabel10.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel10.Name = "materialLabel10";
             this.materialLabel10.Size = new System.Drawing.Size(106, 19);
@@ -1327,7 +1339,7 @@
             this.materialLabel16.AutoSize = true;
             this.materialLabel16.Depth = 0;
             this.materialLabel16.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel16.Location = new System.Drawing.Point(0, 9);
+            this.materialLabel16.Location = new System.Drawing.Point(0, 13);
             this.materialLabel16.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel16.Name = "materialLabel16";
             this.materialLabel16.Size = new System.Drawing.Size(286, 19);
@@ -1341,7 +1353,7 @@
             this.ReceiptTab.Location = new System.Drawing.Point(4, 46);
             this.ReceiptTab.Name = "ReceiptTab";
             this.ReceiptTab.Padding = new System.Windows.Forms.Padding(3);
-            this.ReceiptTab.Size = new System.Drawing.Size(1465, 675);
+            this.ReceiptTab.Size = new System.Drawing.Size(1722, 572);
             this.ReceiptTab.TabIndex = 0;
             this.ReceiptTab.Text = "Bán hàng";
             this.ReceiptTab.UseVisualStyleBackColor = true;
@@ -1349,9 +1361,9 @@
             // Selling_DataPanel
             // 
             this.Selling_DataPanel.ColumnCount = 1;
-            this.Selling_DataPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 1459F));
+            this.Selling_DataPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 1716F));
             this.Selling_DataPanel.Controls.Add(this.panel7, 0, 3);
-            this.Selling_DataPanel.Controls.Add(this.dataGridView6, 0, 2);
+            this.Selling_DataPanel.Controls.Add(this.dtgvBanHang, 0, 2);
             this.Selling_DataPanel.Controls.Add(this.tableLayoutPanel10, 0, 0);
             this.Selling_DataPanel.Controls.Add(this.panel6, 0, 1);
             this.Selling_DataPanel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1367,91 +1379,88 @@
             this.Selling_DataPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.Selling_DataPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.Selling_DataPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.Selling_DataPanel.Size = new System.Drawing.Size(1459, 669);
+            this.Selling_DataPanel.Size = new System.Drawing.Size(1716, 566);
             this.Selling_DataPanel.TabIndex = 7;
             // 
             // panel7
             // 
             this.panel7.Controls.Add(this.linkLabel9);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(3, 631);
+            this.panel7.Location = new System.Drawing.Point(3, 528);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1453, 35);
+            this.panel7.Size = new System.Drawing.Size(1710, 35);
             this.panel7.TabIndex = 6;
             // 
             // linkLabel9
             // 
             this.linkLabel9.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.linkLabel9.AutoSize = true;
-            this.linkLabel9.Location = new System.Drawing.Point(1293, 8);
+            this.linkLabel9.Location = new System.Drawing.Point(1550, 8);
             this.linkLabel9.Name = "linkLabel9";
             this.linkLabel9.Size = new System.Drawing.Size(143, 16);
             this.linkLabel9.TabIndex = 1;
             this.linkLabel9.TabStop = true;
             this.linkLabel9.Text = "Tạo hoá đơn bán hàng";
+            this.linkLabel9.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel9_LinkClicked);
             // 
-            // dataGridView6
+            // dtgvBanHang
             // 
-            this.dataGridView6.AllowUserToAddRows = false;
-            this.dataGridView6.AllowUserToDeleteRows = false;
-            this.dataGridView6.AllowUserToResizeRows = false;
-            dataGridViewCellStyle130.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle130.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle130.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle130.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle130.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle130.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle130.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView6.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle130;
-            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView6.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn18,
-            this.dataGridViewTextBoxColumn19,
+            this.dtgvBanHang.AllowUserToAddRows = false;
+            this.dtgvBanHang.AllowUserToDeleteRows = false;
+            this.dtgvBanHang.AllowUserToResizeRows = false;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvBanHang.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            this.dtgvBanHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvBanHang.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.clBH1,
+            this.clBH123,
             this.Column3,
-            this.dataGridViewTextBoxColumn28,
+            this.clBH2,
+            this.clBH3,
             this.Column4,
-            this.dataGridViewTextBoxColumn37,
+            this.clBH4,
             this.dataGridViewTextBoxColumn38});
-            dataGridViewCellStyle131.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle131.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle131.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle131.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle131.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle131.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle131.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView6.DefaultCellStyle = dataGridViewCellStyle131;
-            this.dataGridView6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView6.Location = new System.Drawing.Point(3, 110);
-            this.dataGridView6.Name = "dataGridView6";
-            this.dataGridView6.ReadOnly = true;
-            dataGridViewCellStyle132.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle132.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle132.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle132.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle132.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle132.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle132.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView6.RowHeadersDefaultCellStyle = dataGridViewCellStyle132;
-            this.dataGridView6.RowHeadersWidth = 51;
-            this.dataGridView6.RowTemplate.Height = 24;
-            this.dataGridView6.Size = new System.Drawing.Size(1453, 515);
-            this.dataGridView6.TabIndex = 4;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvBanHang.DefaultCellStyle = dataGridViewCellStyle18;
+            this.dtgvBanHang.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtgvBanHang.Location = new System.Drawing.Point(3, 110);
+            this.dtgvBanHang.Name = "dtgvBanHang";
+            this.dtgvBanHang.ReadOnly = true;
+            this.dtgvBanHang.RowHeadersWidth = 51;
+            this.dtgvBanHang.RowTemplate.Height = 24;
+            this.dtgvBanHang.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgvBanHang.Size = new System.Drawing.Size(1710, 412);
+            this.dtgvBanHang.TabIndex = 4;
+            this.dtgvBanHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvBanHang_CellClick);
+            this.dtgvBanHang.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvBanHang_CellClick);
             // 
-            // dataGridViewTextBoxColumn18
+            // clBH1
             // 
-            this.dataGridViewTextBoxColumn18.HeaderText = "Mã BH";
-            this.dataGridViewTextBoxColumn18.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
-            this.dataGridViewTextBoxColumn18.ReadOnly = true;
-            this.dataGridViewTextBoxColumn18.Width = 150;
+            this.clBH1.HeaderText = "Mã BH";
+            this.clBH1.MinimumWidth = 6;
+            this.clBH1.Name = "clBH1";
+            this.clBH1.ReadOnly = true;
+            this.clBH1.Width = 150;
             // 
-            // dataGridViewTextBoxColumn19
+            // clBH123
             // 
-            this.dataGridViewTextBoxColumn19.HeaderText = "Mã KH";
-            this.dataGridViewTextBoxColumn19.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
-            this.dataGridViewTextBoxColumn19.ReadOnly = true;
-            this.dataGridViewTextBoxColumn19.Width = 150;
+            this.clBH123.HeaderText = "Mã KH";
+            this.clBH123.MinimumWidth = 6;
+            this.clBH123.Name = "clBH123";
+            this.clBH123.ReadOnly = true;
+            this.clBH123.Width = 150;
             // 
             // Column3
             // 
@@ -1461,13 +1470,21 @@
             this.Column3.ReadOnly = true;
             this.Column3.Width = 300;
             // 
-            // dataGridViewTextBoxColumn28
+            // clBH2
             // 
-            this.dataGridViewTextBoxColumn28.HeaderText = "Mã NV";
-            this.dataGridViewTextBoxColumn28.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
-            this.dataGridViewTextBoxColumn28.ReadOnly = true;
-            this.dataGridViewTextBoxColumn28.Width = 150;
+            this.clBH2.HeaderText = "Số điện thoại KH";
+            this.clBH2.MinimumWidth = 10;
+            this.clBH2.Name = "clBH2";
+            this.clBH2.ReadOnly = true;
+            this.clBH2.Width = 200;
+            // 
+            // clBH3
+            // 
+            this.clBH3.HeaderText = "Mã NV";
+            this.clBH3.MinimumWidth = 6;
+            this.clBH3.Name = "clBH3";
+            this.clBH3.ReadOnly = true;
+            this.clBH3.Width = 150;
             // 
             // Column4
             // 
@@ -1477,13 +1494,13 @@
             this.Column4.ReadOnly = true;
             this.Column4.Width = 300;
             // 
-            // dataGridViewTextBoxColumn37
+            // clBH4
             // 
-            this.dataGridViewTextBoxColumn37.HeaderText = "Ngày tạo";
-            this.dataGridViewTextBoxColumn37.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn37.Name = "dataGridViewTextBoxColumn37";
-            this.dataGridViewTextBoxColumn37.ReadOnly = true;
-            this.dataGridViewTextBoxColumn37.Width = 160;
+            this.clBH4.HeaderText = "Ngày tạo";
+            this.clBH4.MinimumWidth = 6;
+            this.clBH4.Name = "clBH4";
+            this.clBH4.ReadOnly = true;
+            this.clBH4.Width = 160;
             // 
             // dataGridViewTextBoxColumn38
             // 
@@ -1498,130 +1515,150 @@
             this.tableLayoutPanel10.ColumnCount = 2;
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 86.66128F));
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 135F));
-            this.tableLayoutPanel10.Controls.Add(this.materialTextBox21, 0, 0);
-            this.tableLayoutPanel10.Controls.Add(this.materialButton6, 1, 0);
+            this.tableLayoutPanel10.Controls.Add(this.txbTimKiemBH, 0, 0);
+            this.tableLayoutPanel10.Controls.Add(this.btnTimKiemBH, 1, 0);
             this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel10.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 1;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 56F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(1453, 56);
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(1710, 56);
             this.tableLayoutPanel10.TabIndex = 1;
             // 
-            // materialTextBox21
+            // txbTimKiemBH
             // 
-            this.materialTextBox21.AnimateReadOnly = true;
-            this.materialTextBox21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialTextBox21.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.materialTextBox21.Depth = 0;
-            this.materialTextBox21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialTextBox21.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox21.HideSelection = true;
-            this.materialTextBox21.Hint = "Nhập để tìm kiếm...";
-            this.materialTextBox21.LeadingIcon = null;
-            this.materialTextBox21.Location = new System.Drawing.Point(3, 3);
-            this.materialTextBox21.MaxLength = 32767;
-            this.materialTextBox21.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox21.Name = "materialTextBox21";
-            this.materialTextBox21.PasswordChar = '\0';
-            this.materialTextBox21.PrefixSuffixText = null;
-            this.materialTextBox21.ReadOnly = false;
-            this.materialTextBox21.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialTextBox21.SelectedText = "";
-            this.materialTextBox21.SelectionLength = 0;
-            this.materialTextBox21.SelectionStart = 0;
-            this.materialTextBox21.ShortcutsEnabled = true;
-            this.materialTextBox21.Size = new System.Drawing.Size(1312, 48);
-            this.materialTextBox21.TabIndex = 3;
-            this.materialTextBox21.TabStop = false;
-            this.materialTextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialTextBox21.TrailingIcon = null;
-            this.materialTextBox21.UseSystemPasswordChar = false;
+            this.txbTimKiemBH.AnimateReadOnly = true;
+            this.txbTimKiemBH.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txbTimKiemBH.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txbTimKiemBH.Depth = 0;
+            this.txbTimKiemBH.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txbTimKiemBH.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txbTimKiemBH.HideSelection = true;
+            this.txbTimKiemBH.Hint = "Nhập để tìm kiếm...";
+            this.txbTimKiemBH.LeadingIcon = null;
+            this.txbTimKiemBH.Location = new System.Drawing.Point(3, 3);
+            this.txbTimKiemBH.MaxLength = 32767;
+            this.txbTimKiemBH.MouseState = MaterialSkin.MouseState.OUT;
+            this.txbTimKiemBH.Name = "txbTimKiemBH";
+            this.txbTimKiemBH.PasswordChar = '\0';
+            this.txbTimKiemBH.PrefixSuffixText = null;
+            this.txbTimKiemBH.ReadOnly = false;
+            this.txbTimKiemBH.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txbTimKiemBH.SelectedText = "";
+            this.txbTimKiemBH.SelectionLength = 0;
+            this.txbTimKiemBH.SelectionStart = 0;
+            this.txbTimKiemBH.ShortcutsEnabled = true;
+            this.txbTimKiemBH.Size = new System.Drawing.Size(1569, 48);
+            this.txbTimKiemBH.TabIndex = 3;
+            this.txbTimKiemBH.TabStop = false;
+            this.txbTimKiemBH.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txbTimKiemBH.TrailingIcon = null;
+            this.txbTimKiemBH.UseSystemPasswordChar = false;
             // 
-            // materialButton6
+            // btnTimKiemBH
             // 
-            this.materialButton6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton6.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton6.Depth = 0;
-            this.materialButton6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialButton6.HighEmphasis = true;
-            this.materialButton6.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton6.Icon")));
-            this.materialButton6.Location = new System.Drawing.Point(1322, 2);
-            this.materialButton6.Margin = new System.Windows.Forms.Padding(4, 2, 0, 6);
-            this.materialButton6.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton6.Name = "materialButton6";
-            this.materialButton6.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton6.Size = new System.Drawing.Size(131, 48);
-            this.materialButton6.TabIndex = 4;
-            this.materialButton6.Text = "Tìm kiếm";
-            this.materialButton6.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton6.UseAccentColor = false;
-            this.materialButton6.UseVisualStyleBackColor = true;
+            this.btnTimKiemBH.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnTimKiemBH.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnTimKiemBH.Depth = 0;
+            this.btnTimKiemBH.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnTimKiemBH.HighEmphasis = true;
+            this.btnTimKiemBH.Icon = ((System.Drawing.Image)(resources.GetObject("btnTimKiemBH.Icon")));
+            this.btnTimKiemBH.Location = new System.Drawing.Point(1579, 2);
+            this.btnTimKiemBH.Margin = new System.Windows.Forms.Padding(4, 2, 0, 6);
+            this.btnTimKiemBH.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnTimKiemBH.Name = "btnTimKiemBH";
+            this.btnTimKiemBH.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnTimKiemBH.Size = new System.Drawing.Size(131, 48);
+            this.btnTimKiemBH.TabIndex = 4;
+            this.btnTimKiemBH.Text = "Tìm kiếm";
+            this.btnTimKiemBH.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnTimKiemBH.UseAccentColor = false;
+            this.btnTimKiemBH.UseVisualStyleBackColor = true;
+            this.btnTimKiemBH.Click += new System.EventHandler(this.btnTimKiemBH_Click);
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.materialRadioButton9);
-            this.panel6.Controls.Add(this.materialRadioButton10);
-            this.panel6.Controls.Add(this.materialRadioButton11);
+            this.panel6.Controls.Add(this.rBtnSDTKHBH);
+            this.panel6.Controls.Add(this.rBtnMaNVBH);
+            this.panel6.Controls.Add(this.rBtnMaBH);
+            this.panel6.Controls.Add(this.rBtnNgayTaoBH);
             this.panel6.Controls.Add(this.materialLabel15);
             this.panel6.Controls.Add(this.materialLabel14);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(3, 65);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1453, 39);
+            this.panel6.Size = new System.Drawing.Size(1710, 39);
             this.panel6.TabIndex = 7;
             // 
-            // materialRadioButton9
+            // rBtnSDTKHBH
             // 
-            this.materialRadioButton9.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.materialRadioButton9.AutoSize = true;
-            this.materialRadioButton9.Depth = 0;
-            this.materialRadioButton9.Location = new System.Drawing.Point(1235, -1);
-            this.materialRadioButton9.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton9.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton9.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton9.Name = "materialRadioButton9";
-            this.materialRadioButton9.Ripple = true;
-            this.materialRadioButton9.Size = new System.Drawing.Size(83, 37);
-            this.materialRadioButton9.TabIndex = 10;
-            this.materialRadioButton9.TabStop = true;
-            this.materialRadioButton9.Text = "Mã NV";
-            this.materialRadioButton9.UseVisualStyleBackColor = true;
+            this.rBtnSDTKHBH.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.rBtnSDTKHBH.AutoSize = true;
+            this.rBtnSDTKHBH.Depth = 0;
+            this.rBtnSDTKHBH.Location = new System.Drawing.Point(1257, 1);
+            this.rBtnSDTKHBH.Margin = new System.Windows.Forms.Padding(0);
+            this.rBtnSDTKHBH.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.rBtnSDTKHBH.MouseState = MaterialSkin.MouseState.HOVER;
+            this.rBtnSDTKHBH.Name = "rBtnSDTKHBH";
+            this.rBtnSDTKHBH.Ripple = true;
+            this.rBtnSDTKHBH.Size = new System.Drawing.Size(91, 37);
+            this.rBtnSDTKHBH.TabIndex = 13;
+            this.rBtnSDTKHBH.TabStop = true;
+            this.rBtnSDTKHBH.Text = "SĐT KH";
+            this.rBtnSDTKHBH.UseVisualStyleBackColor = true;
             // 
-            // materialRadioButton10
+            // rBtnMaNVBH
             // 
-            this.materialRadioButton10.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.materialRadioButton10.AutoSize = true;
-            this.materialRadioButton10.Depth = 0;
-            this.materialRadioButton10.Location = new System.Drawing.Point(1025, 0);
-            this.materialRadioButton10.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton10.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton10.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton10.Name = "materialRadioButton10";
-            this.materialRadioButton10.Ripple = true;
-            this.materialRadioButton10.Size = new System.Drawing.Size(83, 37);
-            this.materialRadioButton10.TabIndex = 11;
-            this.materialRadioButton10.TabStop = true;
-            this.materialRadioButton10.Text = "Mã BH";
-            this.materialRadioButton10.UseVisualStyleBackColor = true;
+            this.rBtnMaNVBH.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.rBtnMaNVBH.AutoSize = true;
+            this.rBtnMaNVBH.Depth = 0;
+            this.rBtnMaNVBH.Location = new System.Drawing.Point(1369, 1);
+            this.rBtnMaNVBH.Margin = new System.Windows.Forms.Padding(0);
+            this.rBtnMaNVBH.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.rBtnMaNVBH.MouseState = MaterialSkin.MouseState.HOVER;
+            this.rBtnMaNVBH.Name = "rBtnMaNVBH";
+            this.rBtnMaNVBH.Ripple = true;
+            this.rBtnMaNVBH.Size = new System.Drawing.Size(83, 37);
+            this.rBtnMaNVBH.TabIndex = 10;
+            this.rBtnMaNVBH.TabStop = true;
+            this.rBtnMaNVBH.Text = "Mã NV";
+            this.rBtnMaNVBH.UseVisualStyleBackColor = true;
             // 
-            // materialRadioButton11
+            // rBtnMaBH
             // 
-            this.materialRadioButton11.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.materialRadioButton11.AutoSize = true;
-            this.materialRadioButton11.Depth = 0;
-            this.materialRadioButton11.Location = new System.Drawing.Point(1129, -1);
-            this.materialRadioButton11.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton11.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton11.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton11.Name = "materialRadioButton11";
-            this.materialRadioButton11.Ripple = true;
-            this.materialRadioButton11.Size = new System.Drawing.Size(83, 37);
-            this.materialRadioButton11.TabIndex = 12;
-            this.materialRadioButton11.TabStop = true;
-            this.materialRadioButton11.Text = "Mã KH";
-            this.materialRadioButton11.UseVisualStyleBackColor = true;
+            this.rBtnMaBH.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.rBtnMaBH.AutoSize = true;
+            this.rBtnMaBH.Checked = true;
+            this.rBtnMaBH.Depth = 0;
+            this.rBtnMaBH.Location = new System.Drawing.Point(1153, 1);
+            this.rBtnMaBH.Margin = new System.Windows.Forms.Padding(0);
+            this.rBtnMaBH.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.rBtnMaBH.MouseState = MaterialSkin.MouseState.HOVER;
+            this.rBtnMaBH.Name = "rBtnMaBH";
+            this.rBtnMaBH.Ripple = true;
+            this.rBtnMaBH.Size = new System.Drawing.Size(83, 37);
+            this.rBtnMaBH.TabIndex = 11;
+            this.rBtnMaBH.TabStop = true;
+            this.rBtnMaBH.Text = "Mã BH";
+            this.rBtnMaBH.UseVisualStyleBackColor = true;
+            // 
+            // rBtnNgayTaoBH
+            // 
+            this.rBtnNgayTaoBH.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.rBtnNgayTaoBH.AutoSize = true;
+            this.rBtnNgayTaoBH.Depth = 0;
+            this.rBtnNgayTaoBH.Location = new System.Drawing.Point(1473, 1);
+            this.rBtnNgayTaoBH.Margin = new System.Windows.Forms.Padding(0);
+            this.rBtnNgayTaoBH.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.rBtnNgayTaoBH.MouseState = MaterialSkin.MouseState.HOVER;
+            this.rBtnNgayTaoBH.Name = "rBtnNgayTaoBH";
+            this.rBtnNgayTaoBH.Ripple = true;
+            this.rBtnNgayTaoBH.Size = new System.Drawing.Size(99, 37);
+            this.rBtnNgayTaoBH.TabIndex = 12;
+            this.rBtnNgayTaoBH.TabStop = true;
+            this.rBtnNgayTaoBH.Text = "Ngày tạo";
+            this.rBtnNgayTaoBH.UseVisualStyleBackColor = true;
             // 
             // materialLabel15
             // 
@@ -1629,7 +1666,7 @@
             this.materialLabel15.AutoSize = true;
             this.materialLabel15.Depth = 0;
             this.materialLabel15.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel15.Location = new System.Drawing.Point(900, 9);
+            this.materialLabel15.Location = new System.Drawing.Point(1013, 10);
             this.materialLabel15.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel15.Name = "materialLabel15";
             this.materialLabel15.Size = new System.Drawing.Size(106, 19);
@@ -1642,7 +1679,7 @@
             this.materialLabel14.AutoSize = true;
             this.materialLabel14.Depth = 0;
             this.materialLabel14.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel14.Location = new System.Drawing.Point(0, 9);
+            this.materialLabel14.Location = new System.Drawing.Point(0, 13);
             this.materialLabel14.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel14.Name = "materialLabel14";
             this.materialLabel14.Size = new System.Drawing.Size(279, 19);
@@ -1656,7 +1693,7 @@
             this.BookTab.Location = new System.Drawing.Point(4, 46);
             this.BookTab.Name = "BookTab";
             this.BookTab.Padding = new System.Windows.Forms.Padding(3);
-            this.BookTab.Size = new System.Drawing.Size(1465, 675);
+            this.BookTab.Size = new System.Drawing.Size(1722, 572);
             this.BookTab.TabIndex = 1;
             this.BookTab.Text = "Sách";
             this.BookTab.UseVisualStyleBackColor = true;
@@ -1664,9 +1701,9 @@
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 1459F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 1716F));
             this.tableLayoutPanel2.Controls.Add(this.panel9, 0, 3);
-            this.tableLayoutPanel2.Controls.Add(this.dataGridView1, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.dtgvSach, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel11, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel13, 0, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1677,7 +1714,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1459, 669);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1716, 566);
             this.tableLayoutPanel2.TabIndex = 7;
             // 
             // panel9
@@ -1687,106 +1724,117 @@
             this.panel9.Controls.Add(this.linkLabel2);
             this.panel9.Controls.Add(this.linkLabel3);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel9.Location = new System.Drawing.Point(3, 631);
+            this.panel9.Location = new System.Drawing.Point(3, 528);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1453, 35);
+            this.panel9.Size = new System.Drawing.Size(1710, 35);
             this.panel9.TabIndex = 6;
             // 
             // linkLabel1
             // 
             this.linkLabel1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(1313, 8);
+            this.linkLabel1.Location = new System.Drawing.Point(1570, 8);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(124, 16);
             this.linkLabel1.TabIndex = 1;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Thêm thông tin NXB";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // linkLabel7
+            // 
+            this.linkLabel7.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.linkLabel7.AutoSize = true;
+            this.linkLabel7.Location = new System.Drawing.Point(1280, 8);
+            this.linkLabel7.Name = "linkLabel7";
+            this.linkLabel7.Size = new System.Drawing.Size(113, 16);
+            this.linkLabel7.TabIndex = 0;
+            this.linkLabel7.TabStop = true;
+            this.linkLabel7.Text = "Thêm khuyến mãi";
+            this.linkLabel7.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel7_LinkClicked);
             // 
             // linkLabel2
             // 
             this.linkLabel2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(901, 8);
+            this.linkLabel2.Location = new System.Drawing.Point(1174, 8);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(74, 16);
             this.linkLabel2.TabIndex = 0;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Thêm sách";
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // linkLabel3
             // 
             this.linkLabel3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.linkLabel3.AutoSize = true;
-            this.linkLabel3.Location = new System.Drawing.Point(1164, 8);
+            this.linkLabel3.Location = new System.Drawing.Point(1424, 8);
             this.linkLabel3.Name = "linkLabel3";
             this.linkLabel3.Size = new System.Drawing.Size(120, 16);
             this.linkLabel3.TabIndex = 0;
             this.linkLabel3.TabStop = true;
             this.linkLabel3.Text = "Thêm thể loại sách";
+            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
             // 
-            // dataGridView1
+            // dtgvSach
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle133.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle133.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle133.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle133.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle133.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle133.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle133.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle133;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn20,
-            this.dataGridViewTextBoxColumn21,
+            this.dtgvSach.AllowUserToAddRows = false;
+            this.dtgvSach.AllowUserToDeleteRows = false;
+            this.dtgvSach.AllowUserToResizeRows = false;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvSach.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle19;
+            this.dtgvSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvSach.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.clSach1,
+            this.clSach2,
             this.dataGridViewTextBoxColumn22,
             this.dataGridViewTextBoxColumn23,
+            this.Column5,
+            this.Column6,
             this.dataGridViewTextBoxColumn24,
             this.dataGridViewTextBoxColumn25,
             this.dataGridViewTextBoxColumn26});
-            dataGridViewCellStyle134.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle134.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle134.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle134.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle134.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle134.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle134.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle134;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 110);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            dataGridViewCellStyle135.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle135.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle135.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle135.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle135.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle135.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle135.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle135;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1453, 515);
-            this.dataGridView1.TabIndex = 4;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvSach.DefaultCellStyle = dataGridViewCellStyle20;
+            this.dtgvSach.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtgvSach.Location = new System.Drawing.Point(3, 110);
+            this.dtgvSach.Name = "dtgvSach";
+            this.dtgvSach.ReadOnly = true;
+            this.dtgvSach.RowHeadersWidth = 51;
+            this.dtgvSach.RowTemplate.Height = 24;
+            this.dtgvSach.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgvSach.Size = new System.Drawing.Size(1710, 412);
+            this.dtgvSach.TabIndex = 4;
+            this.dtgvSach.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvSach_CellClick);
             // 
-            // dataGridViewTextBoxColumn20
+            // clSach1
             // 
-            this.dataGridViewTextBoxColumn20.HeaderText = "Mã sách";
-            this.dataGridViewTextBoxColumn20.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
-            this.dataGridViewTextBoxColumn20.ReadOnly = true;
-            this.dataGridViewTextBoxColumn20.Width = 125;
+            this.clSach1.HeaderText = "Mã sách";
+            this.clSach1.MinimumWidth = 6;
+            this.clSach1.Name = "clSach1";
+            this.clSach1.ReadOnly = true;
+            this.clSach1.Width = 125;
             // 
-            // dataGridViewTextBoxColumn21
+            // clSach2
             // 
-            this.dataGridViewTextBoxColumn21.HeaderText = "Tên sách";
-            this.dataGridViewTextBoxColumn21.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
-            this.dataGridViewTextBoxColumn21.ReadOnly = true;
-            this.dataGridViewTextBoxColumn21.Width = 475;
+            this.clSach2.HeaderText = "Tên sách";
+            this.clSach2.MinimumWidth = 6;
+            this.clSach2.Name = "clSach2";
+            this.clSach2.ReadOnly = true;
+            this.clSach2.Width = 475;
             // 
             // dataGridViewTextBoxColumn22
             // 
@@ -1803,6 +1851,22 @@
             this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
             this.dataGridViewTextBoxColumn23.ReadOnly = true;
             this.dataGridViewTextBoxColumn23.Width = 80;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Đơn giá";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            this.Column5.Width = 125;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Số lượng";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Width = 125;
             // 
             // dataGridViewTextBoxColumn24
             // 
@@ -1833,112 +1897,114 @@
             this.tableLayoutPanel11.ColumnCount = 2;
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 86.66128F));
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 135F));
-            this.tableLayoutPanel11.Controls.Add(this.materialTextBox22, 0, 0);
-            this.tableLayoutPanel11.Controls.Add(this.materialButton1, 1, 0);
+            this.tableLayoutPanel11.Controls.Add(this.txbTimKiemSach, 0, 0);
+            this.tableLayoutPanel11.Controls.Add(this.btnTimKiemSach, 1, 0);
             this.tableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel11.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
             this.tableLayoutPanel11.RowCount = 1;
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 56F));
-            this.tableLayoutPanel11.Size = new System.Drawing.Size(1453, 56);
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(1710, 56);
             this.tableLayoutPanel11.TabIndex = 1;
             // 
-            // materialTextBox22
+            // txbTimKiemSach
             // 
-            this.materialTextBox22.AnimateReadOnly = true;
-            this.materialTextBox22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialTextBox22.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.materialTextBox22.Depth = 0;
-            this.materialTextBox22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialTextBox22.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox22.HideSelection = true;
-            this.materialTextBox22.Hint = "Nhập để tìm kiếm...";
-            this.materialTextBox22.LeadingIcon = null;
-            this.materialTextBox22.Location = new System.Drawing.Point(3, 3);
-            this.materialTextBox22.MaxLength = 32767;
-            this.materialTextBox22.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox22.Name = "materialTextBox22";
-            this.materialTextBox22.PasswordChar = '\0';
-            this.materialTextBox22.PrefixSuffixText = null;
-            this.materialTextBox22.ReadOnly = false;
-            this.materialTextBox22.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialTextBox22.SelectedText = "";
-            this.materialTextBox22.SelectionLength = 0;
-            this.materialTextBox22.SelectionStart = 0;
-            this.materialTextBox22.ShortcutsEnabled = true;
-            this.materialTextBox22.Size = new System.Drawing.Size(1312, 48);
-            this.materialTextBox22.TabIndex = 3;
-            this.materialTextBox22.TabStop = false;
-            this.materialTextBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialTextBox22.TrailingIcon = null;
-            this.materialTextBox22.UseSystemPasswordChar = false;
+            this.txbTimKiemSach.AnimateReadOnly = true;
+            this.txbTimKiemSach.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txbTimKiemSach.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txbTimKiemSach.Depth = 0;
+            this.txbTimKiemSach.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txbTimKiemSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txbTimKiemSach.HideSelection = true;
+            this.txbTimKiemSach.Hint = "Nhập để tìm kiếm...";
+            this.txbTimKiemSach.LeadingIcon = null;
+            this.txbTimKiemSach.Location = new System.Drawing.Point(3, 3);
+            this.txbTimKiemSach.MaxLength = 32767;
+            this.txbTimKiemSach.MouseState = MaterialSkin.MouseState.OUT;
+            this.txbTimKiemSach.Name = "txbTimKiemSach";
+            this.txbTimKiemSach.PasswordChar = '\0';
+            this.txbTimKiemSach.PrefixSuffixText = null;
+            this.txbTimKiemSach.ReadOnly = false;
+            this.txbTimKiemSach.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txbTimKiemSach.SelectedText = "";
+            this.txbTimKiemSach.SelectionLength = 0;
+            this.txbTimKiemSach.SelectionStart = 0;
+            this.txbTimKiemSach.ShortcutsEnabled = true;
+            this.txbTimKiemSach.Size = new System.Drawing.Size(1569, 48);
+            this.txbTimKiemSach.TabIndex = 3;
+            this.txbTimKiemSach.TabStop = false;
+            this.txbTimKiemSach.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txbTimKiemSach.TrailingIcon = null;
+            this.txbTimKiemSach.UseSystemPasswordChar = false;
             // 
-            // materialButton1
+            // btnTimKiemSach
             // 
-            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton1.Depth = 0;
-            this.materialButton1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialButton1.HighEmphasis = true;
-            this.materialButton1.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton1.Icon")));
-            this.materialButton1.Location = new System.Drawing.Point(1322, 2);
-            this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 2, 0, 6);
-            this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton1.Name = "materialButton1";
-            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton1.Size = new System.Drawing.Size(131, 48);
-            this.materialButton1.TabIndex = 4;
-            this.materialButton1.Text = "Tìm kiếm";
-            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton1.UseAccentColor = false;
-            this.materialButton1.UseVisualStyleBackColor = true;
+            this.btnTimKiemSach.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnTimKiemSach.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnTimKiemSach.Depth = 0;
+            this.btnTimKiemSach.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnTimKiemSach.HighEmphasis = true;
+            this.btnTimKiemSach.Icon = ((System.Drawing.Image)(resources.GetObject("btnTimKiemSach.Icon")));
+            this.btnTimKiemSach.Location = new System.Drawing.Point(1579, 2);
+            this.btnTimKiemSach.Margin = new System.Windows.Forms.Padding(4, 2, 0, 6);
+            this.btnTimKiemSach.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnTimKiemSach.Name = "btnTimKiemSach";
+            this.btnTimKiemSach.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnTimKiemSach.Size = new System.Drawing.Size(131, 48);
+            this.btnTimKiemSach.TabIndex = 4;
+            this.btnTimKiemSach.Text = "Tìm kiếm";
+            this.btnTimKiemSach.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnTimKiemSach.UseAccentColor = false;
+            this.btnTimKiemSach.UseVisualStyleBackColor = true;
+            this.btnTimKiemSach.Click += new System.EventHandler(this.btnTimKiemSach_Click);
             // 
             // panel13
             // 
-            this.panel13.Controls.Add(this.materialRadioButton7);
-            this.panel13.Controls.Add(this.materialRadioButton8);
+            this.panel13.Controls.Add(this.rBtnSachMS);
+            this.panel13.Controls.Add(this.rBtnSachTS);
             this.panel13.Controls.Add(this.materialLabel1);
             this.panel13.Controls.Add(this.materialLabel7);
             this.panel13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel13.Location = new System.Drawing.Point(3, 65);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(1453, 39);
+            this.panel13.Size = new System.Drawing.Size(1710, 39);
             this.panel13.TabIndex = 3;
             // 
-            // materialRadioButton7
+            // rBtnSachMS
             // 
-            this.materialRadioButton7.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.materialRadioButton7.AutoSize = true;
-            this.materialRadioButton7.Depth = 0;
-            this.materialRadioButton7.Location = new System.Drawing.Point(1097, 1);
-            this.materialRadioButton7.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton7.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton7.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton7.Name = "materialRadioButton7";
-            this.materialRadioButton7.Ripple = true;
-            this.materialRadioButton7.Size = new System.Drawing.Size(96, 37);
-            this.materialRadioButton7.TabIndex = 6;
-            this.materialRadioButton7.TabStop = true;
-            this.materialRadioButton7.Text = "Mã sách";
-            this.materialRadioButton7.UseVisualStyleBackColor = true;
+            this.rBtnSachMS.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.rBtnSachMS.AutoSize = true;
+            this.rBtnSachMS.Checked = true;
+            this.rBtnSachMS.Depth = 0;
+            this.rBtnSachMS.Location = new System.Drawing.Point(1354, 1);
+            this.rBtnSachMS.Margin = new System.Windows.Forms.Padding(0);
+            this.rBtnSachMS.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.rBtnSachMS.MouseState = MaterialSkin.MouseState.HOVER;
+            this.rBtnSachMS.Name = "rBtnSachMS";
+            this.rBtnSachMS.Ripple = true;
+            this.rBtnSachMS.Size = new System.Drawing.Size(96, 37);
+            this.rBtnSachMS.TabIndex = 6;
+            this.rBtnSachMS.TabStop = true;
+            this.rBtnSachMS.Text = "Mã sách";
+            this.rBtnSachMS.UseVisualStyleBackColor = true;
             // 
-            // materialRadioButton8
+            // rBtnSachTS
             // 
-            this.materialRadioButton8.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.materialRadioButton8.AutoSize = true;
-            this.materialRadioButton8.Depth = 0;
-            this.materialRadioButton8.Location = new System.Drawing.Point(1215, 0);
-            this.materialRadioButton8.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton8.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton8.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton8.Name = "materialRadioButton8";
-            this.materialRadioButton8.Ripple = true;
-            this.materialRadioButton8.Size = new System.Drawing.Size(100, 37);
-            this.materialRadioButton8.TabIndex = 6;
-            this.materialRadioButton8.TabStop = true;
-            this.materialRadioButton8.Text = "Tên sách";
-            this.materialRadioButton8.UseVisualStyleBackColor = true;
+            this.rBtnSachTS.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.rBtnSachTS.AutoSize = true;
+            this.rBtnSachTS.Depth = 0;
+            this.rBtnSachTS.Location = new System.Drawing.Point(1472, 0);
+            this.rBtnSachTS.Margin = new System.Windows.Forms.Padding(0);
+            this.rBtnSachTS.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.rBtnSachTS.MouseState = MaterialSkin.MouseState.HOVER;
+            this.rBtnSachTS.Name = "rBtnSachTS";
+            this.rBtnSachTS.Ripple = true;
+            this.rBtnSachTS.Size = new System.Drawing.Size(100, 37);
+            this.rBtnSachTS.TabIndex = 6;
+            this.rBtnSachTS.TabStop = true;
+            this.rBtnSachTS.Text = "Tên sách";
+            this.rBtnSachTS.UseVisualStyleBackColor = true;
             // 
             // materialLabel1
             // 
@@ -1946,7 +2012,7 @@
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.Location = new System.Drawing.Point(971, 10);
+            this.materialLabel1.Location = new System.Drawing.Point(1228, 10);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(106, 19);
@@ -1974,7 +2040,7 @@
             this.HomepageTab.Location = new System.Drawing.Point(4, 46);
             this.HomepageTab.Name = "HomepageTab";
             this.HomepageTab.Padding = new System.Windows.Forms.Padding(3);
-            this.HomepageTab.Size = new System.Drawing.Size(1465, 675);
+            this.HomepageTab.Size = new System.Drawing.Size(1722, 572);
             this.HomepageTab.TabIndex = 4;
             this.HomepageTab.Text = "Trang chủ";
             this.HomepageTab.UseVisualStyleBackColor = true;
@@ -1994,21 +2060,33 @@
             this.Homepage_Panel.Name = "Homepage_Panel";
             this.Homepage_Panel.RowCount = 3;
             this.Homepage_Panel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14F));
-            this.Homepage_Panel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 26.0095F));
-            this.Homepage_Panel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60.09501F));
-            this.Homepage_Panel.Size = new System.Drawing.Size(1459, 669);
-            this.Homepage_Panel.TabIndex = 0;
+            this.Homepage_Panel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 31.27209F));
+            this.Homepage_Panel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 54.77032F));
+            this.Homepage_Panel.Size = new System.Drawing.Size(1716, 566);
+            this.Homepage_Panel.TabIndex = 2;
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.linkLabel8);
             this.panel3.Controls.Add(this.linkLabel12);
             this.panel3.Controls.Add(this.linkLabel13);
             this.panel3.Controls.Add(this.materialLabel6);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(504, 269);
+            this.panel3.Location = new System.Drawing.Point(593, 258);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(952, 397);
+            this.panel3.Size = new System.Drawing.Size(1120, 305);
             this.panel3.TabIndex = 4;
+            // 
+            // linkLabel8
+            // 
+            this.linkLabel8.AutoSize = true;
+            this.linkLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel8.Location = new System.Drawing.Point(59, 115);
+            this.linkLabel8.Name = "linkLabel8";
+            this.linkLabel8.Size = new System.Drawing.Size(143, 32);
+            this.linkLabel8.TabIndex = 1;
+            this.linkLabel8.TabStop = true;
+            this.linkLabel8.Text = "Đăng xuất";
             // 
             // linkLabel12
             // 
@@ -2016,10 +2094,10 @@
             this.linkLabel12.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel12.Location = new System.Drawing.Point(59, 83);
             this.linkLabel12.Name = "linkLabel12";
-            this.linkLabel12.Size = new System.Drawing.Size(80, 32);
+            this.linkLabel12.Size = new System.Drawing.Size(180, 32);
             this.linkLabel12.TabIndex = 1;
             this.linkLabel12.TabStop = true;
-            this.linkLabel12.Text = "What";
+            this.linkLabel12.Text = "Đổi mật khẩu";
             // 
             // linkLabel13
             // 
@@ -2027,10 +2105,10 @@
             this.linkLabel13.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel13.Location = new System.Drawing.Point(59, 51);
             this.linkLabel13.Name = "linkLabel13";
-            this.linkLabel13.Size = new System.Drawing.Size(80, 32);
+            this.linkLabel13.Size = new System.Drawing.Size(241, 32);
             this.linkLabel13.TabIndex = 1;
             this.linkLabel13.TabStop = true;
-            this.linkLabel13.Text = "What";
+            this.linkLabel13.Text = "Thông tin cá nhân";
             // 
             // materialLabel6
             // 
@@ -2051,9 +2129,9 @@
             this.panel2.Controls.Add(this.Homepage_ReceiptLink);
             this.panel2.Controls.Add(this.materialLabel5);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(504, 96);
+            this.panel2.Location = new System.Drawing.Point(593, 82);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(952, 167);
+            this.panel2.Size = new System.Drawing.Size(1120, 170);
             this.panel2.TabIndex = 3;
             // 
             // Homepage_CustomerLink
@@ -2098,9 +2176,9 @@
             this.panel1.Controls.Add(this.Homepage_ImportLink);
             this.panel1.Controls.Add(this.materialLabel4);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 269);
+            this.panel1.Location = new System.Drawing.Point(3, 258);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(495, 397);
+            this.panel1.Size = new System.Drawing.Size(584, 305);
             this.panel1.TabIndex = 2;
             // 
             // linkLabel6
@@ -2158,7 +2236,7 @@
             this.materialLabel2.Location = new System.Drawing.Point(3, 0);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(1453, 93);
+            this.materialLabel2.Size = new System.Drawing.Size(1710, 79);
             this.materialLabel2.TabIndex = 0;
             this.materialLabel2.Text = "   UIT Bookstore";
             this.materialLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2171,9 +2249,9 @@
             this.Homepage_BookPanel.Controls.Add(this.Homepage_BookLink);
             this.Homepage_BookPanel.Controls.Add(this.materialLabel3);
             this.Homepage_BookPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Homepage_BookPanel.Location = new System.Drawing.Point(3, 96);
+            this.Homepage_BookPanel.Location = new System.Drawing.Point(3, 82);
             this.Homepage_BookPanel.Name = "Homepage_BookPanel";
-            this.Homepage_BookPanel.Size = new System.Drawing.Size(495, 167);
+            this.Homepage_BookPanel.Size = new System.Drawing.Size(584, 170);
             this.Homepage_BookPanel.TabIndex = 1;
             // 
             // Homepage_SaleLink
@@ -2241,7 +2319,7 @@
             this.AdminTabControl.Controls.Add(this.ImportTab);
             this.AdminTabControl.Controls.Add(this.CustomerTab);
             this.AdminTabControl.Controls.Add(this.EmployeeTab);
-            this.AdminTabControl.Controls.Add(this.tabPage1);
+            this.AdminTabControl.Controls.Add(this.AccountTab);
             this.AdminTabControl.Depth = 0;
             this.AdminTabControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.AdminTabControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2252,37 +2330,15 @@
             this.AdminTabControl.Multiline = true;
             this.AdminTabControl.Name = "AdminTabControl";
             this.AdminTabControl.SelectedIndex = 0;
-            this.AdminTabControl.Size = new System.Drawing.Size(1473, 725);
+            this.AdminTabControl.Size = new System.Drawing.Size(1730, 622);
             this.AdminTabControl.TabIndex = 0;
             this.AdminTabControl.SelectedIndexChanged += new System.EventHandler(this.AdminTabControl_SelectedIndexChanged);
-            // 
-            // linkLabel4
-            // 
-            this.linkLabel4.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.linkLabel4.AutoSize = true;
-            this.linkLabel4.Location = new System.Drawing.Point(1093, 8);
-            this.linkLabel4.Name = "linkLabel4";
-            this.linkLabel4.Size = new System.Drawing.Size(154, 16);
-            this.linkLabel4.TabIndex = 1;
-            this.linkLabel4.TabStop = true;
-            this.linkLabel4.Text = "Thêm thông tin nhân viên";
-            // 
-            // linkLabel7
-            // 
-            this.linkLabel7.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.linkLabel7.AutoSize = true;
-            this.linkLabel7.Location = new System.Drawing.Point(1016, 8);
-            this.linkLabel7.Name = "linkLabel7";
-            this.linkLabel7.Size = new System.Drawing.Size(113, 16);
-            this.linkLabel7.TabIndex = 0;
-            this.linkLabel7.TabStop = true;
-            this.linkLabel7.Text = "Thêm khuyến mãi";
             // 
             // Main_Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1476, 808);
+            this.ClientSize = new System.Drawing.Size(1733, 705);
             this.Controls.Add(this.AdminTabControl);
             this.DrawerShowIconsWhenHidden = true;
             this.DrawerTabControl = this.AdminTabControl;
@@ -2296,7 +2352,7 @@
             this.tableLayoutPanel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvNhanVien)).EndInit();
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
             this.panel16.ResumeLayout(false);
@@ -2305,7 +2361,7 @@
             this.Customer_DataPanel.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvKhachHang)).EndInit();
             this.tableLayoutPanel8.ResumeLayout(false);
             this.tableLayoutPanel8.PerformLayout();
             this.panel15.ResumeLayout(false);
@@ -2314,7 +2370,7 @@
             this.tableLayoutPanel6.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvNhapSach)).EndInit();
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel7.PerformLayout();
             this.panel14.ResumeLayout(false);
@@ -2323,7 +2379,7 @@
             this.Selling_DataPanel.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvBanHang)).EndInit();
             this.tableLayoutPanel10.ResumeLayout(false);
             this.tableLayoutPanel10.PerformLayout();
             this.panel6.ResumeLayout(false);
@@ -2332,7 +2388,7 @@
             this.tableLayoutPanel2.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvSach)).EndInit();
             this.tableLayoutPanel11.ResumeLayout(false);
             this.tableLayoutPanel11.PerformLayout();
             this.panel13.ResumeLayout(false);
@@ -2366,80 +2422,61 @@
         private MaterialSkin.Controls.MaterialCheckbox materialCheckbox10;
         private MaterialSkin.Controls.MaterialCheckbox materialCheckbox11;
         private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage AccountTab;
         private System.Windows.Forms.TabPage EmployeeTab;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.LinkLabel linkLabel14;
-        private System.Windows.Forms.DataGridView dataGridView4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridView dtgvNhanVien;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private MaterialSkin.Controls.MaterialTextBox2 materialTextBox24;
-        private MaterialSkin.Controls.MaterialButton materialButton3;
+        private MaterialSkin.Controls.MaterialTextBox2 txbTimKiemNV;
+        private MaterialSkin.Controls.MaterialButton btnTimKiemNV;
         private System.Windows.Forms.Panel panel16;
-        private MaterialSkin.Controls.MaterialRadioButton materialRadioButton2;
-        private MaterialSkin.Controls.MaterialRadioButton materialRadioButton5;
-        private MaterialSkin.Controls.MaterialRadioButton materialRadioButton6;
+        private MaterialSkin.Controls.MaterialRadioButton rBtnMaNV;
+        private MaterialSkin.Controls.MaterialRadioButton rBtnSDTNV;
+        private MaterialSkin.Controls.MaterialRadioButton rBtnTenNV;
         private MaterialSkin.Controls.MaterialLabel materialLabel9;
         private MaterialSkin.Controls.MaterialLabel materialLabel11;
         private System.Windows.Forms.TabPage CustomerTab;
         private System.Windows.Forms.TableLayoutPanel Customer_DataPanel;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.LinkLabel linkLabel11;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn41;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn42;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn43;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn44;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn47;
+        private System.Windows.Forms.DataGridView dtgvKhachHang;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
-        private MaterialSkin.Controls.MaterialTextBox2 materialTextBox23;
-        private MaterialSkin.Controls.MaterialButton materialButton2;
+        private MaterialSkin.Controls.MaterialTextBox2 txbTimKiemKH;
+        private MaterialSkin.Controls.MaterialButton btnTimKiemKH;
         private System.Windows.Forms.Panel panel15;
-        private MaterialSkin.Controls.MaterialRadioButton materialRadioButton1;
-        private MaterialSkin.Controls.MaterialRadioButton materialRadioButton4;
-        private MaterialSkin.Controls.MaterialRadioButton materialRadioButton3;
+        private MaterialSkin.Controls.MaterialRadioButton rBtnMaKH;
+        private MaterialSkin.Controls.MaterialRadioButton rBtnSDTKH;
+        private MaterialSkin.Controls.MaterialRadioButton rBtnTenKH;
         private MaterialSkin.Controls.MaterialLabel materialLabel8;
         private MaterialSkin.Controls.MaterialLabel materialLabel12;
         private System.Windows.Forms.TabPage ImportTab;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.LinkLabel linkLabel10;
-        private System.Windows.Forms.DataGridView dataGridView3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn39;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn40;
+        private System.Windows.Forms.DataGridView dtgvNhapSach;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
-        private MaterialSkin.Controls.MaterialTextBox2 materialTextBox25;
-        private MaterialSkin.Controls.MaterialButton materialButton4;
+        private MaterialSkin.Controls.MaterialTextBox2 txbTimKiemNS;
+        private MaterialSkin.Controls.MaterialButton btnTimKiemNS;
         private System.Windows.Forms.Panel panel14;
-        private MaterialSkin.Controls.MaterialRadioButton materialRadioButton12;
-        private MaterialSkin.Controls.MaterialRadioButton materialRadioButton13;
-        private MaterialSkin.Controls.MaterialRadioButton materialRadioButton14;
+        private MaterialSkin.Controls.MaterialRadioButton rBtnMaNVNS;
+        private MaterialSkin.Controls.MaterialRadioButton rBtnMaNS;
+        private MaterialSkin.Controls.MaterialRadioButton rBtnMaNCC;
         private MaterialSkin.Controls.MaterialLabel materialLabel10;
         private MaterialSkin.Controls.MaterialLabel materialLabel16;
         private System.Windows.Forms.TabPage ReceiptTab;
         private System.Windows.Forms.TableLayoutPanel Selling_DataPanel;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.LinkLabel linkLabel9;
-        private System.Windows.Forms.DataGridView dataGridView6;
+        private System.Windows.Forms.DataGridView dtgvBanHang;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
-        private MaterialSkin.Controls.MaterialTextBox2 materialTextBox21;
-        private MaterialSkin.Controls.MaterialButton materialButton6;
+        private MaterialSkin.Controls.MaterialTextBox2 txbTimKiemBH;
+        private MaterialSkin.Controls.MaterialButton btnTimKiemBH;
         private System.Windows.Forms.Panel panel6;
-        private MaterialSkin.Controls.MaterialRadioButton materialRadioButton9;
-        private MaterialSkin.Controls.MaterialRadioButton materialRadioButton10;
-        private MaterialSkin.Controls.MaterialRadioButton materialRadioButton11;
+        private MaterialSkin.Controls.MaterialRadioButton rBtnMaNVBH;
+        private MaterialSkin.Controls.MaterialRadioButton rBtnMaBH;
+        private MaterialSkin.Controls.MaterialRadioButton rBtnNgayTaoBH;
         private MaterialSkin.Controls.MaterialLabel materialLabel15;
         private MaterialSkin.Controls.MaterialLabel materialLabel14;
         private System.Windows.Forms.TabPage BookTab;
@@ -2448,25 +2485,49 @@
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.LinkLabel linkLabel3;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn20;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn22;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn23;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn24;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn25;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn26;
+        private System.Windows.Forms.DataGridView dtgvSach;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
-        private MaterialSkin.Controls.MaterialTextBox2 materialTextBox22;
-        private MaterialSkin.Controls.MaterialButton materialButton1;
+        private MaterialSkin.Controls.MaterialTextBox2 txbTimKiemSach;
+        private MaterialSkin.Controls.MaterialButton btnTimKiemSach;
         private System.Windows.Forms.Panel panel13;
-        private MaterialSkin.Controls.MaterialRadioButton materialRadioButton7;
-        private MaterialSkin.Controls.MaterialRadioButton materialRadioButton8;
+        private MaterialSkin.Controls.MaterialRadioButton rBtnSachMS;
+        private MaterialSkin.Controls.MaterialRadioButton rBtnSachTS;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private MaterialSkin.Controls.MaterialLabel materialLabel7;
         private System.Windows.Forms.TabPage HomepageTab;
+        private MaterialSkin.Controls.MaterialTabControl AdminTabControl;
+        private System.Windows.Forms.LinkLabel linkLabel7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clKH1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clKH2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clKH3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn47;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clNV1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clNV2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clNV3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private MaterialSkin.Controls.MaterialRadioButton rBtnNgayTaoNS;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clNS1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clNS2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clNS3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clNS4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn40;
+        private MaterialSkin.Controls.MaterialRadioButton rBtnSDTKHBH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clBH1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clBH123;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clBH2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clBH3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clBH4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn38;
         private System.Windows.Forms.TableLayoutPanel Homepage_Panel;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.LinkLabel linkLabel8;
         private System.Windows.Forms.LinkLabel linkLabel12;
         private System.Windows.Forms.LinkLabel linkLabel13;
         private MaterialSkin.Controls.MaterialLabel materialLabel6;
@@ -2486,15 +2547,15 @@
         private System.Windows.Forms.LinkLabel Homepage_PublisherLink;
         private System.Windows.Forms.LinkLabel Homepage_BookLink;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
-        private MaterialSkin.Controls.MaterialTabControl AdminTabControl;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn19;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn28;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn37;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn38;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clSach1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clSach2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn22;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn23;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn24;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn25;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn26;
         private System.Windows.Forms.LinkLabel linkLabel4;
-        private System.Windows.Forms.LinkLabel linkLabel7;
     }
 }

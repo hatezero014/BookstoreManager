@@ -68,6 +68,7 @@ namespace BookstoreManager
             cbNXB.Text = "";
             txbNamXB.Text = "";
         }
+
         #endregion
 
         #region events

@@ -47,23 +47,21 @@ namespace BookstoreManager
 
         #region events
 
-        private void btnXoaNV_Click(object sender, EventArgs e)
+        #endregion
+
+        private void txbNgaySinhNV_TextChanged(object sender, EventArgs e)
         {
-            string idNV = txbMaNV.Text;
-            if (MessageBox.Show("Bạn có chắc muốn xóa nhân viên này không?", "Warning", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            string input = txbNgaySinhNV.Text.Trim();
+            if (!string.IsNullOrEmpty(input))
             {
-                if (NHANVIENDAO.Instance.DeleteStaffByID(idNV) == true)
+                if (!DateTime.TryParseExact(input, "dd-MM-yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out _))
                 {
-                    MessageBox.Show("Xoá nhân viên thành công!", "Thông báo");
+                    MessageBox.Show("Ngày tháng không hợp lệ. Vui lòng nhập theo định dạng dd-MM-yyyy.");
                 }
-                else
-                {
-                    MessageBox.Show("Xoá nhân viên thất bại!", "Thông báo");
-                }
-                this.Close();
             }
         }
-        private void btnCapNhatNV_Click(object sender, EventArgs e)
+
+        private void btnThem_Click(object sender, EventArgs e)
         {
             if (txbTenNV.Text == "")
             {
@@ -114,11 +112,34 @@ namespace BookstoreManager
             this.Close();
         }
 
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            string idNV = txbMaNV.Text;
+            if (MessageBox.Show("Bạn có chắc muốn xóa nhân viên này không?", "Warning", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+                if (NHANVIENDAO.Instance.DeleteStaffByID(idNV) == true)
+                {
+                    MessageBox.Show("Xoá nhân viên thành công!", "Thông báo");
+                }
+                else
+                {
+                    MessageBox.Show("Xoá nhân viên thất bại!", "Thông báo");
+                }
+                this.Close();
+            }
+        }
+
         private void btnThoat_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        #endregion
+        private void txbNgaySinhNV_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

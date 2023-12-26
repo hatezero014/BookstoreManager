@@ -1,4 +1,5 @@
-﻿    using BookstoreManager.DAO;
+﻿using BookstoreManager.DAO;
+using BookstoreManager.DTO;
 using MaterialSkin;
 using MaterialSkin.Controls;
 using System;
@@ -32,15 +33,6 @@ namespace BookstoreManager
         #endregion
 
         #region events
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void materialFloatingActionButton1_Click(object sender, EventArgs e)
         {
@@ -50,16 +42,9 @@ namespace BookstoreManager
 
             if (isCheckAccount >= 0)
             {
-                if (isCheckAccount == 0)
-                {
-                    Main_NhanVien main_Employee = new Main_NhanVien();
-                    main_Employee.Show();
-                }
-                else
-                {
-                    Main_Admin main_Admin = new Main_Admin();
-                    main_Admin.Show();
-                }
+                TAIKHOAN taiKhoan = TAIKHOANDAO.Instance.GetMaNVByTK(username);
+                Main_Admin main_Admin = new Main_Admin(taiKhoan.MaNV, taiKhoan.Loai);
+                main_Admin.ShowDialog();
             }
             else
             {

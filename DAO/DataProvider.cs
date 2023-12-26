@@ -13,7 +13,7 @@ namespace BookstoreManager.DAO
 
         private static DataProvider instance;
 
-        public static DataProvider Intstance
+        public static DataProvider Instance
         {
             get { if (instance == null) instance = new DataProvider(); return instance; }
             private set { instance = value; }

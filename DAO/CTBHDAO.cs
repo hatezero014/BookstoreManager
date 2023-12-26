@@ -26,7 +26,7 @@ namespace BookstoreManager.DAO
 
             List<CTBH> result = new List<CTBH>();
 
-            DataTable data = DataProvider.Intstance.ExcuteQuery(query);
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
 
             foreach (DataRow row in data.Rows)
             {
@@ -34,6 +34,14 @@ namespace BookstoreManager.DAO
             }
 
             return result;
+        }
+
+        public bool InsertCTBH(string maBH, string maSach, decimal giaNhap, int soLuong, decimal tongTien)
+        {
+            string query = $"INSERT INTO CTBH " +
+                            $"VALUES ('{maBH}', '{maSach}', {giaNhap}, {soLuong}, {tongTien})";
+
+            return DataProvider.Instance.ExcuteNonQuery(query) > 0;
         }
     }
 }

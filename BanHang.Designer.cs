@@ -29,57 +29,62 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BanHang));
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtgvCTBH = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.materialTextBox1 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox2 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox5 = new MaterialSkin.Controls.MaterialTextBox();
+            this.txbMaHD = new MaterialSkin.Controls.MaterialTextBox();
+            this.txbSDTKH = new MaterialSkin.Controls.MaterialTextBox();
+            this.txbMaNV = new MaterialSkin.Controls.MaterialTextBox();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
-            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialButton3 = new MaterialSkin.Controls.MaterialButton();
+            this.btnThanhToan = new MaterialSkin.Controls.MaterialButton();
+            this.lbThanhTien = new MaterialSkin.Controls.MaterialLabel();
+            this.btnHuyBo = new MaterialSkin.Controls.MaterialButton();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
-            this.AddBtn = new MaterialSkin.Controls.MaterialButton();
-            this.materialTextBox7 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox6 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox9 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox4 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox8 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox3 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
-            this.DeleteBtn = new MaterialSkin.Controls.MaterialButton();
+            this.btnThemSach = new MaterialSkin.Controls.MaterialButton();
+            this.txbThanhTien = new MaterialSkin.Controls.MaterialTextBox();
+            this.txbDonGia = new MaterialSkin.Controls.MaterialTextBox();
+            this.txbSLKho = new MaterialSkin.Controls.MaterialTextBox();
+            this.txbSLBan = new MaterialSkin.Controls.MaterialTextBox();
+            this.txbMaSach = new MaterialSkin.Controls.MaterialTextBox();
+            this.btnHuyChon = new MaterialSkin.Controls.MaterialButton();
+            this.btnXoa = new MaterialSkin.Controls.MaterialButton();
             this.txbNgayTao = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialButton4 = new MaterialSkin.Controls.MaterialButton();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.btnInHD = new MaterialSkin.Controls.MaterialButton();
+            this.cbListSach = new MaterialSkin.Controls.MaterialComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvCTBH)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dtgvCTBH
             // 
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dtgvCTBH.AllowUserToDeleteRows = false;
+            this.dtgvCTBH.AllowUserToOrderColumns = true;
+            this.dtgvCTBH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvCTBH.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
             this.Column4,
             this.Column5});
-            this.dataGridView1.Location = new System.Drawing.Point(33, 157);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(865, 599);
-            this.dataGridView1.TabIndex = 0;
+            this.dtgvCTBH.Location = new System.Drawing.Point(50, 245);
+            this.dtgvCTBH.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dtgvCTBH.Name = "dtgvCTBH";
+            this.dtgvCTBH.ReadOnly = true;
+            this.dtgvCTBH.RowHeadersWidth = 51;
+            this.dtgvCTBH.RowTemplate.Height = 24;
+            this.dtgvCTBH.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgvCTBH.Size = new System.Drawing.Size(1298, 936);
+            this.dtgvCTBH.TabIndex = 0;
+            this.dtgvCTBH.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvCTBH_CellClick);
             // 
             // Column1
             // 
             this.Column1.HeaderText = "Mã sách";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             this.Column1.Width = 90;
             // 
             // Column2
@@ -87,6 +92,7 @@
             this.Column2.HeaderText = "Tên sách";
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             this.Column2.Width = 350;
             // 
             // Column3
@@ -94,6 +100,7 @@
             this.Column3.HeaderText = "Số lượng";
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             this.Column3.Width = 125;
             // 
             // Column4
@@ -101,6 +108,7 @@
             this.Column4.HeaderText = "Đơn giá";
             this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
             this.Column4.Width = 110;
             // 
             // Column5
@@ -108,65 +116,68 @@
             this.Column5.HeaderText = "Thành tiền";
             this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
             this.Column5.Width = 160;
             // 
-            // materialTextBox1
+            // txbMaHD
             // 
-            this.materialTextBox1.AnimateReadOnly = false;
-            this.materialTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox1.Depth = 0;
-            this.materialTextBox1.Enabled = false;
-            this.materialTextBox1.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox1.Hint = "Mã hoá đơn";
-            this.materialTextBox1.LeadingIcon = null;
-            this.materialTextBox1.Location = new System.Drawing.Point(33, 88);
-            this.materialTextBox1.MaxLength = 50;
-            this.materialTextBox1.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox1.Multiline = false;
-            this.materialTextBox1.Name = "materialTextBox1";
-            this.materialTextBox1.Size = new System.Drawing.Size(139, 50);
-            this.materialTextBox1.TabIndex = 1;
-            this.materialTextBox1.Text = "";
-            this.materialTextBox1.TrailingIcon = null;
+            this.txbMaHD.AnimateReadOnly = false;
+            this.txbMaHD.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbMaHD.Depth = 0;
+            this.txbMaHD.Enabled = false;
+            this.txbMaHD.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txbMaHD.Hint = "Mã hoá đơn";
+            this.txbMaHD.LeadingIcon = null;
+            this.txbMaHD.Location = new System.Drawing.Point(50, 138);
+            this.txbMaHD.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txbMaHD.MaxLength = 50;
+            this.txbMaHD.MouseState = MaterialSkin.MouseState.OUT;
+            this.txbMaHD.Multiline = false;
+            this.txbMaHD.Name = "txbMaHD";
+            this.txbMaHD.Size = new System.Drawing.Size(208, 50);
+            this.txbMaHD.TabIndex = 1;
+            this.txbMaHD.Text = "";
+            this.txbMaHD.TrailingIcon = null;
             // 
-            // materialTextBox2
+            // txbSDTKH
             // 
-            this.materialTextBox2.AnimateReadOnly = false;
-            this.materialTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox2.Depth = 0;
-            this.materialTextBox2.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox2.Hint = "Mã khách hàng";
-            this.materialTextBox2.LeadingIcon = null;
-            this.materialTextBox2.Location = new System.Drawing.Point(503, 88);
-            this.materialTextBox2.MaxLength = 50;
-            this.materialTextBox2.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox2.Multiline = false;
-            this.materialTextBox2.Name = "materialTextBox2";
-            this.materialTextBox2.Size = new System.Drawing.Size(144, 50);
-            this.materialTextBox2.TabIndex = 2;
-            this.materialTextBox2.Text = "";
-            this.materialTextBox2.TrailingIcon = null;
-            this.materialTextBox2.TextChanged += new System.EventHandler(this.materialTextBox2_TextChanged);
+            this.txbSDTKH.AnimateReadOnly = false;
+            this.txbSDTKH.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbSDTKH.Depth = 0;
+            this.txbSDTKH.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txbSDTKH.Hint = "SĐT khách hàng";
+            this.txbSDTKH.LeadingIcon = null;
+            this.txbSDTKH.Location = new System.Drawing.Point(754, 138);
+            this.txbSDTKH.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txbSDTKH.MaxLength = 50;
+            this.txbSDTKH.MouseState = MaterialSkin.MouseState.OUT;
+            this.txbSDTKH.Multiline = false;
+            this.txbSDTKH.Name = "txbSDTKH";
+            this.txbSDTKH.Size = new System.Drawing.Size(216, 50);
+            this.txbSDTKH.TabIndex = 2;
+            this.txbSDTKH.Text = "";
+            this.txbSDTKH.TrailingIcon = null;
+            this.txbSDTKH.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbSDTKH_KeyPress);
             // 
-            // materialTextBox5
+            // txbMaNV
             // 
-            this.materialTextBox5.AnimateReadOnly = false;
-            this.materialTextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox5.Depth = 0;
-            this.materialTextBox5.Enabled = false;
-            this.materialTextBox5.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox5.Hint = "Mã nhân viên";
-            this.materialTextBox5.LeadingIcon = null;
-            this.materialTextBox5.Location = new System.Drawing.Point(343, 88);
-            this.materialTextBox5.MaxLength = 50;
-            this.materialTextBox5.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox5.Multiline = false;
-            this.materialTextBox5.Name = "materialTextBox5";
-            this.materialTextBox5.Size = new System.Drawing.Size(144, 50);
-            this.materialTextBox5.TabIndex = 2;
-            this.materialTextBox5.Text = "";
-            this.materialTextBox5.TrailingIcon = null;
-            this.materialTextBox5.TextChanged += new System.EventHandler(this.materialTextBox5_TextChanged);
+            this.txbMaNV.AnimateReadOnly = false;
+            this.txbMaNV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbMaNV.Depth = 0;
+            this.txbMaNV.Enabled = false;
+            this.txbMaNV.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txbMaNV.Hint = "Mã nhân viên";
+            this.txbMaNV.LeadingIcon = null;
+            this.txbMaNV.Location = new System.Drawing.Point(514, 138);
+            this.txbMaNV.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txbMaNV.MaxLength = 50;
+            this.txbMaNV.MouseState = MaterialSkin.MouseState.OUT;
+            this.txbMaNV.Multiline = false;
+            this.txbMaNV.Name = "txbMaNV";
+            this.txbMaNV.Size = new System.Drawing.Size(216, 50);
+            this.txbMaNV.TabIndex = 2;
+            this.txbMaNV.Text = "";
+            this.txbMaNV.TrailingIcon = null;
             // 
             // materialLabel1
             // 
@@ -174,254 +185,251 @@
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.materialLabel1.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
-            this.materialLabel1.Location = new System.Drawing.Point(934, 630);
+            this.materialLabel1.Location = new System.Drawing.Point(1401, 984);
+            this.materialLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(96, 24);
             this.materialLabel1.TabIndex = 9;
             this.materialLabel1.Text = "Thành tiền";
             // 
-            // materialButton2
+            // btnThanhToan
             // 
-            this.materialButton2.AutoSize = false;
-            this.materialButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton2.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton2.Depth = 0;
-            this.materialButton2.HighEmphasis = true;
-            this.materialButton2.Icon = null;
-            this.materialButton2.Location = new System.Drawing.Point(938, 672);
-            this.materialButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton2.Name = "materialButton2";
-            this.materialButton2.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton2.Size = new System.Drawing.Size(342, 36);
-            this.materialButton2.TabIndex = 10;
-            this.materialButton2.Text = "Thanh toán";
-            this.materialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton2.UseAccentColor = false;
-            this.materialButton2.UseVisualStyleBackColor = true;
+            this.btnThanhToan.AutoSize = false;
+            this.btnThanhToan.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnThanhToan.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnThanhToan.Depth = 0;
+            this.btnThanhToan.HighEmphasis = true;
+            this.btnThanhToan.Icon = null;
+            this.btnThanhToan.Location = new System.Drawing.Point(1407, 1050);
+            this.btnThanhToan.Margin = new System.Windows.Forms.Padding(6, 9, 6, 9);
+            this.btnThanhToan.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnThanhToan.Name = "btnThanhToan";
+            this.btnThanhToan.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnThanhToan.Size = new System.Drawing.Size(513, 56);
+            this.btnThanhToan.TabIndex = 10;
+            this.btnThanhToan.Text = "Thanh toán";
+            this.btnThanhToan.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnThanhToan.UseAccentColor = false;
+            this.btnThanhToan.UseVisualStyleBackColor = true;
+            this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
             // 
-            // materialLabel2
+            // lbThanhTien
             // 
-            this.materialLabel2.AutoSize = true;
-            this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel2.Location = new System.Drawing.Point(1212, 631);
-            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(25, 19);
-            this.materialLabel2.TabIndex = 11;
-            this.materialLabel2.Text = "Giá";
+            this.lbThanhTien.AutoSize = true;
+            this.lbThanhTien.Depth = 0;
+            this.lbThanhTien.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lbThanhTien.Location = new System.Drawing.Point(1818, 986);
+            this.lbThanhTien.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbThanhTien.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lbThanhTien.Name = "lbThanhTien";
+            this.lbThanhTien.Size = new System.Drawing.Size(10, 19);
+            this.lbThanhTien.TabIndex = 11;
+            this.lbThanhTien.Text = "0";
             // 
-            // materialButton3
+            // btnHuyBo
             // 
-            this.materialButton3.AutoSize = false;
-            this.materialButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton3.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton3.Depth = 0;
-            this.materialButton3.HighEmphasis = true;
-            this.materialButton3.Icon = null;
-            this.materialButton3.Location = new System.Drawing.Point(938, 720);
-            this.materialButton3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton3.Name = "materialButton3";
-            this.materialButton3.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton3.Size = new System.Drawing.Size(342, 36);
-            this.materialButton3.TabIndex = 10;
-            this.materialButton3.Text = "Huỷ bỏ";
-            this.materialButton3.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
-            this.materialButton3.UseAccentColor = false;
-            this.materialButton3.UseVisualStyleBackColor = true;
+            this.btnHuyBo.AutoSize = false;
+            this.btnHuyBo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnHuyBo.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnHuyBo.Depth = 0;
+            this.btnHuyBo.HighEmphasis = true;
+            this.btnHuyBo.Icon = null;
+            this.btnHuyBo.Location = new System.Drawing.Point(1407, 1125);
+            this.btnHuyBo.Margin = new System.Windows.Forms.Padding(6, 9, 6, 9);
+            this.btnHuyBo.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnHuyBo.Name = "btnHuyBo";
+            this.btnHuyBo.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnHuyBo.Size = new System.Drawing.Size(513, 56);
+            this.btnHuyBo.TabIndex = 10;
+            this.btnHuyBo.Text = "Huỷ bỏ";
+            this.btnHuyBo.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
+            this.btnHuyBo.UseAccentColor = false;
+            this.btnHuyBo.UseVisualStyleBackColor = true;
+            this.btnHuyBo.Click += new System.EventHandler(this.btnHuyBo_Click);
             // 
             // materialLabel3
             // 
             this.materialLabel3.AutoSize = true;
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel3.Location = new System.Drawing.Point(939, 171);
+            this.materialLabel3.Location = new System.Drawing.Point(1408, 267);
+            this.materialLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
             this.materialLabel3.Size = new System.Drawing.Size(299, 19);
             this.materialLabel3.TabIndex = 39;
             this.materialLabel3.Text = "Nhập thông tin sách để thêm vào hoá đơn";
             // 
-            // AddBtn
+            // btnThemSach
             // 
-            this.AddBtn.AutoSize = false;
-            this.AddBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.AddBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.AddBtn.Depth = 0;
-            this.AddBtn.HighEmphasis = true;
-            this.AddBtn.Icon = null;
-            this.AddBtn.Location = new System.Drawing.Point(1176, 487);
-            this.AddBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.AddBtn.MouseState = MaterialSkin.MouseState.HOVER;
-            this.AddBtn.Name = "AddBtn";
-            this.AddBtn.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.AddBtn.Size = new System.Drawing.Size(104, 36);
-            this.AddBtn.TabIndex = 38;
-            this.AddBtn.Text = "Thêm sách";
-            this.AddBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.AddBtn.UseAccentColor = false;
-            this.AddBtn.UseVisualStyleBackColor = true;
+            this.btnThemSach.AutoSize = false;
+            this.btnThemSach.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnThemSach.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnThemSach.Depth = 0;
+            this.btnThemSach.HighEmphasis = true;
+            this.btnThemSach.Icon = null;
+            this.btnThemSach.Location = new System.Drawing.Point(1764, 761);
+            this.btnThemSach.Margin = new System.Windows.Forms.Padding(6, 9, 6, 9);
+            this.btnThemSach.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnThemSach.Name = "btnThemSach";
+            this.btnThemSach.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnThemSach.Size = new System.Drawing.Size(156, 56);
+            this.btnThemSach.TabIndex = 38;
+            this.btnThemSach.Text = "Thêm sách";
+            this.btnThemSach.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnThemSach.UseAccentColor = false;
+            this.btnThemSach.UseVisualStyleBackColor = true;
+            this.btnThemSach.Click += new System.EventHandler(this.btnThemSach_Click_1);
             // 
-            // materialTextBox7
+            // txbThanhTien
             // 
-            this.materialTextBox7.AnimateReadOnly = false;
-            this.materialTextBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox7.Depth = 0;
-            this.materialTextBox7.Enabled = false;
-            this.materialTextBox7.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox7.Hint = "Thành tiền";
-            this.materialTextBox7.LeadingIcon = null;
-            this.materialTextBox7.Location = new System.Drawing.Point(938, 411);
-            this.materialTextBox7.MaxLength = 50;
-            this.materialTextBox7.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox7.Multiline = false;
-            this.materialTextBox7.Name = "materialTextBox7";
-            this.materialTextBox7.Size = new System.Drawing.Size(342, 50);
-            this.materialTextBox7.TabIndex = 35;
-            this.materialTextBox7.Text = "";
-            this.materialTextBox7.TrailingIcon = null;
+            this.txbThanhTien.AnimateReadOnly = false;
+            this.txbThanhTien.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbThanhTien.Depth = 0;
+            this.txbThanhTien.Enabled = false;
+            this.txbThanhTien.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txbThanhTien.Hint = "Thành tiền";
+            this.txbThanhTien.LeadingIcon = null;
+            this.txbThanhTien.Location = new System.Drawing.Point(1407, 642);
+            this.txbThanhTien.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txbThanhTien.MaxLength = 50;
+            this.txbThanhTien.MouseState = MaterialSkin.MouseState.OUT;
+            this.txbThanhTien.Multiline = false;
+            this.txbThanhTien.Name = "txbThanhTien";
+            this.txbThanhTien.Size = new System.Drawing.Size(513, 50);
+            this.txbThanhTien.TabIndex = 35;
+            this.txbThanhTien.Text = "";
+            this.txbThanhTien.TrailingIcon = null;
             // 
-            // materialTextBox6
+            // txbDonGia
             // 
-            this.materialTextBox6.AnimateReadOnly = false;
-            this.materialTextBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox6.Depth = 0;
-            this.materialTextBox6.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox6.Hint = "Đơn giá";
-            this.materialTextBox6.LeadingIcon = null;
-            this.materialTextBox6.Location = new System.Drawing.Point(938, 344);
-            this.materialTextBox6.MaxLength = 50;
-            this.materialTextBox6.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox6.Multiline = false;
-            this.materialTextBox6.Name = "materialTextBox6";
-            this.materialTextBox6.Size = new System.Drawing.Size(173, 50);
-            this.materialTextBox6.TabIndex = 34;
-            this.materialTextBox6.Text = "";
-            this.materialTextBox6.TrailingIcon = null;
+            this.txbDonGia.AnimateReadOnly = false;
+            this.txbDonGia.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbDonGia.Depth = 0;
+            this.txbDonGia.Enabled = false;
+            this.txbDonGia.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txbDonGia.Hint = "Đơn giá";
+            this.txbDonGia.LeadingIcon = null;
+            this.txbDonGia.Location = new System.Drawing.Point(1407, 538);
+            this.txbDonGia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txbDonGia.MaxLength = 50;
+            this.txbDonGia.MouseState = MaterialSkin.MouseState.OUT;
+            this.txbDonGia.Multiline = false;
+            this.txbDonGia.Name = "txbDonGia";
+            this.txbDonGia.Size = new System.Drawing.Size(260, 50);
+            this.txbDonGia.TabIndex = 34;
+            this.txbDonGia.Text = "";
+            this.txbDonGia.TrailingIcon = null;
+            this.txbDonGia.TextChanged += new System.EventHandler(this.txbDonGia_TextChanged_1);
+            this.txbDonGia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbDonGia_KeyPress);
             // 
-            // materialTextBox9
+            // txbSLKho
             // 
-            this.materialTextBox9.AnimateReadOnly = false;
-            this.materialTextBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox9.Depth = 0;
-            this.materialTextBox9.Enabled = false;
-            this.materialTextBox9.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox9.Hint = "Kho";
-            this.materialTextBox9.LeadingIcon = null;
-            this.materialTextBox9.Location = new System.Drawing.Point(1128, 214);
-            this.materialTextBox9.MaxLength = 50;
-            this.materialTextBox9.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox9.Multiline = false;
-            this.materialTextBox9.Name = "materialTextBox9";
-            this.materialTextBox9.Size = new System.Drawing.Size(152, 50);
-            this.materialTextBox9.TabIndex = 36;
-            this.materialTextBox9.Text = "";
-            this.materialTextBox9.TrailingIcon = null;
+            this.txbSLKho.AnimateReadOnly = false;
+            this.txbSLKho.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbSLKho.Depth = 0;
+            this.txbSLKho.Enabled = false;
+            this.txbSLKho.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txbSLKho.Hint = "Kho";
+            this.txbSLKho.LeadingIcon = null;
+            this.txbSLKho.Location = new System.Drawing.Point(1692, 334);
+            this.txbSLKho.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txbSLKho.MaxLength = 50;
+            this.txbSLKho.MouseState = MaterialSkin.MouseState.OUT;
+            this.txbSLKho.Multiline = false;
+            this.txbSLKho.Name = "txbSLKho";
+            this.txbSLKho.Size = new System.Drawing.Size(228, 50);
+            this.txbSLKho.TabIndex = 36;
+            this.txbSLKho.Text = "";
+            this.txbSLKho.TrailingIcon = null;
             // 
-            // materialTextBox4
+            // txbSLBan
             // 
-            this.materialTextBox4.AnimateReadOnly = false;
-            this.materialTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox4.Depth = 0;
-            this.materialTextBox4.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox4.Hint = "Số lượng";
-            this.materialTextBox4.LeadingIcon = null;
-            this.materialTextBox4.Location = new System.Drawing.Point(1128, 344);
-            this.materialTextBox4.MaxLength = 50;
-            this.materialTextBox4.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox4.Multiline = false;
-            this.materialTextBox4.Name = "materialTextBox4";
-            this.materialTextBox4.Size = new System.Drawing.Size(152, 50);
-            this.materialTextBox4.TabIndex = 37;
-            this.materialTextBox4.Text = "";
-            this.materialTextBox4.TrailingIcon = null;
+            this.txbSLBan.AnimateReadOnly = false;
+            this.txbSLBan.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbSLBan.Depth = 0;
+            this.txbSLBan.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txbSLBan.Hint = "Số lượng";
+            this.txbSLBan.LeadingIcon = null;
+            this.txbSLBan.Location = new System.Drawing.Point(1692, 538);
+            this.txbSLBan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txbSLBan.MaxLength = 50;
+            this.txbSLBan.MouseState = MaterialSkin.MouseState.OUT;
+            this.txbSLBan.Multiline = false;
+            this.txbSLBan.Name = "txbSLBan";
+            this.txbSLBan.Size = new System.Drawing.Size(228, 50);
+            this.txbSLBan.TabIndex = 37;
+            this.txbSLBan.Text = "";
+            this.txbSLBan.TrailingIcon = null;
+            this.txbSLBan.TextChanged += new System.EventHandler(this.txbSLBan_TextChanged);
+            this.txbSLBan.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbSLNhap_KeyPress);
             // 
-            // materialTextBox8
+            // txbMaSach
             // 
-            this.materialTextBox8.AnimateReadOnly = false;
-            this.materialTextBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox8.Depth = 0;
-            this.materialTextBox8.Enabled = false;
-            this.materialTextBox8.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox8.Hint = "Mã sách";
-            this.materialTextBox8.LeadingIcon = null;
-            this.materialTextBox8.Location = new System.Drawing.Point(938, 214);
-            this.materialTextBox8.MaxLength = 50;
-            this.materialTextBox8.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox8.Multiline = false;
-            this.materialTextBox8.Name = "materialTextBox8";
-            this.materialTextBox8.Size = new System.Drawing.Size(173, 50);
-            this.materialTextBox8.TabIndex = 32;
-            this.materialTextBox8.Text = "";
-            this.materialTextBox8.TrailingIcon = null;
+            this.txbMaSach.AnimateReadOnly = false;
+            this.txbMaSach.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbMaSach.Depth = 0;
+            this.txbMaSach.Enabled = false;
+            this.txbMaSach.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txbMaSach.Hint = "Mã sách";
+            this.txbMaSach.LeadingIcon = null;
+            this.txbMaSach.Location = new System.Drawing.Point(1407, 334);
+            this.txbMaSach.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txbMaSach.MaxLength = 50;
+            this.txbMaSach.MouseState = MaterialSkin.MouseState.OUT;
+            this.txbMaSach.Multiline = false;
+            this.txbMaSach.Name = "txbMaSach";
+            this.txbMaSach.Size = new System.Drawing.Size(260, 50);
+            this.txbMaSach.TabIndex = 32;
+            this.txbMaSach.Text = "";
+            this.txbMaSach.TrailingIcon = null;
             // 
-            // materialTextBox3
+            // btnHuyChon
             // 
-            this.materialTextBox3.AnimateReadOnly = false;
-            this.materialTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox3.Depth = 0;
-            this.materialTextBox3.Enabled = false;
-            this.materialTextBox3.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox3.Hint = "Tên sách";
-            this.materialTextBox3.LeadingIcon = null;
-            this.materialTextBox3.Location = new System.Drawing.Point(938, 279);
-            this.materialTextBox3.MaxLength = 50;
-            this.materialTextBox3.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox3.Multiline = false;
-            this.materialTextBox3.Name = "materialTextBox3";
-            this.materialTextBox3.Size = new System.Drawing.Size(342, 50);
-            this.materialTextBox3.TabIndex = 33;
-            this.materialTextBox3.Text = "";
-            this.materialTextBox3.TrailingIcon = null;
+            this.btnHuyChon.AutoSize = false;
+            this.btnHuyChon.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnHuyChon.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnHuyChon.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnHuyChon.Depth = 0;
+            this.btnHuyChon.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHuyChon.HighEmphasis = true;
+            this.btnHuyChon.Icon = null;
+            this.btnHuyChon.Location = new System.Drawing.Point(1582, 761);
+            this.btnHuyChon.Margin = new System.Windows.Forms.Padding(6, 9, 6, 9);
+            this.btnHuyChon.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnHuyChon.Name = "btnHuyChon";
+            this.btnHuyChon.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnHuyChon.Size = new System.Drawing.Size(156, 56);
+            this.btnHuyChon.TabIndex = 31;
+            this.btnHuyChon.Text = "Huỷ chọn";
+            this.btnHuyChon.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
+            this.btnHuyChon.UseAccentColor = false;
+            this.btnHuyChon.UseVisualStyleBackColor = true;
+            this.btnHuyChon.Click += new System.EventHandler(this.btnHuyChon_Click_1);
             // 
-            // materialButton1
+            // btnXoa
             // 
-            this.materialButton1.AutoSize = false;
-            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton1.Depth = 0;
-            this.materialButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.materialButton1.HighEmphasis = true;
-            this.materialButton1.Icon = null;
-            this.materialButton1.Location = new System.Drawing.Point(1055, 487);
-            this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton1.Name = "materialButton1";
-            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton1.Size = new System.Drawing.Size(104, 36);
-            this.materialButton1.TabIndex = 31;
-            this.materialButton1.Text = "Huỷ chọn";
-            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
-            this.materialButton1.UseAccentColor = false;
-            this.materialButton1.UseVisualStyleBackColor = true;
-            this.materialButton1.Click += new System.EventHandler(this.materialButton1_Click);
-            // 
-            // DeleteBtn
-            // 
-            this.DeleteBtn.AutoSize = false;
-            this.DeleteBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.DeleteBtn.Cursor = System.Windows.Forms.Cursors.Default;
-            this.DeleteBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.DeleteBtn.Depth = 0;
-            this.DeleteBtn.Enabled = false;
-            this.DeleteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeleteBtn.HighEmphasis = true;
-            this.DeleteBtn.Icon = null;
-            this.DeleteBtn.Location = new System.Drawing.Point(938, 487);
-            this.DeleteBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.DeleteBtn.MouseState = MaterialSkin.MouseState.HOVER;
-            this.DeleteBtn.Name = "DeleteBtn";
-            this.DeleteBtn.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.DeleteBtn.Size = new System.Drawing.Size(101, 36);
-            this.DeleteBtn.TabIndex = 30;
-            this.DeleteBtn.Text = "Xoá";
-            this.DeleteBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
-            this.DeleteBtn.UseAccentColor = false;
-            this.DeleteBtn.UseVisualStyleBackColor = true;
+            this.btnXoa.AutoSize = false;
+            this.btnXoa.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnXoa.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnXoa.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnXoa.Depth = 0;
+            this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.HighEmphasis = true;
+            this.btnXoa.Icon = null;
+            this.btnXoa.Location = new System.Drawing.Point(1407, 761);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(6, 9, 6, 9);
+            this.btnXoa.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnXoa.Size = new System.Drawing.Size(152, 56);
+            this.btnXoa.TabIndex = 30;
+            this.btnXoa.Text = "Xoá";
+            this.btnXoa.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
+            this.btnXoa.UseAccentColor = false;
+            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // txbNgayTao
             // 
@@ -432,66 +440,94 @@
             this.txbNgayTao.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txbNgayTao.Hint = "Ngày";
             this.txbNgayTao.LeadingIcon = null;
-            this.txbNgayTao.Location = new System.Drawing.Point(188, 88);
+            this.txbNgayTao.Location = new System.Drawing.Point(282, 138);
+            this.txbNgayTao.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txbNgayTao.MaxLength = 50;
             this.txbNgayTao.MouseState = MaterialSkin.MouseState.OUT;
             this.txbNgayTao.Multiline = false;
             this.txbNgayTao.Name = "txbNgayTao";
-            this.txbNgayTao.Size = new System.Drawing.Size(140, 50);
+            this.txbNgayTao.Size = new System.Drawing.Size(210, 50);
             this.txbNgayTao.TabIndex = 40;
             this.txbNgayTao.Text = "";
             this.txbNgayTao.TrailingIcon = null;
             // 
-            // materialButton4
+            // btnInHD
             // 
-            this.materialButton4.AutoSize = false;
-            this.materialButton4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton4.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton4.Depth = 0;
-            this.materialButton4.HighEmphasis = true;
-            this.materialButton4.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton4.Icon")));
-            this.materialButton4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.materialButton4.Location = new System.Drawing.Point(1127, 95);
-            this.materialButton4.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton4.Name = "materialButton4";
-            this.materialButton4.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton4.Size = new System.Drawing.Size(153, 43);
-            this.materialButton4.TabIndex = 51;
-            this.materialButton4.Text = "In hoá đơn";
-            this.materialButton4.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton4.UseAccentColor = false;
-            this.materialButton4.UseVisualStyleBackColor = true;
+            this.btnInHD.AutoSize = false;
+            this.btnInHD.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnInHD.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnInHD.Depth = 0;
+            this.btnInHD.HighEmphasis = true;
+            this.btnInHD.Icon = ((System.Drawing.Image)(resources.GetObject("btnInHD.Icon")));
+            this.btnInHD.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnInHD.Location = new System.Drawing.Point(1690, 148);
+            this.btnInHD.Margin = new System.Windows.Forms.Padding(6, 9, 6, 9);
+            this.btnInHD.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnInHD.Name = "btnInHD";
+            this.btnInHD.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnInHD.Size = new System.Drawing.Size(230, 67);
+            this.btnInHD.TabIndex = 51;
+            this.btnInHD.Text = "In hoá đơn";
+            this.btnInHD.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnInHD.UseAccentColor = false;
+            this.btnInHD.UseVisualStyleBackColor = true;
+            this.btnInHD.Click += new System.EventHandler(this.btnInHD_Click);
+            // 
+            // cbListSach
+            // 
+            this.cbListSach.AutoResize = false;
+            this.cbListSach.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cbListSach.Depth = 0;
+            this.cbListSach.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cbListSach.DropDownHeight = 174;
+            this.cbListSach.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbListSach.DropDownWidth = 121;
+            this.cbListSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cbListSach.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cbListSach.FormattingEnabled = true;
+            this.cbListSach.Hint = "Tên sách";
+            this.cbListSach.IntegralHeight = false;
+            this.cbListSach.ItemHeight = 43;
+            this.cbListSach.Location = new System.Drawing.Point(1407, 437);
+            this.cbListSach.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cbListSach.MaxDropDownItems = 4;
+            this.cbListSach.MouseState = MaterialSkin.MouseState.OUT;
+            this.cbListSach.Name = "cbListSach";
+            this.cbListSach.Size = new System.Drawing.Size(511, 49);
+            this.cbListSach.StartIndex = 0;
+            this.cbListSach.TabIndex = 52;
+            this.cbListSach.SelectedIndexChanged += new System.EventHandler(this.cbListSach_SelectedIndexChanged);
             // 
             // BanHang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1316, 793);
-            this.Controls.Add(this.materialButton4);
+            this.ClientSize = new System.Drawing.Size(1974, 1239);
+            this.Controls.Add(this.cbListSach);
+            this.Controls.Add(this.btnInHD);
             this.Controls.Add(this.txbNgayTao);
             this.Controls.Add(this.materialLabel3);
-            this.Controls.Add(this.AddBtn);
-            this.Controls.Add(this.materialTextBox7);
-            this.Controls.Add(this.materialTextBox6);
-            this.Controls.Add(this.materialTextBox9);
-            this.Controls.Add(this.materialTextBox4);
-            this.Controls.Add(this.materialTextBox8);
-            this.Controls.Add(this.materialTextBox3);
-            this.Controls.Add(this.materialButton1);
-            this.Controls.Add(this.DeleteBtn);
-            this.Controls.Add(this.materialLabel2);
-            this.Controls.Add(this.materialButton3);
-            this.Controls.Add(this.materialButton2);
+            this.Controls.Add(this.btnThemSach);
+            this.Controls.Add(this.txbThanhTien);
+            this.Controls.Add(this.txbDonGia);
+            this.Controls.Add(this.txbSLKho);
+            this.Controls.Add(this.txbSLBan);
+            this.Controls.Add(this.txbMaSach);
+            this.Controls.Add(this.btnHuyChon);
+            this.Controls.Add(this.btnXoa);
+            this.Controls.Add(this.lbThanhTien);
+            this.Controls.Add(this.btnHuyBo);
+            this.Controls.Add(this.btnThanhToan);
             this.Controls.Add(this.materialLabel1);
-            this.Controls.Add(this.materialTextBox5);
-            this.Controls.Add(this.materialTextBox2);
-            this.Controls.Add(this.materialTextBox1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.txbMaNV);
+            this.Controls.Add(this.txbSDTKH);
+            this.Controls.Add(this.txbMaHD);
+            this.Controls.Add(this.dtgvCTBH);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "BanHang";
+            this.Padding = new System.Windows.Forms.Padding(4, 100, 4, 5);
             this.Text = "Tạo hoá đơn bán hàng";
-            this.Load += new System.EventHandler(this.BanHang_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvCTBH)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -499,30 +535,30 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox1;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox2;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox5;
+        private System.Windows.Forms.DataGridView dtgvCTBH;
+        private MaterialSkin.Controls.MaterialTextBox txbMaHD;
+        private MaterialSkin.Controls.MaterialTextBox txbSDTKH;
+        private MaterialSkin.Controls.MaterialTextBox txbMaNV;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
-        private MaterialSkin.Controls.MaterialButton materialButton2;
-        private MaterialSkin.Controls.MaterialLabel materialLabel2;
-        private MaterialSkin.Controls.MaterialButton materialButton3;
+        private MaterialSkin.Controls.MaterialButton btnThanhToan;
+        private MaterialSkin.Controls.MaterialLabel lbThanhTien;
+        private MaterialSkin.Controls.MaterialButton btnHuyBo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
-        private MaterialSkin.Controls.MaterialButton AddBtn;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox7;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox6;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox9;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox4;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox8;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox3;
-        private MaterialSkin.Controls.MaterialButton materialButton1;
-        private MaterialSkin.Controls.MaterialButton DeleteBtn;
+        private MaterialSkin.Controls.MaterialButton btnThemSach;
+        private MaterialSkin.Controls.MaterialTextBox txbThanhTien;
+        private MaterialSkin.Controls.MaterialTextBox txbDonGia;
+        private MaterialSkin.Controls.MaterialTextBox txbSLKho;
+        private MaterialSkin.Controls.MaterialTextBox txbSLBan;
+        private MaterialSkin.Controls.MaterialTextBox txbMaSach;
+        private MaterialSkin.Controls.MaterialButton btnHuyChon;
+        private MaterialSkin.Controls.MaterialButton btnXoa;
         private MaterialSkin.Controls.MaterialTextBox txbNgayTao;
-        private MaterialSkin.Controls.MaterialButton materialButton4;
+        private MaterialSkin.Controls.MaterialButton btnInHD;
+        private MaterialSkin.Controls.MaterialComboBox cbListSach;
     }
 }

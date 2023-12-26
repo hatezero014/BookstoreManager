@@ -26,7 +26,7 @@ namespace BookstoreManager.DAO
 
             HOADONNHAPSACH result = null;
 
-            DataTable data = DataProvider.Intstance.ExcuteQuery(query);
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
 
             if (data.Rows.Count > 0)
             {
@@ -40,7 +40,7 @@ namespace BookstoreManager.DAO
         {
             string query = "SELECT TOP 1 * FROM HOADONNHAPSACH ORDER BY MANS DESC";
 
-            DataTable data = DataProvider.Intstance.ExcuteQuery(query);
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
 
             string result = "NS001";
 
@@ -59,7 +59,23 @@ namespace BookstoreManager.DAO
             string query = $"INSERT INTO HOADONNHAPSACH " +
                             $"VALUES ('{maNS}', '{maNCC}', '{maNV}', '{ngayNhap}', {tongTien})";
 
-            return DataProvider.Intstance.ExcuteNonQuery(query) > 0;
+            return DataProvider.Instance.ExcuteNonQuery(query) > 0;
+        }
+
+        public List<HOADONNHAPSACH> GetListNhapSach()
+        {
+            string query = $"SELECT * FROM HOADONNHAPSACH";
+
+            List<HOADONNHAPSACH> result = new List<HOADONNHAPSACH>();
+
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
+
+            foreach (DataRow row in data.Rows)
+            {
+                result.Add(new HOADONNHAPSACH(row));
+            }
+
+            return result;
         }
     }
 }

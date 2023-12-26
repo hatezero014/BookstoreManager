@@ -53,7 +53,16 @@ namespace BookstoreManager
             }
             else
             {
-                Clear();
+                string maNXB = NHAXUATBANDAO.Instance.GetIDOfNXB();
+                int lastNumber = int.Parse(maNXB.Substring(3).Trim());
+                int nextNumber = lastNumber + 1;
+                string nextID = string.Format("NXB{0:D3}", nextNumber);
+
+                txbMaNXB.Text = nextID.ToString();
+                txbTenNXB.Text = "";
+                btnAction.Text = "THÊM";
+                dtgvListNXB.ClearSelection();
+                btnXoaNXB.Enabled = false;
             }
         }
 
@@ -88,7 +97,6 @@ namespace BookstoreManager
 
                 txbMaNXB.Text = selectedRow.Cells["Column1"].Value.ToString().Trim();
                 txbTenNXB.Text = selectedRow.Cells["Column2"].Value.ToString().Trim();
-                btnAction.Text = "CẬP NHẬT";
             }
             else
             {
