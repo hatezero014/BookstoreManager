@@ -85,7 +85,6 @@ C:\code\UIT\n\LTTQ-QLNS-new-material-design\LTTQ-QLNS-new-material-design\obj\De
 C:\code\UIT\n\LTTQ-QLNS-new-material-design\LTTQ-QLNS-new-material-design\obj\Debug\BookstoreManager.pdb
 C:\code\BookstoreManager\obj\Debug\BookstoreManager.NhapSach.resources
 C:\code\BookstoreManager\obj\Debug\BookstoreManager.BanHang.resources
-C:\code\BookstoreManager\obj\Debug\BookstoreManager.Main_NhanVien.resources
 C:\code\BookstoreManager\obj\Debug\BookstoreManager.ThemKhachHang.resources
 C:\code\BookstoreManager\obj\Debug\BookstoreManager.ThemNhanVien.resources
 C:\Users\NamLe\Downloads\BookstoreManager-new-material-design\BookstoreManager-new-material-design\bin\Debug\BookstoreManager.exe.config
@@ -343,3 +342,4 @@ C:\Users\ngdm2\OneDrive\Desktop\t\nam\BookstoreManager\BookstoreManager\obj\Debu
 C:\Users\ngdm2\OneDrive\Desktop\t\nam\BookstoreManager\BookstoreManager\obj\Debug\BookstoreManager.csproj.CopyComplete
 C:\Users\ngdm2\OneDrive\Desktop\t\nam\BookstoreManager\BookstoreManager\obj\Debug\BookstoreManager.exe
 C:\Users\ngdm2\OneDrive\Desktop\t\nam\BookstoreManager\BookstoreManager\obj\Debug\BookstoreManager.pdb
+C:\code\BookstoreManager\obj\Debug\BookstoreManager.ThemTaiKhoan.resources
