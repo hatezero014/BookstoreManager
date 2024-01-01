@@ -20,6 +20,25 @@ namespace BookstoreManager.DAO
 
         private SACHDAO() { }
 
+        public bool UpdatePriceBookById(string maSach, decimal giaSach)
+        {
+            string query = $"UPDATE SACH SET GIASACH = {giaSach} WHERE MASACH = '{maSach}'";
+
+            return DataProvider.Instance.ExcuteNonQuery(query) > 0;
+        }
+
+        public bool SoftDeleteByMaLS(string maLS)
+        {
+            string query = $"UPDATE SACH SET SOLUONG = -1, MALS = NULL WHERE MALS = '{maLS}'";
+
+            return DataProvider.Instance.ExcuteNonQuery(query) > 0;
+        }
+        public bool SoftDeleteByMaNXB(string maNXB)
+        {
+            string query = $"UPDATE SACH SET SOLUONG = -1, MANXB = NULL WHERE MANXB = '{maNXB}'";
+
+            return DataProvider.Instance.ExcuteNonQuery(query) > 0;
+        }
         public bool InsertBook(string maSach, string tenSach, string tacGia, short? namXB, string moTa, string nhaXB, string loaiSach)
         {
             string query = "USP_InsertBook @MASACH , @TENSACH , @TACGIA , @NAMXB , @MOTA , @TENNXB , @LOAISACH";
@@ -68,11 +87,11 @@ namespace BookstoreManager.DAO
             return DataProvider.Instance.ExcuteNonQuery(query) > 0;
         }
 
-        public bool UpdateBookByID(string iD, string tenSach, string tacGia, decimal? giaSach, short? namXB, string moTa, int soLuong, string tenNXB, string loaiSach)
+        public bool UpdateBookByID(string iD, string tenSach, string tacGia, decimal? giaSach, short? namXB, string moTa, int soLuong, string tenNXB, string loaiSach, decimal? giaGoc)
         {
-            string query = $"USP_UpdateBook @MASACH , @TENSACH , @TACGIA , @GIASACH , @NAMXB , @MOTA , @SOLUONG , @TENNXB , @MALS";
+            string query = $"USP_UpdateBook @MASACH , @TENSACH , @TACGIA , @GIASACH , @NAMXB , @MOTA , @SOLUONG , @TENNXB , @MALS , @GIAGOC";
 
-            return DataProvider.Instance.ExcuteNonQuery(query, new object[] { iD, tenSach, tacGia, giaSach, namXB, moTa, soLuong, tenNXB, loaiSach }) > 0;
+            return DataProvider.Instance.ExcuteNonQuery(query, new object[] { iD, tenSach, tacGia, giaSach, namXB, moTa, soLuong, tenNXB, loaiSach, giaGoc }) > 0;
         }
 
         public SACH LoadBookByID(string maSach)
@@ -94,6 +113,22 @@ namespace BookstoreManager.DAO
         public List<SACH> GetListSach()
         {
             string query = $"SELECT * FROM SACH";
+
+            List<SACH> result = new List<SACH>();
+
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
+
+            foreach (DataRow row in data.Rows)
+            {
+                result.Add(new SACH(row));
+            }
+
+            return result;
+        }
+
+        public List<SACH> GetListSachNotNull()
+        {
+            string query = $"SELECT * FROM SACH WHERE GIAGOC IS NOT NULL";
 
             List<SACH> result = new List<SACH>();
 

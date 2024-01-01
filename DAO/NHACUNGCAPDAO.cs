@@ -19,6 +19,13 @@ namespace BookstoreManager.DAO
         }
 
         private NHACUNGCAPDAO() { }
+
+        public bool SortDelete(string maNCC)
+        {
+            string query = $"UPDATE NHACUNGCAP SET TENNCC = N'Đã xóa' WHERE MANCC = '{maNCC}'";
+
+            return DataProvider.Instance.ExcuteNonQuery(query) > 0;
+        }
         public List<NHACUNGCAP> GetListNCC()
         {
             List<NHACUNGCAP> result = new List<NHACUNGCAP>();

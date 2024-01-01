@@ -23,6 +23,8 @@ namespace BookstoreManager
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(Color.FromArgb(0, 84, 195), Color.FromArgb(13, 0, 195), Color.FromArgb(0, 182, 195), Color.FromArgb(0, 155, 179), TextShade.WHITE);
+
+            LoadInfo();
         }
 
         #region methods
@@ -56,7 +58,7 @@ namespace BookstoreManager
                 txbMaNV.Text = selectedRow.Cells["Column1"].Value.ToString().Trim();
                 txbTaiKhoan.Text = selectedRow.Cells["Column2"].Value.ToString().Trim();
                 txbMatKhau.Text = selectedRow.Cells["Column3"].Value.ToString().Trim();
-                btnAction.Text = "CẬP NHẬT";
+                // btnAction.Text = "CẬP NHẬT";
             }
             else
             {
@@ -113,13 +115,14 @@ namespace BookstoreManager
                 txbMaNV.Text = selectedRow.Cells["Column1"].Value.ToString().Trim();
                 txbTaiKhoan.Text = selectedRow.Cells["Column2"].Value.ToString().Trim();
                 txbMatKhau.Text = selectedRow.Cells["Column3"].Value.ToString().Trim();
-                btnAction.Text = "CẬP NHẬT";
+                // btnAction.Text = "CẬP NHẬT";
             }
             else
             {
                 dtgvListTK.ClearSelection();
             }
             btnXoa.Enabled = true;
+            btnDatLaiMK.Enabled = true;
         }
 
         private void btnAction_Click(object sender, EventArgs e)
@@ -147,6 +150,7 @@ namespace BookstoreManager
                 selectedIndex = dtgvListTK.CurrentRow.Index;
 
             TAIKHOAN TK = TAIKHOANDAO.Instance.GetTKByTK(taiKhoan);
+            /*
             if (btnAction.Text == "THÊM")
             {
                 if (TK == null)
@@ -168,31 +172,46 @@ namespace BookstoreManager
             }
             else
             {
-                if (TK != null)
+            */
+            if (TK != null)
+            {
+                if (TAIKHOANDAO.Instance.UpdateTKByID(taiKhoan, matKhau))
                 {
-                    if (TAIKHOANDAO.Instance.UpdateTKByID(taiKhoan, matKhau))
-                    {
-                        MessageBox.Show("Cập nhật tài khoản thành công!", "Thông báo");
-                        dtgvListTK.Rows[selectedIndex].Cells["Column3"].Value = txbMatKhau.Text;
-                    }
-                    else
-                    {
-                        MessageBox.Show("Cập nhật tài khoản thất bại!", "Thông báo");
-                    }
+                    MessageBox.Show("Cập nhật tài khoản thành công!", "Thông báo");
+                    dtgvListTK.Rows[selectedIndex].Cells["Column3"].Value = txbMatKhau.Text;
                 }
                 else
                 {
-                    MessageBox.Show("Tài khoản không tồn tại!", "Thông báo");
+                    MessageBox.Show("Cập nhật tài khoản thất bại!", "Thông báo");
                 }
             }
-        }
-
-        private void btnAction_TextChanged(object sender, EventArgs e)
-        {
-            if (btnAction.Text == "CẬP NHẬT")
-                btnXoa.Enabled = true;
             else
-                btnXoa.Enabled = false;
+            {
+                MessageBox.Show("Tài khoản không tồn tại!", "Thông báo");
+            }
         }
     }
+
+    /* private void btnAction_TextChanged(object sender, EventArgs e)
+    {
+        if (btnAction.Text == "CẬP NHẬT")
+        {
+            btnXoa.Enabled = true;
+            btnDatLaiMK.Enabled = true;
+        }
+        else
+            btnXoa.Enabled = false;
+    } */
+
+    /* private void btnDatLaiMK_Click(object sender, EventArgs e)
+    {
+        if (TAIKHOANDAO.Instance.UpdateTKByID(txbTaiKhoan.Text, "1"))
+        {
+            MessageBox.Show("Đổi mật khẩu thành công!", "Thông báo");
+        }
+        else
+        {
+            MessageBox.Show("Đổi mật khẩu thất bại!", "Thông báo");
+        }
+    } */
 }

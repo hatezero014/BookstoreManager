@@ -72,6 +72,11 @@ namespace BookstoreManager
         #endregion
 
         #region events
+        private void readOnlyTxb_KeyDown(object sender, KeyEventArgs e)
+        {
+            e.Handled = true;
+        }
+
         private void materialButton2_Click(object sender, EventArgs e)
         {
             txbTenSach.Text = "";
@@ -104,6 +109,12 @@ namespace BookstoreManager
                 MessageBox.Show("Vui lòng chọn loại sách!", "Thông báo");
                 return;
             }
+            int year = int.Parse(txbNamXB.Text);
+            if (year < 0 || year > 2024)
+            {
+                MessageBox.Show("Năm giảm giá không hợp lệ (từ 0 đến 2024).");
+                return;
+            }
             string maSach = txbMaSach.Text;
             string tenSach = txbTenSach.Text;
             string loaiSach = cbLoaiSach.Text;
@@ -130,6 +141,15 @@ namespace BookstoreManager
         private void btnThoat_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+
+        private void txbNamXB_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
 
         #endregion

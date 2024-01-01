@@ -19,7 +19,12 @@ namespace BookstoreManager.DAO
         }
 
         private KHACHHANGDAO() { }
+        public bool SortDelete(string maKH)
+        {
+            string query = $"UPDATE KHACHHANG SET HOTEN = N'Đã xóa', SODT = N'Đã xóa' WHERE MAKH = '{maKH}'";
 
+            return DataProvider.Instance.ExcuteNonQuery(query) > 0;
+        }
         public bool DeleteCustomerByID(string iD)
         {
             string query = $"DELETE KHACHHANG WHERE MAKH = '{iD}'";
@@ -50,7 +55,7 @@ namespace BookstoreManager.DAO
             return result;
         }
 
-        public bool InsertCustomer(string maKH, string hoTen, string soDT, string diaChi)
+        public bool InsertCustomer(string maKH, string hoTen, string diaChi, string soDT)
         {
             string query = $"INSERT INTO KHACHHANG VALUES ('{maKH}', N'{hoTen}', N'{diaChi}', '{soDT}')";
 

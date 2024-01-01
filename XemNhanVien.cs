@@ -47,18 +47,9 @@ namespace BookstoreManager
 
         #region events
 
-        #endregion
-
-        private void txbNgaySinhNV_TextChanged(object sender, EventArgs e)
+        private void readOnlyTxb_KeyDown(object sender, KeyEventArgs e)
         {
-            string input = txbNgaySinhNV.Text.Trim();
-            if (!string.IsNullOrEmpty(input))
-            {
-                if (!DateTime.TryParseExact(input, "dd-MM-yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out _))
-                {
-                    MessageBox.Show("Ngày tháng không hợp lệ. Vui lòng nhập theo định dạng dd-MM-yyyy.");
-                }
-            }
+            e.Handled = true;
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -76,6 +67,18 @@ namespace BookstoreManager
             if (txbNgaySinhNV.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập ngày sinh!", "Thông báo");
+                return;
+            }
+            string input = txbNgaySinhNV.Text.Trim();
+            if (!DateTime.TryParseExact(input, "dd-MM-yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out _))
+            {
+                MessageBox.Show("Ngày tháng không hợp lệ. Vui lòng nhập theo định dạng dd-MM-yyyy.");
+                return;
+            }
+            int year = int.Parse(txbNgaySinhNV.Text.Substring(6, 4));
+            if (year < 1900 || year > 2079)
+            {
+                MessageBox.Show("Năm không hợp lệ (từ 1900 đến 2079).");
                 return;
             }
             if (txbSDTNV.Text == "")
@@ -141,5 +144,6 @@ namespace BookstoreManager
                 e.Handled = true;
             }
         }
+        #endregion
     }
 }

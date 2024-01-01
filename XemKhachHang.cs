@@ -43,13 +43,17 @@ namespace BookstoreManager
         #endregion
 
         #region events
+        private void readOnlyTxb_KeyDown(object sender, KeyEventArgs e)
+        {
+            e.Handled = true;
+        }
 
         private void btnXoaKH_Click(object sender, EventArgs e)
         {
             string maKH = txbMaKH.Text;
             if (MessageBox.Show("Bạn có chắc muốn xóa khách hàng này không?", "Warning", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
-                if (KHACHHANGDAO.Instance.DeleteCustomerByID(maKH) == true)
+                if (KHACHHANGDAO.Instance.SortDelete(maKH) == true)
                 {
                     MessageBox.Show("Xoá khách hàng thành công!", "Thông báo");
                 }

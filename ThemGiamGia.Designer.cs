@@ -53,13 +53,13 @@
             this.btnAction.Depth = 0;
             this.btnAction.HighEmphasis = true;
             this.btnAction.Icon = null;
-            this.btnAction.Location = new System.Drawing.Point(498, 703);
-            this.btnAction.Margin = new System.Windows.Forms.Padding(6, 9, 6, 9);
+            this.btnAction.Location = new System.Drawing.Point(65, 447);
+            this.btnAction.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnAction.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnAction.Name = "btnAction";
             this.btnAction.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnAction.Size = new System.Drawing.Size(154, 56);
-            this.btnAction.TabIndex = 15;
+            this.btnAction.Size = new System.Drawing.Size(103, 41);
+            this.btnAction.TabIndex = 6;
             this.btnAction.Text = "Cập nhật";
             this.btnAction.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnAction.UseAccentColor = false;
@@ -77,13 +77,13 @@
             this.btnHuyChon.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHuyChon.HighEmphasis = true;
             this.btnHuyChon.Icon = null;
-            this.btnHuyChon.Location = new System.Drawing.Point(183, 703);
-            this.btnHuyChon.Margin = new System.Windows.Forms.Padding(6, 9, 6, 9);
+            this.btnHuyChon.Location = new System.Drawing.Point(189, 447);
+            this.btnHuyChon.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnHuyChon.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnHuyChon.Name = "btnHuyChon";
             this.btnHuyChon.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnHuyChon.Size = new System.Drawing.Size(154, 56);
-            this.btnHuyChon.TabIndex = 13;
+            this.btnHuyChon.Size = new System.Drawing.Size(103, 41);
+            this.btnHuyChon.TabIndex = 7;
             this.btnHuyChon.Text = "Huỷ chọn";
             this.btnHuyChon.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
             this.btnHuyChon.UseAccentColor = false;
@@ -100,14 +100,14 @@
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.HighEmphasis = true;
             this.btnXoa.Icon = null;
-            this.btnXoa.Location = new System.Drawing.Point(358, 703);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(6, 9, 6, 9);
+            this.btnXoa.Location = new System.Drawing.Point(313, 447);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnXoa.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnXoa.Size = new System.Drawing.Size(117, 56);
-            this.btnXoa.TabIndex = 14;
-            this.btnXoa.Text = "Xóa";
+            this.btnXoa.Size = new System.Drawing.Size(103, 41);
+            this.btnXoa.TabIndex = 8;
+            this.btnXoa.Text = "Xoá";
             this.btnXoa.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
             this.btnXoa.UseAccentColor = false;
             this.btnXoa.UseVisualStyleBackColor = true;
@@ -116,6 +116,7 @@
             // dtgvList
             // 
             this.dtgvList.AllowUserToDeleteRows = false;
+            this.dtgvList.BackgroundColor = System.Drawing.Color.MintCream;
             this.dtgvList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -123,15 +124,16 @@
             this.Column3,
             this.Column4,
             this.Column5});
-            this.dtgvList.Location = new System.Drawing.Point(716, 156);
-            this.dtgvList.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dtgvList.Location = new System.Drawing.Point(458, 102);
+            this.dtgvList.MultiSelect = false;
             this.dtgvList.Name = "dtgvList";
             this.dtgvList.ReadOnly = true;
             this.dtgvList.RowHeadersWidth = 51;
             this.dtgvList.RowTemplate.Height = 24;
             this.dtgvList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgvList.Size = new System.Drawing.Size(837, 603);
+            this.dtgvList.Size = new System.Drawing.Size(558, 386);
             this.dtgvList.TabIndex = 16;
+            this.dtgvList.TabStop = false;
             this.dtgvList.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvList_CellClick);
             // 
             // Column1
@@ -183,16 +185,16 @@
             this.txbMaSach.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txbMaSach.Hint = "Mã sách";
             this.txbMaSach.LeadingIcon = null;
-            this.txbMaSach.Location = new System.Drawing.Point(88, 156);
-            this.txbMaSach.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txbMaSach.Location = new System.Drawing.Point(40, 169);
             this.txbMaSach.MaxLength = 50;
             this.txbMaSach.MouseState = MaterialSkin.MouseState.OUT;
             this.txbMaSach.Multiline = false;
             this.txbMaSach.Name = "txbMaSach";
-            this.txbMaSach.Size = new System.Drawing.Size(344, 50);
-            this.txbMaSach.TabIndex = 18;
+            this.txbMaSach.Size = new System.Drawing.Size(376, 50);
+            this.txbMaSach.TabIndex = 2;
             this.txbMaSach.Text = "";
             this.txbMaSach.TrailingIcon = null;
+            this.txbMaSach.KeyDown += new System.Windows.Forms.KeyEventHandler(this.readOnlyTxb_KeyDown);
             // 
             // txbGiaGiam
             // 
@@ -202,14 +204,13 @@
             this.txbGiaGiam.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txbGiaGiam.Hint = "Giá giảm";
             this.txbGiaGiam.LeadingIcon = null;
-            this.txbGiaGiam.Location = new System.Drawing.Point(88, 353);
-            this.txbGiaGiam.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txbGiaGiam.Location = new System.Drawing.Point(40, 304);
             this.txbGiaGiam.MaxLength = 100;
             this.txbGiaGiam.MouseState = MaterialSkin.MouseState.OUT;
             this.txbGiaGiam.Multiline = false;
             this.txbGiaGiam.Name = "txbGiaGiam";
-            this.txbGiaGiam.Size = new System.Drawing.Size(344, 50);
-            this.txbGiaGiam.TabIndex = 19;
+            this.txbGiaGiam.Size = new System.Drawing.Size(376, 50);
+            this.txbGiaGiam.TabIndex = 4;
             this.txbGiaGiam.Text = "";
             this.txbGiaGiam.TrailingIcon = null;
             this.txbGiaGiam.TextChanged += new System.EventHandler(this.txbGiaGiam_TextChanged);
@@ -224,16 +225,16 @@
             this.txbGiaTruocGiam.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txbGiaTruocGiam.Hint = "Giá trước giảm";
             this.txbGiaTruocGiam.LeadingIcon = null;
-            this.txbGiaTruocGiam.Location = new System.Drawing.Point(88, 443);
-            this.txbGiaTruocGiam.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txbGiaTruocGiam.Location = new System.Drawing.Point(40, 237);
             this.txbGiaTruocGiam.MaxLength = 100;
             this.txbGiaTruocGiam.MouseState = MaterialSkin.MouseState.OUT;
             this.txbGiaTruocGiam.Multiline = false;
             this.txbGiaTruocGiam.Name = "txbGiaTruocGiam";
-            this.txbGiaTruocGiam.Size = new System.Drawing.Size(344, 50);
-            this.txbGiaTruocGiam.TabIndex = 20;
+            this.txbGiaTruocGiam.Size = new System.Drawing.Size(376, 50);
+            this.txbGiaTruocGiam.TabIndex = 3;
             this.txbGiaTruocGiam.Text = "";
             this.txbGiaTruocGiam.TrailingIcon = null;
+            this.txbGiaTruocGiam.KeyDown += new System.Windows.Forms.KeyEventHandler(this.readOnlyTxb_KeyDown);
             this.txbGiaTruocGiam.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbGiaTruocGiam_KeyPress);
             // 
             // txbGiamDen
@@ -244,14 +245,13 @@
             this.txbGiamDen.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txbGiamDen.Hint = "Giảm đến";
             this.txbGiamDen.LeadingIcon = null;
-            this.txbGiamDen.Location = new System.Drawing.Point(88, 547);
-            this.txbGiamDen.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txbGiamDen.Location = new System.Drawing.Point(40, 370);
             this.txbGiamDen.MaxLength = 100;
             this.txbGiamDen.MouseState = MaterialSkin.MouseState.OUT;
             this.txbGiamDen.Multiline = false;
             this.txbGiamDen.Name = "txbGiamDen";
-            this.txbGiamDen.Size = new System.Drawing.Size(344, 50);
-            this.txbGiamDen.TabIndex = 21;
+            this.txbGiamDen.Size = new System.Drawing.Size(376, 50);
+            this.txbGiamDen.TabIndex = 5;
             this.txbGiamDen.Text = "";
             this.txbGiamDen.TrailingIcon = null;
             this.txbGiamDen.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbGiamDen_KeyPress);
@@ -272,21 +272,20 @@
             this.cbListSach.Hint = "Tên sách";
             this.cbListSach.IntegralHeight = false;
             this.cbListSach.ItemHeight = 43;
-            this.cbListSach.Location = new System.Drawing.Point(88, 260);
-            this.cbListSach.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cbListSach.Location = new System.Drawing.Point(40, 102);
             this.cbListSach.MaxDropDownItems = 4;
             this.cbListSach.MouseState = MaterialSkin.MouseState.OUT;
             this.cbListSach.Name = "cbListSach";
-            this.cbListSach.Size = new System.Drawing.Size(344, 49);
+            this.cbListSach.Size = new System.Drawing.Size(376, 49);
             this.cbListSach.StartIndex = 0;
-            this.cbListSach.TabIndex = 31;
+            this.cbListSach.TabIndex = 1;
             this.cbListSach.SelectedIndexChanged += new System.EventHandler(this.cbListSach_SelectedIndexChanged);
             // 
             // ThemGiamGia
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1624, 894);
+            this.ClientSize = new System.Drawing.Size(1054, 526);
             this.Controls.Add(this.cbListSach);
             this.Controls.Add(this.txbGiamDen);
             this.Controls.Add(this.txbGiaTruocGiam);
@@ -296,9 +295,10 @@
             this.Controls.Add(this.btnHuyChon);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.dtgvList);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.FormStyle = MaterialSkin.Controls.MaterialForm.FormStyles.ActionBar_48;
             this.Name = "ThemGiamGia";
-            this.Padding = new System.Windows.Forms.Padding(4, 100, 4, 5);
+            this.Padding = new System.Windows.Forms.Padding(3, 72, 3, 3);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Giảm giá sách";
             ((System.ComponentModel.ISupportInitialize)(this.dtgvList)).EndInit();
             this.ResumeLayout(false);

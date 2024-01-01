@@ -48,14 +48,13 @@
             this.txbDiaChi.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txbDiaChi.Hint = "Địa chỉ";
             this.txbDiaChi.LeadingIcon = null;
-            this.txbDiaChi.Location = new System.Drawing.Point(70, 483);
-            this.txbDiaChi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txbDiaChi.Location = new System.Drawing.Point(47, 309);
             this.txbDiaChi.MaxLength = 100;
             this.txbDiaChi.MouseState = MaterialSkin.MouseState.OUT;
             this.txbDiaChi.Multiline = false;
             this.txbDiaChi.Name = "txbDiaChi";
-            this.txbDiaChi.Size = new System.Drawing.Size(776, 50);
-            this.txbDiaChi.TabIndex = 6;
+            this.txbDiaChi.Size = new System.Drawing.Size(517, 50);
+            this.txbDiaChi.TabIndex = 7;
             this.txbDiaChi.Text = "";
             this.txbDiaChi.TrailingIcon = null;
             // 
@@ -67,16 +66,16 @@
             this.txbSDT.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txbSDT.Hint = "Số điện thoại";
             this.txbSDT.LeadingIcon = null;
-            this.txbSDT.Location = new System.Drawing.Point(70, 266);
-            this.txbSDT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txbSDT.Location = new System.Drawing.Point(47, 170);
             this.txbSDT.MaxLength = 10;
             this.txbSDT.MouseState = MaterialSkin.MouseState.OUT;
             this.txbSDT.Multiline = false;
             this.txbSDT.Name = "txbSDT";
-            this.txbSDT.Size = new System.Drawing.Size(381, 50);
-            this.txbSDT.TabIndex = 4;
+            this.txbSDT.Size = new System.Drawing.Size(254, 50);
+            this.txbSDT.TabIndex = 3;
             this.txbSDT.Text = "";
             this.txbSDT.TrailingIcon = null;
+            this.txbSDT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbSDT_KeyPress);
             // 
             // txbHoTen
             // 
@@ -86,14 +85,13 @@
             this.txbHoTen.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txbHoTen.Hint = "Họ tên";
             this.txbHoTen.LeadingIcon = null;
-            this.txbHoTen.Location = new System.Drawing.Point(314, 158);
-            this.txbHoTen.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txbHoTen.Location = new System.Drawing.Point(209, 101);
             this.txbHoTen.MaxLength = 50;
             this.txbHoTen.MouseState = MaterialSkin.MouseState.OUT;
             this.txbHoTen.Multiline = false;
             this.txbHoTen.Name = "txbHoTen";
-            this.txbHoTen.Size = new System.Drawing.Size(532, 50);
-            this.txbHoTen.TabIndex = 1;
+            this.txbHoTen.Size = new System.Drawing.Size(355, 50);
+            this.txbHoTen.TabIndex = 2;
             this.txbHoTen.Text = "";
             this.txbHoTen.TrailingIcon = null;
             // 
@@ -106,16 +104,17 @@
             this.txbMaNV.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txbMaNV.Hint = "Mã nhân viên";
             this.txbMaNV.LeadingIcon = null;
-            this.txbMaNV.Location = new System.Drawing.Point(70, 158);
-            this.txbMaNV.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txbMaNV.Location = new System.Drawing.Point(47, 101);
             this.txbMaNV.MaxLength = 50;
             this.txbMaNV.MouseState = MaterialSkin.MouseState.OUT;
             this.txbMaNV.Multiline = false;
             this.txbMaNV.Name = "txbMaNV";
-            this.txbMaNV.Size = new System.Drawing.Size(222, 50);
-            this.txbMaNV.TabIndex = 6;
+            this.txbMaNV.Size = new System.Drawing.Size(148, 50);
+            this.txbMaNV.TabIndex = 1;
+            this.txbMaNV.TabStop = false;
             this.txbMaNV.Text = "";
             this.txbMaNV.TrailingIcon = null;
+            this.txbMaNV.KeyDown += new System.Windows.Forms.KeyEventHandler(this.readOnlyTxb_KeyDown);
             // 
             // txbCCCD
             // 
@@ -125,16 +124,16 @@
             this.txbCCCD.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txbCCCD.Hint = "Số CCCD";
             this.txbCCCD.LeadingIcon = null;
-            this.txbCCCD.Location = new System.Drawing.Point(70, 375);
-            this.txbCCCD.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txbCCCD.Location = new System.Drawing.Point(47, 240);
             this.txbCCCD.MaxLength = 10;
             this.txbCCCD.MouseState = MaterialSkin.MouseState.OUT;
             this.txbCCCD.Multiline = false;
             this.txbCCCD.Name = "txbCCCD";
-            this.txbCCCD.Size = new System.Drawing.Size(381, 50);
-            this.txbCCCD.TabIndex = 2;
+            this.txbCCCD.Size = new System.Drawing.Size(254, 50);
+            this.txbCCCD.TabIndex = 5;
             this.txbCCCD.Text = "";
             this.txbCCCD.TrailingIcon = null;
+            this.txbCCCD.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbCCCD_KeyPress);
             // 
             // txbEmail
             // 
@@ -144,14 +143,13 @@
             this.txbEmail.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txbEmail.Hint = "Email";
             this.txbEmail.LeadingIcon = null;
-            this.txbEmail.Location = new System.Drawing.Point(472, 266);
-            this.txbEmail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txbEmail.Location = new System.Drawing.Point(315, 170);
             this.txbEmail.MaxLength = 25;
             this.txbEmail.MouseState = MaterialSkin.MouseState.OUT;
             this.txbEmail.Multiline = false;
             this.txbEmail.Name = "txbEmail";
-            this.txbEmail.Size = new System.Drawing.Size(374, 50);
-            this.txbEmail.TabIndex = 5;
+            this.txbEmail.Size = new System.Drawing.Size(249, 50);
+            this.txbEmail.TabIndex = 4;
             this.txbEmail.Text = "";
             this.txbEmail.TrailingIcon = null;
             // 
@@ -163,14 +161,13 @@
             this.txbNgaySinh.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txbNgaySinh.Hint = "Ngày sinh";
             this.txbNgaySinh.LeadingIcon = null;
-            this.txbNgaySinh.Location = new System.Drawing.Point(472, 375);
-            this.txbNgaySinh.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txbNgaySinh.Location = new System.Drawing.Point(315, 240);
             this.txbNgaySinh.MaxLength = 25;
             this.txbNgaySinh.MouseState = MaterialSkin.MouseState.OUT;
             this.txbNgaySinh.Multiline = false;
             this.txbNgaySinh.Name = "txbNgaySinh";
-            this.txbNgaySinh.Size = new System.Drawing.Size(374, 50);
-            this.txbNgaySinh.TabIndex = 5;
+            this.txbNgaySinh.Size = new System.Drawing.Size(249, 50);
+            this.txbNgaySinh.TabIndex = 6;
             this.txbNgaySinh.Text = "";
             this.txbNgaySinh.TrailingIcon = null;
             this.txbNgaySinh.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbNgaySinh_KeyPress);
@@ -181,15 +178,16 @@
             this.btnThoat.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnThoat.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.btnThoat.Depth = 0;
+            this.btnThoat.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnThoat.HighEmphasis = true;
             this.btnThoat.Icon = null;
-            this.btnThoat.Location = new System.Drawing.Point(328, 602);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(6, 9, 6, 9);
+            this.btnThoat.Location = new System.Drawing.Point(447, 385);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnThoat.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnThoat.Size = new System.Drawing.Size(140, 56);
-            this.btnThoat.TabIndex = 13;
+            this.btnThoat.Size = new System.Drawing.Size(117, 39);
+            this.btnThoat.TabIndex = 10;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
             this.btnThoat.UseAccentColor = false;
@@ -204,13 +202,13 @@
             this.btnXoa.Depth = 0;
             this.btnXoa.HighEmphasis = true;
             this.btnXoa.Icon = null;
-            this.btnXoa.Location = new System.Drawing.Point(492, 602);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(6, 9, 6, 9);
+            this.btnXoa.Location = new System.Drawing.Point(310, 385);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnXoa.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnXoa.Size = new System.Drawing.Size(154, 56);
-            this.btnXoa.TabIndex = 14;
+            this.btnXoa.Size = new System.Drawing.Size(117, 39);
+            this.btnXoa.TabIndex = 9;
             this.btnXoa.Text = "Xoá";
             this.btnXoa.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
             this.btnXoa.UseAccentColor = false;
@@ -225,13 +223,13 @@
             this.btnThem.Depth = 0;
             this.btnThem.HighEmphasis = true;
             this.btnThem.Icon = null;
-            this.btnThem.Location = new System.Drawing.Point(670, 602);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(6, 9, 6, 9);
+            this.btnThem.Location = new System.Drawing.Point(173, 385);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnThem.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnThem.Name = "btnThem";
             this.btnThem.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnThem.Size = new System.Drawing.Size(176, 56);
-            this.btnThem.TabIndex = 15;
+            this.btnThem.Size = new System.Drawing.Size(117, 39);
+            this.btnThem.TabIndex = 8;
             this.btnThem.Text = "Thêm";
             this.btnThem.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnThem.UseAccentColor = false;
@@ -240,9 +238,11 @@
             // 
             // ThemNhanVien
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AcceptButton = this.btnThem;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(900, 716);
+            this.CancelButton = this.btnThoat;
+            this.ClientSize = new System.Drawing.Size(600, 458);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnThem);
@@ -254,9 +254,9 @@
             this.Controls.Add(this.txbHoTen);
             this.Controls.Add(this.txbMaNV);
             this.FormStyle = MaterialSkin.Controls.MaterialForm.FormStyles.ActionBar_48;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ThemNhanVien";
-            this.Padding = new System.Windows.Forms.Padding(4, 112, 4, 5);
+            this.Padding = new System.Windows.Forms.Padding(3, 72, 3, 3);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Thêm nhân viên";
             this.ResumeLayout(false);
 

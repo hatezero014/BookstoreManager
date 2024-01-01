@@ -7,17 +7,19 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Controls;
 using System.Windows.Forms;
 
 namespace BookstoreManager
 {
     public partial class NhapSach : MaterialForm
     {
+
+        private PrintDocument printDocument;
         public NhapSach(string maNV)
         {
             InitializeComponent();
@@ -26,7 +28,69 @@ namespace BookstoreManager
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(Color.FromArgb(0, 84, 195), Color.FromArgb(13, 0, 195), Color.FromArgb(0, 182, 195), Color.FromArgb(0, 155, 179), TextShade.WHITE);
 
+            printDocument = new PrintDocument();
+            printDocument.PrintPage += PrintDocument_PrintPage; ;
+
             Load(maNV);
+        }
+
+        private void PrintDocument_PrintPage(object sender, PrintPageEventArgs e)
+        {
+            Font titleFont = new Font("Arial", 18, FontStyle.Bold);
+            Font headerFont = new Font("Arial", 13, FontStyle.Bold);
+            Font normalFont = new Font("Arial", 13);
+            Font totalFont = new Font("Arial", 13, FontStyle.Bold);
+
+            float x = 20, y = 10;
+
+            float titleWidth = e.Graphics.MeasureString("Hóa Đơn Bán Sách", titleFont).Width;
+
+            float titleX = (e.PageBounds.Width - titleWidth) / 2;
+
+            e.Graphics.DrawString("Hóa Đơn Nhập Sách", titleFont, Brushes.Black, titleX, y);
+            y += 60;
+
+            NHACUNGCAP nhaCungCap = NHACUNGCAPDAO.Instance.GetNCCByID(txbMaNCC.Text);
+
+            e.Graphics.DrawString($"Mã Hóa Đơn: {txbMaHD.Text}", headerFont, Brushes.Black, x, y);
+            y += 30;
+            e.Graphics.DrawString($"Tên Nhà Cung Cấp: {nhaCungCap.TenNCC}", headerFont, Brushes.Black, x, y);
+            y += 30;
+            e.Graphics.DrawString($"Mã Nhân Viên: {txbMaNV.Text}", headerFont, Brushes.Black, x, y);
+            y += 30;
+            e.Graphics.DrawString($"Ngày tạo: {txbNgayTao.Text}", headerFont, Brushes.Black, x, y);
+            y += 70;
+
+            e.Graphics.DrawString("Mã Sách", headerFont, Brushes.Black, x, y);
+            e.Graphics.DrawString("Tên Sách", headerFont, Brushes.Black, x + 100, y);
+            e.Graphics.DrawString("Số Lượng", headerFont, Brushes.Black, x + 450, y);
+            e.Graphics.DrawString("Đơn Giá", headerFont, Brushes.Black, x + 600, y);
+            e.Graphics.DrawString("Thành Tiền", headerFont, Brushes.Black, x + 700, y);
+            y += 20;
+            decimal totalAmount = 0;
+
+            for (int i = 0; i < dtgvCTNS.Rows.Count - 1; i++)
+            {
+                DataGridViewRow row = dtgvCTNS.Rows[i];
+                string maSach = row.Cells["Column1"].Value.ToString().Trim();
+                string tenSach = row.Cells["Column2"].Value.ToString().Trim();
+                int soLuong = Convert.ToInt32(row.Cells["Column3"].Value.ToString().Trim());
+                decimal donGia = Convert.ToDecimal(row.Cells["Column4"].Value.ToString().Trim());
+                decimal thanhTien = Convert.ToDecimal(row.Cells["Column5"].Value.ToString().Trim());
+                totalAmount += thanhTien;
+
+                e.Graphics.DrawString(maSach, normalFont, Brushes.Black, x, y);
+                e.Graphics.DrawString(tenSach, normalFont, Brushes.Black, x + 100, y);
+                e.Graphics.DrawString(soLuong.ToString(), normalFont, Brushes.Black, x + 450, y);
+                e.Graphics.DrawString(FormatMoney(donGia), normalFont, Brushes.Black, x + 600, y);
+                e.Graphics.DrawString(FormatMoney(thanhTien), normalFont, Brushes.Black, x + 700, y);
+                y += 20;
+            }
+
+            y += 20;
+
+            e.Graphics.DrawString("Tổng Tiền", totalFont, Brushes.Black, x, y);
+            e.Graphics.DrawString(FormatMoney(totalAmount), totalFont, Brushes.Black, x + 700, y);
         }
 
         #region methods
@@ -54,7 +118,7 @@ namespace BookstoreManager
 
         void LoadSach()
         {
-            List<SACH> list = SACHDAO.Instance.GetListSach();
+            List<SACH> list = SACHDAO.Instance.GetListSachNotNull();
 
             cbListSach.DataSource = list;
             cbListSach.DisplayMember = "TenSach";
@@ -237,18 +301,29 @@ namespace BookstoreManager
                         string maSach = row.Cells["Column1"].Value.ToString().Trim();
                         string tenSach = row.Cells["Column2"].Value.ToString().Trim();
                         int soLuong = int.Parse(row.Cells["Column3"].Value.ToString().Trim());
-                        decimal donGia = decimal.Parse(row.Cells["Column4"].Value.ToString().Trim());
+                        decimal giaGoc = decimal.Parse(row.Cells["Column4"].Value.ToString().Trim());
                         decimal thanhTien = decimal.Parse(row.Cells["Column5"].Value.ToString().Trim());
+                        decimal giaBan = decimal.Parse((double.Parse(giaGoc.ToString()) * 1.2).ToString());
 
-                        CTNSDAO.Instance.InsertCTNS(maNS, maSach, donGia, soLuong, thanhTien);
+                        CTNSDAO.Instance.InsertCTNS(maNS, maSach, giaGoc, soLuong, thanhTien);
+
+                        SACHGIAMGIADAO.Instance.DeleteSGGByID(maSach);
 
                         SACH sach = SACHDAO.Instance.GetBookByID(maSach);
                         LOAISACH loaiSach = LOAISACHDAO.Instance.GetLoaiSachByID(sach.MaLS.Trim());
                         NHAXUATBAN nxb = NHAXUATBANDAO.Instance.GetNXBByID(sach.MaNXB);
-                        SACHDAO.Instance.UpdateBookByID(maSach, tenSach, sach.TacGia.Trim(), sach.GiaSach, sach.NamXB, sach.MoTa.Trim(),
-                                                            sach.SoLuong - soLuong, nxb.TenNXB.Trim(), loaiSach.TenLS);
+                        SACHDAO.Instance.UpdateBookByID(maSach, tenSach, sach.TacGia.Trim(), giaBan, sach.NamXB, sach.MoTa.Trim(),
+                                                            sach.SoLuong + soLuong, nxb.TenNXB.Trim(), loaiSach.TenLS, giaGoc);
                     }
                     MessageBox.Show("Tạo hóa đơn thành công!", "Thông báo");
+                    PrintDialog printDialog = new PrintDialog();
+
+                    if (printDialog.ShowDialog() == DialogResult.OK)
+                    {
+                        printDialog.Document = printDocument;
+
+                        printDocument.Print();
+                    }
                     this.Close();
                 }
 
@@ -290,9 +365,11 @@ namespace BookstoreManager
                 thanhToan += thanhTien;
                 lbTongThanhToan.Text = FormatMoney(thanhToan);
 
-                string[] newRowValues = { maSach, tenSach, soLuong, donGia, thanhTien.ToString().Trim() };
+                string[] newRowValues = { maSach, tenSach, soLuong, donGia, FormatMoney(decimal.Parse(thanhTien.ToString().Trim())) };
 
                 dtgvCTNS.Rows.Add(newRowValues);
+
+                Clear();
             }
             else
             {
@@ -314,6 +391,11 @@ namespace BookstoreManager
             {
                 e.Handled = true;
             }
+        }
+
+        private void readOnlyTxb_KeyDown(object sender, KeyEventArgs e)
+        {
+            e.Handled = true;
         }
 
         #endregion

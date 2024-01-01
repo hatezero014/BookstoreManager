@@ -20,6 +20,38 @@ namespace BookstoreManager.DAO
 
         private HOADONBANHANGDAO() { }
 
+        public List<HOADONBANHANG> GetListBHByNgayTao(string ngayTao)
+        {
+            List<HOADONBANHANG> list = new List<HOADONBANHANG>();
+
+            string query = $"SELECT * FROM HOADONBANHANG WHERE NGAYBAN = '{ngayTao}'";
+
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
+
+            foreach (DataRow row in data.Rows)
+            {
+                list.Add(new HOADONBANHANG(row));
+            }
+
+            return list;
+        }
+
+        public List<HOADONBANHANG> GetListBHByNgayTaoAndMaNV(string maNV, string ngayTao)
+        {
+            List<HOADONBANHANG> list = new List<HOADONBANHANG>();
+
+            string query = $"SELECT * FROM HOADONBANHANG WHERE NGAYBAN = '{ngayTao}' AND MANV = '{maNV}'";
+
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
+
+            foreach (DataRow row in data.Rows)
+            {
+                list.Add(new HOADONBANHANG(row));
+            }
+
+            return list;
+        }
+
         public HOADONBANHANG GetHoaDonBHByID(string maBH)
         {
             string query = $"SELECT * FROM HOADONBANHANG WHERE MABH = '{maBH}'";

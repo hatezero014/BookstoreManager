@@ -49,13 +49,13 @@
             this.btnDeleteBook.Depth = 0;
             this.btnDeleteBook.HighEmphasis = true;
             this.btnDeleteBook.Icon = null;
-            this.btnDeleteBook.Location = new System.Drawing.Point(473, 632);
+            this.btnDeleteBook.Location = new System.Drawing.Point(483, 630);
             this.btnDeleteBook.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnDeleteBook.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnDeleteBook.Name = "btnDeleteBook";
             this.btnDeleteBook.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnDeleteBook.Size = new System.Drawing.Size(81, 36);
-            this.btnDeleteBook.TabIndex = 25;
+            this.btnDeleteBook.Size = new System.Drawing.Size(80, 42);
+            this.btnDeleteBook.TabIndex = 8;
             this.btnDeleteBook.Text = "Xoá";
             this.btnDeleteBook.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
             this.btnDeleteBook.UseAccentColor = false;
@@ -70,13 +70,13 @@
             this.btnAddBook.Depth = 0;
             this.btnAddBook.HighEmphasis = true;
             this.btnAddBook.Icon = null;
-            this.btnAddBook.Location = new System.Drawing.Point(569, 632);
+            this.btnAddBook.Location = new System.Drawing.Point(361, 630);
             this.btnAddBook.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnAddBook.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnAddBook.Name = "btnAddBook";
             this.btnAddBook.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnAddBook.Size = new System.Drawing.Size(102, 36);
-            this.btnAddBook.TabIndex = 26;
+            this.btnAddBook.Size = new System.Drawing.Size(102, 42);
+            this.btnAddBook.TabIndex = 7;
             this.btnAddBook.Text = "Thêm";
             this.btnAddBook.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnAddBook.UseAccentColor = false;
@@ -135,8 +135,10 @@
             this.txbMaSach.Name = "txbMaSach";
             this.txbMaSach.Size = new System.Drawing.Size(151, 50);
             this.txbMaSach.TabIndex = 1;
+            this.txbMaSach.TabStop = false;
             this.txbMaSach.Text = "";
             this.txbMaSach.TrailingIcon = null;
+            this.txbMaSach.KeyDown += new System.Windows.Forms.KeyEventHandler(this.readOnlyTxb_KeyDown);
             // 
             // txbMoTa
             // 
@@ -194,6 +196,7 @@
             this.txbNamXB.TabIndex = 5;
             this.txbNamXB.Text = "";
             this.txbNamXB.TrailingIcon = null;
+            this.txbNamXB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbNamXB_KeyPress);
             // 
             // cbLoaiSach
             // 
@@ -236,15 +239,16 @@
             this.btnThoat.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnThoat.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.btnThoat.Depth = 0;
+            this.btnThoat.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnThoat.HighEmphasis = true;
             this.btnThoat.Icon = null;
-            this.btnThoat.Location = new System.Drawing.Point(369, 632);
+            this.btnThoat.Location = new System.Drawing.Point(585, 630);
             this.btnThoat.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnThoat.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnThoat.Size = new System.Drawing.Size(89, 36);
-            this.btnThoat.TabIndex = 25;
+            this.btnThoat.Size = new System.Drawing.Size(86, 42);
+            this.btnThoat.TabIndex = 9;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
             this.btnThoat.UseAccentColor = false;
@@ -256,7 +260,8 @@
             this.AcceptButton = this.btnAddBook;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(705, 707);
+            this.CancelButton = this.btnThoat;
+            this.ClientSize = new System.Drawing.Size(709, 705);
             this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.cbLoaiSach);
             this.Controls.Add(this.txbNamXB);
@@ -271,6 +276,7 @@
             this.FormStyle = MaterialSkin.Controls.MaterialForm.FormStyles.ActionBar_48;
             this.Name = "ThemSach";
             this.Padding = new System.Windows.Forms.Padding(3, 72, 3, 3);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Tạo sách mới";
             this.ResumeLayout(false);
             this.PerformLayout();

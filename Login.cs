@@ -43,8 +43,10 @@ namespace BookstoreManager
             if (isCheckAccount >= 0)
             {
                 TAIKHOAN taiKhoan = TAIKHOANDAO.Instance.GetMaNVByTK(username);
-                Main_Admin main_Admin = new Main_Admin(taiKhoan.MaNV, taiKhoan.Loai);
+                Main_Form main_Admin = new Main_Form(taiKhoan.MaNV, taiKhoan.Loai);
+                this.Hide();
                 main_Admin.ShowDialog();
+                this.Close();
             }
             else
             {

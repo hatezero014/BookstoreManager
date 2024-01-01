@@ -74,6 +74,10 @@ namespace BookstoreManager
         #endregion
 
         #region events
+        private void readOnlyTxb_KeyDown(object sender, KeyEventArgs e)
+        {
+            e.Handled = true;
+        }
 
         private void dtgvListNXB_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -105,6 +109,7 @@ namespace BookstoreManager
 
             if (loaisach != null)
             {
+                SACHDAO.Instance.SoftDeleteByMaNXB(maNXB);
                 if (MessageBox.Show("Bạn có chắc muốn xóa nhà xuất bản này không?", "Warning", MessageBoxButtons.OKCancel) == DialogResult.OK)
                 {
                     if (NHAXUATBANDAO.Instance.DeleteNXBByID(maNXB))

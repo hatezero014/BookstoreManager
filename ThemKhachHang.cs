@@ -40,6 +40,10 @@ namespace BookstoreManager
             txbSDT.Text = "";
             txbDiaChi.Text = "";
         }
+        private void readOnlyTxb_KeyDown(object sender, KeyEventArgs e)
+        {
+            e.Handled = true;
+        }
 
         #endregion
 

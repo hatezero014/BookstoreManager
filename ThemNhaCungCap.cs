@@ -35,6 +35,9 @@ namespace BookstoreManager
 
             foreach (NHACUNGCAP ncc in listNCC)
             {
+                if (ncc.TenNCC == "Đã xóa")
+                    continue;
+
                 DataGridViewRow row = new DataGridViewRow();
 
                 row.CreateCells(dtgvListNCC, ncc.MaNCC, ncc.TenNCC, ncc.SoDT, ncc.DiaChi);
@@ -75,6 +78,10 @@ namespace BookstoreManager
         }
 
         #endregion
+        private void readOnlyTxb_KeyDown(object sender, KeyEventArgs e)
+        {
+            e.Handled = true;
+        }
 
         private void btnHuyChonNCC_Click(object sender, EventArgs e)
         {
@@ -120,7 +127,7 @@ namespace BookstoreManager
             {
                 if (MessageBox.Show("Bạn có chắc muốn xóa nhà cung cấp này không?", "Warning", MessageBoxButtons.OKCancel) == DialogResult.OK)
                 {
-                    if (NHACUNGCAPDAO.Instance.DeleteNCCByID(maNCC))
+                    if (NHACUNGCAPDAO.Instance.SortDelete(maNCC))
                     {
                         MessageBox.Show("Xoá nhà cung cấp thành công!", "Thông báo");
                         LoadInfo();

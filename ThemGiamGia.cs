@@ -119,7 +119,7 @@ namespace BookstoreManager
             {
 
                 cbListSach.Enabled = false;
-                txbGiaTruocGiam.Enabled = false;
+                // txbGiaTruocGiam.Enabled = false;
                 DataGridViewRow selectedRow = dtgvList.Rows[e.RowIndex];
 
                 string maSach = selectedRow.Cells["Column1"].Value.ToString().Trim();
@@ -152,6 +152,7 @@ namespace BookstoreManager
             {
                 if (MessageBox.Show("Bạn có chắc muốn xóa sách giảm giá này không?", "Warning", MessageBoxButtons.OKCancel) == DialogResult.OK)
                 {
+                    SACHDAO.Instance.UpdatePriceBookById(maSach, sachGG.GiaTruocGiam);
                     if (SACHGIAMGIADAO.Instance.DeleteSGGByID(maSach))
                     {
                         MessageBox.Show("Xoá sách giảm giá thành công!", "Thông báo");
@@ -191,6 +192,12 @@ namespace BookstoreManager
                 MessageBox.Show("Ngày tháng không hợp lệ. Vui lòng nhập theo định dạng dd-MM-yyyy.");
                 return;
             }
+            int year = int.Parse(txbGiamDen.Text.Substring(6, 4));
+            if (year < 1900 || year > 2079)
+            {
+                MessageBox.Show("Năm giảm giá không hợp lệ (từ 1900 đến 2079).");
+                return;
+            }
             DateTime parsedDateTime = DateTime.ParseExact(txbGiamDen.Text, "dd-MM-yyyy", CultureInfo.InvariantCulture);
             string giamDen = parsedDateTime.ToString("yyyy-MM-dd");
 
@@ -204,6 +211,7 @@ namespace BookstoreManager
             {
                 if (sachGG == null)
                 {
+                    SACHDAO.Instance.UpdatePriceBookById(maSach, giaGiam);
                     if (SACHGIAMGIADAO.Instance.InsertSGG(maSach, tenSach, giaTruocGiam, giaGiam, giamDen))
                     {
                         MessageBox.Show("Thêm sách giảm giá thành công!", "Thông báo");
@@ -224,6 +232,7 @@ namespace BookstoreManager
             {
                 if (sachGG != null)
                 {
+                    SACHDAO.Instance.UpdatePriceBookById(maSach, giaGiam);
                     if (SACHGIAMGIADAO.Instance.UpdateSGGByID(maSach, tenSach, giaTruocGiam, giaGiam, giamDen))
                     {
                         MessageBox.Show("Cập nhật sách giảm giá thành công!", "Thông báo");
@@ -253,6 +262,7 @@ namespace BookstoreManager
             if (sach != null)
             {
                 txbMaSach.Text = sach.MaSach;
+                // txbGiaTruocGiam.Enabled = false;
                 txbGiaTruocGiam.Text = FormatMoney(decimal.Parse(sach.GiaSach.ToString()));
             }
         }
@@ -307,6 +317,11 @@ namespace BookstoreManager
             {
                 e.Handled = true;
             }
+        }
+
+        private void readOnlyTxb_KeyDown(object sender, KeyEventArgs e)
+        {
+            e.Handled = true;
         }
     }
 }

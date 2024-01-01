@@ -88,6 +88,19 @@ namespace BookstoreManager.DAO
             return null;
         }
 
+        public TAIKHOAN GetTKByMaNV(string maNV)
+        {
+            string query = $"SELECT * FROM TAIKHOAN WHERE MANV = '{maNV}'";
+
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
+
+            if (data.Rows.Count > 0)
+            {
+                return new TAIKHOAN(data.Rows[0]);
+            }
+            return null;
+        }
+
         public bool DeleteTKByMaNV(string maNV)
         {
             string query = $"DELETE TAIKHOAN WHERE MANV = '{maNV}'";

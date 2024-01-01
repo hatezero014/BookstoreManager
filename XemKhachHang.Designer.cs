@@ -96,6 +96,7 @@
             this.txbMaKH.MouseState = MaterialSkin.MouseState.OUT;
             this.txbMaKH.Name = "txbMaKH";
             this.txbMaKH.TrailingIcon = null;
+            this.txbMaKH.KeyDown += new System.Windows.Forms.KeyEventHandler(this.readOnlyTxb_KeyDown);
             // 
             // btnXoaKH
             // 
@@ -117,6 +118,7 @@
             resources.ApplyResources(this.btnThoat, "btnThoat");
             this.btnThoat.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.btnThoat.Depth = 0;
+            this.btnThoat.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnThoat.HighEmphasis = true;
             this.btnThoat.Icon = null;
             this.btnThoat.MouseState = MaterialSkin.MouseState.HOVER;
@@ -129,8 +131,10 @@
             // 
             // XemKhachHang
             // 
+            this.AcceptButton = this.btnCapNhatKH;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnThoat;
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnXoaKH);
             this.Controls.Add(this.btnCapNhatKH);

@@ -20,6 +20,38 @@ namespace BookstoreManager.DAO
 
         private HOADONNHAPSACHDAO() { }
 
+        public List<HOADONNHAPSACH> GetListNSByNgayTao(string ngayTao)
+        {
+            List<HOADONNHAPSACH> list = new List<HOADONNHAPSACH>();
+
+            string query = $"SELECT * FROM HOADONNHAPSACH WHERE NGAYNHAP = '{ngayTao}'";
+
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
+
+            foreach (DataRow row in data.Rows)
+            {
+                list.Add(new HOADONNHAPSACH(row));
+            }
+
+            return list;
+        }
+
+        public List<HOADONNHAPSACH> GetListNSByNgayTaoAndMaNV(string maNV, string ngayTao)
+        {
+            List<HOADONNHAPSACH> list = new List<HOADONNHAPSACH>();
+
+            string query = $"SELECT * FROM HOADONNHAPSACH WHERE NGAYNHAP = '{ngayTao}' AND MANV = '{maNV}'";
+
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
+
+            foreach (DataRow row in data.Rows)
+            {
+                list.Add(new HOADONNHAPSACH(row));
+            }
+
+            return list;
+        }
+
         public HOADONNHAPSACH GetHoaDonNSByID(string maNS)
         {
             string query = $"SELECT * FROM HOADONNHAPSACH WHERE MANS = '{maNS}'";

@@ -41,7 +41,7 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txbNgayTao = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
+            this.btnInHD = new MaterialSkin.Controls.MaterialButton();
             this.btnThoat = new MaterialSkin.Controls.MaterialButton();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvListCTNS)).BeginInit();
             this.SuspendLayout();
@@ -76,7 +76,6 @@
             this.txbMaNV.AnimateReadOnly = false;
             this.txbMaNV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txbMaNV.Depth = 0;
-            this.txbMaNV.Enabled = false;
             this.txbMaNV.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txbMaNV.Hint = "Mã NV quản lí";
             this.txbMaNV.LeadingIcon = null;
@@ -89,13 +88,13 @@
             this.txbMaNV.TabIndex = 33;
             this.txbMaNV.Text = "";
             this.txbMaNV.TrailingIcon = null;
+            this.txbMaNV.KeyDown += new System.Windows.Forms.KeyEventHandler(this.readOnlyTxb_KeyDown);
             // 
             // txbMaNCC
             // 
             this.txbMaNCC.AnimateReadOnly = false;
             this.txbMaNCC.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txbMaNCC.Depth = 0;
-            this.txbMaNCC.Enabled = false;
             this.txbMaNCC.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txbMaNCC.Hint = "Mã NCC";
             this.txbMaNCC.LeadingIcon = null;
@@ -108,13 +107,13 @@
             this.txbMaNCC.TabIndex = 32;
             this.txbMaNCC.Text = "";
             this.txbMaNCC.TrailingIcon = null;
+            this.txbMaNCC.KeyDown += new System.Windows.Forms.KeyEventHandler(this.readOnlyTxb_KeyDown);
             // 
             // txbMaNS
             // 
             this.txbMaNS.AnimateReadOnly = false;
             this.txbMaNS.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txbMaNS.Depth = 0;
-            this.txbMaNS.Enabled = false;
             this.txbMaNS.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txbMaNS.Hint = "Mã hoá đơn";
             this.txbMaNS.LeadingIcon = null;
@@ -127,10 +126,12 @@
             this.txbMaNS.TabIndex = 31;
             this.txbMaNS.Text = "";
             this.txbMaNS.TrailingIcon = null;
+            this.txbMaNS.KeyDown += new System.Windows.Forms.KeyEventHandler(this.readOnlyTxb_KeyDown);
             // 
             // dtgvListCTNS
             // 
             this.dtgvListCTNS.AllowUserToDeleteRows = false;
+            this.dtgvListCTNS.BackgroundColor = System.Drawing.Color.MintCream;
             this.dtgvListCTNS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvListCTNS.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -145,6 +146,7 @@
             this.dtgvListCTNS.RowTemplate.Height = 24;
             this.dtgvListCTNS.Size = new System.Drawing.Size(865, 599);
             this.dtgvListCTNS.TabIndex = 30;
+            this.dtgvListCTNS.TabStop = false;
             // 
             // Column1
             // 
@@ -191,7 +193,6 @@
             this.txbNgayTao.AnimateReadOnly = false;
             this.txbNgayTao.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txbNgayTao.Depth = 0;
-            this.txbNgayTao.Enabled = false;
             this.txbNgayTao.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txbNgayTao.Hint = "Ngày";
             this.txbNgayTao.LeadingIcon = null;
@@ -204,27 +205,29 @@
             this.txbNgayTao.TabIndex = 33;
             this.txbNgayTao.Text = "";
             this.txbNgayTao.TrailingIcon = null;
+            this.txbNgayTao.KeyDown += new System.Windows.Forms.KeyEventHandler(this.readOnlyTxb_KeyDown);
             // 
-            // materialButton1
+            // btnInHD
             // 
-            this.materialButton1.AutoSize = false;
-            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton1.Depth = 0;
-            this.materialButton1.HighEmphasis = true;
-            this.materialButton1.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton1.Icon")));
-            this.materialButton1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.materialButton1.Location = new System.Drawing.Point(741, 788);
-            this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton1.Name = "materialButton1";
-            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton1.Size = new System.Drawing.Size(153, 43);
-            this.materialButton1.TabIndex = 50;
-            this.materialButton1.Text = "In hoá đơn";
-            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton1.UseAccentColor = false;
-            this.materialButton1.UseVisualStyleBackColor = true;
+            this.btnInHD.AutoSize = false;
+            this.btnInHD.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnInHD.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnInHD.Depth = 0;
+            this.btnInHD.HighEmphasis = true;
+            this.btnInHD.Icon = ((System.Drawing.Image)(resources.GetObject("btnInHD.Icon")));
+            this.btnInHD.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnInHD.Location = new System.Drawing.Point(637, 788);
+            this.btnInHD.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnInHD.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnInHD.Name = "btnInHD";
+            this.btnInHD.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnInHD.Size = new System.Drawing.Size(153, 43);
+            this.btnInHD.TabIndex = 1;
+            this.btnInHD.Text = "In hoá đơn";
+            this.btnInHD.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnInHD.UseAccentColor = false;
+            this.btnInHD.UseVisualStyleBackColor = true;
+            this.btnInHD.Click += new System.EventHandler(this.btnInHD_Click);
             // 
             // btnThoat
             // 
@@ -232,27 +235,30 @@
             this.btnThoat.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnThoat.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.btnThoat.Depth = 0;
+            this.btnThoat.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnThoat.HighEmphasis = true;
             this.btnThoat.Icon = null;
             this.btnThoat.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnThoat.Location = new System.Drawing.Point(639, 788);
+            this.btnThoat.Location = new System.Drawing.Point(807, 788);
             this.btnThoat.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnThoat.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.NoAccentTextColor = System.Drawing.Color.Empty;
             this.btnThoat.Size = new System.Drawing.Size(87, 43);
-            this.btnThoat.TabIndex = 51;
+            this.btnThoat.TabIndex = 2;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
             this.btnThoat.UseAccentColor = false;
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // XemCTNS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(934, 861);
-            this.Controls.Add(this.materialButton1);
+            this.CancelButton = this.btnThoat;
+            this.ClientSize = new System.Drawing.Size(935, 869);
+            this.Controls.Add(this.btnInHD);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.lbThanhToan);
             this.Controls.Add(this.materialLabel1);
@@ -262,8 +268,10 @@
             this.Controls.Add(this.txbMaNS);
             this.Controls.Add(this.dtgvListCTNS);
             this.FormStyle = MaterialSkin.Controls.MaterialForm.FormStyles.ActionBar_48;
+            this.MinimumSize = new System.Drawing.Size(935, 690);
             this.Name = "XemCTNS";
             this.Padding = new System.Windows.Forms.Padding(3, 72, 3, 3);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Chi tiết nhập sách";
             ((System.ComponentModel.ISupportInitialize)(this.dtgvListCTNS)).EndInit();
             this.ResumeLayout(false);
@@ -285,7 +293,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private MaterialSkin.Controls.MaterialTextBox txbNgayTao;
-        private MaterialSkin.Controls.MaterialButton materialButton1;
+        private MaterialSkin.Controls.MaterialButton btnInHD;
         private MaterialSkin.Controls.MaterialButton btnThoat;
     }
 }

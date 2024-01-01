@@ -52,9 +52,10 @@
             this.txbMaKH.Multiline = false;
             this.txbMaKH.Name = "txbMaKH";
             this.txbMaKH.Size = new System.Drawing.Size(178, 50);
-            this.txbMaKH.TabIndex = 10;
+            this.txbMaKH.TabIndex = 1;
             this.txbMaKH.Text = "";
             this.txbMaKH.TrailingIcon = null;
+            this.txbMaKH.KeyDown += new System.Windows.Forms.KeyEventHandler(this.readOnlyTxb_KeyDown);
             // 
             // txbHoTen
             // 
@@ -70,7 +71,7 @@
             this.txbHoTen.Multiline = false;
             this.txbHoTen.Name = "txbHoTen";
             this.txbHoTen.Size = new System.Drawing.Size(324, 50);
-            this.txbHoTen.TabIndex = 1;
+            this.txbHoTen.TabIndex = 2;
             this.txbHoTen.Text = "";
             this.txbHoTen.TrailingIcon = null;
             // 
@@ -88,7 +89,7 @@
             this.txbSDT.Multiline = false;
             this.txbSDT.Name = "txbSDT";
             this.txbSDT.Size = new System.Drawing.Size(517, 50);
-            this.txbSDT.TabIndex = 2;
+            this.txbSDT.TabIndex = 3;
             this.txbSDT.Text = "";
             this.txbSDT.TrailingIcon = null;
             // 
@@ -106,7 +107,7 @@
             this.txbDiaChi.Multiline = false;
             this.txbDiaChi.Name = "txbDiaChi";
             this.txbDiaChi.Size = new System.Drawing.Size(517, 50);
-            this.txbDiaChi.TabIndex = 3;
+            this.txbDiaChi.TabIndex = 4;
             this.txbDiaChi.Text = "";
             this.txbDiaChi.TrailingIcon = null;
             // 
@@ -118,13 +119,13 @@
             this.btnThem.Depth = 0;
             this.btnThem.HighEmphasis = true;
             this.btnThem.Icon = null;
-            this.btnThem.Location = new System.Drawing.Point(437, 319);
+            this.btnThem.Location = new System.Drawing.Point(207, 315);
             this.btnThem.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnThem.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnThem.Name = "btnThem";
             this.btnThem.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnThem.Size = new System.Drawing.Size(117, 36);
-            this.btnThem.TabIndex = 12;
+            this.btnThem.Size = new System.Drawing.Size(117, 40);
+            this.btnThem.TabIndex = 5;
             this.btnThem.Text = "Thêm";
             this.btnThem.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnThem.UseAccentColor = false;
@@ -139,13 +140,13 @@
             this.btnXoa.Depth = 0;
             this.btnXoa.HighEmphasis = true;
             this.btnXoa.Icon = null;
-            this.btnXoa.Location = new System.Drawing.Point(318, 319);
+            this.btnXoa.Location = new System.Drawing.Point(346, 315);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnXoa.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnXoa.Size = new System.Drawing.Size(103, 36);
-            this.btnXoa.TabIndex = 11;
+            this.btnXoa.Size = new System.Drawing.Size(93, 40);
+            this.btnXoa.TabIndex = 6;
             this.btnXoa.Text = "Xoá";
             this.btnXoa.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
             this.btnXoa.UseAccentColor = false;
@@ -158,15 +159,16 @@
             this.btnThoat.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnThoat.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.btnThoat.Depth = 0;
+            this.btnThoat.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnThoat.HighEmphasis = true;
             this.btnThoat.Icon = null;
-            this.btnThoat.Location = new System.Drawing.Point(209, 319);
+            this.btnThoat.Location = new System.Drawing.Point(461, 315);
             this.btnThoat.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnThoat.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnThoat.Size = new System.Drawing.Size(93, 36);
-            this.btnThoat.TabIndex = 10;
+            this.btnThoat.Size = new System.Drawing.Size(93, 40);
+            this.btnThoat.TabIndex = 7;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
             this.btnThoat.UseAccentColor = false;
@@ -177,7 +179,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(593, 381);
+            this.CancelButton = this.btnThoat;
+            this.ClientSize = new System.Drawing.Size(593, 384);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnThem);
@@ -186,8 +189,11 @@
             this.Controls.Add(this.txbHoTen);
             this.Controls.Add(this.txbMaKH);
             this.FormStyle = MaterialSkin.Controls.MaterialForm.FormStyles.ActionBar_48;
+            this.MaximumSize = new System.Drawing.Size(593, 384);
+            this.MinimumSize = new System.Drawing.Size(593, 384);
             this.Name = "ThemKhachHang";
             this.Padding = new System.Windows.Forms.Padding(3, 72, 3, 3);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Thêm khách hàng mới";
             this.ResumeLayout(false);
 

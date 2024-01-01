@@ -46,6 +46,7 @@
             this.txbMaSach = new MaterialSkin.Controls.MaterialTextBox();
             this.txbSLSach = new MaterialSkin.Controls.MaterialTextBox();
             this.txbGiaSach = new MaterialSkin.Controls.MaterialTextBox();
+            this.txbGiaGoc = new MaterialSkin.Controls.MaterialTextBox();
             this.SuspendLayout();
             // 
             // materialLabel1
@@ -53,7 +54,7 @@
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.Location = new System.Drawing.Point(36, 389);
+            this.materialLabel1.Location = new System.Drawing.Point(36, 390);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(42, 19);
@@ -75,13 +76,13 @@
             this.cbLoaiSach.Hint = "Loại sách";
             this.cbLoaiSach.IntegralHeight = false;
             this.cbLoaiSach.ItemHeight = 43;
-            this.cbLoaiSach.Location = new System.Drawing.Point(35, 309);
+            this.cbLoaiSach.Location = new System.Drawing.Point(353, 238);
             this.cbLoaiSach.MaxDropDownItems = 4;
             this.cbLoaiSach.MouseState = MaterialSkin.MouseState.OUT;
             this.cbLoaiSach.Name = "cbLoaiSach";
-            this.cbLoaiSach.Size = new System.Drawing.Size(300, 49);
+            this.cbLoaiSach.Size = new System.Drawing.Size(316, 49);
             this.cbLoaiSach.StartIndex = 2;
-            this.cbLoaiSach.TabIndex = 5;
+            this.cbLoaiSach.TabIndex = 6;
             // 
             // txbNamXBSach
             // 
@@ -91,13 +92,13 @@
             this.txbNamXBSach.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txbNamXBSach.Hint = "Năm xuất bản";
             this.txbNamXBSach.LeadingIcon = null;
-            this.txbNamXBSach.Location = new System.Drawing.Point(353, 237);
+            this.txbNamXBSach.Location = new System.Drawing.Point(35, 308);
             this.txbNamXBSach.MaxLength = 4;
             this.txbNamXBSach.MouseState = MaterialSkin.MouseState.OUT;
             this.txbNamXBSach.Multiline = false;
             this.txbNamXBSach.Name = "txbNamXBSach";
-            this.txbNamXBSach.Size = new System.Drawing.Size(316, 50);
-            this.txbNamXBSach.TabIndex = 4;
+            this.txbNamXBSach.Size = new System.Drawing.Size(300, 50);
+            this.txbNamXBSach.TabIndex = 7;
             this.txbNamXBSach.Text = "";
             this.txbNamXBSach.TrailingIcon = null;
             // 
@@ -122,7 +123,7 @@
             this.cbNXBSach.Name = "cbNXBSach";
             this.cbNXBSach.Size = new System.Drawing.Size(316, 49);
             this.cbNXBSach.StartIndex = 0;
-            this.cbNXBSach.TabIndex = 6;
+            this.cbNXBSach.TabIndex = 8;
             // 
             // txbMoTaSach
             // 
@@ -132,12 +133,12 @@
             this.txbMoTaSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbMoTaSach.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.txbMoTaSach.Hint = "Mô tả";
-            this.txbMoTaSach.Location = new System.Drawing.Point(35, 420);
+            this.txbMoTaSach.Location = new System.Drawing.Point(35, 421);
             this.txbMoTaSach.MaxLength = 300;
             this.txbMoTaSach.MouseState = MaterialSkin.MouseState.HOVER;
             this.txbMoTaSach.Name = "txbMoTaSach";
             this.txbMoTaSach.Size = new System.Drawing.Size(635, 259);
-            this.txbMoTaSach.TabIndex = 7;
+            this.txbMoTaSach.TabIndex = 9;
             this.txbMoTaSach.Text = "";
             // 
             // btnThoat
@@ -146,15 +147,16 @@
             this.btnThoat.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnThoat.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.btnThoat.Depth = 0;
+            this.btnThoat.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnThoat.HighEmphasis = true;
             this.btnThoat.Icon = null;
-            this.btnThoat.Location = new System.Drawing.Point(367, 711);
+            this.btnThoat.Location = new System.Drawing.Point(581, 708);
             this.btnThoat.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnThoat.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnThoat.Size = new System.Drawing.Size(89, 36);
-            this.btnThoat.TabIndex = 35;
+            this.btnThoat.Size = new System.Drawing.Size(89, 40);
+            this.btnThoat.TabIndex = 12;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
             this.btnThoat.UseAccentColor = false;
@@ -169,13 +171,13 @@
             this.btnDeleteBook.Depth = 0;
             this.btnDeleteBook.HighEmphasis = true;
             this.btnDeleteBook.Icon = null;
-            this.btnDeleteBook.Location = new System.Drawing.Point(471, 711);
+            this.btnDeleteBook.Location = new System.Drawing.Point(471, 708);
             this.btnDeleteBook.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnDeleteBook.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnDeleteBook.Name = "btnDeleteBook";
             this.btnDeleteBook.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnDeleteBook.Size = new System.Drawing.Size(81, 36);
-            this.btnDeleteBook.TabIndex = 36;
+            this.btnDeleteBook.Size = new System.Drawing.Size(89, 40);
+            this.btnDeleteBook.TabIndex = 11;
             this.btnDeleteBook.Text = "Xoá";
             this.btnDeleteBook.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
             this.btnDeleteBook.UseAccentColor = false;
@@ -190,13 +192,13 @@
             this.btnUpdateSach.Depth = 0;
             this.btnUpdateSach.HighEmphasis = true;
             this.btnUpdateSach.Icon = null;
-            this.btnUpdateSach.Location = new System.Drawing.Point(567, 711);
+            this.btnUpdateSach.Location = new System.Drawing.Point(350, 708);
             this.btnUpdateSach.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnUpdateSach.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnUpdateSach.Name = "btnUpdateSach";
             this.btnUpdateSach.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnUpdateSach.Size = new System.Drawing.Size(102, 36);
-            this.btnUpdateSach.TabIndex = 37;
+            this.btnUpdateSach.Size = new System.Drawing.Size(102, 40);
+            this.btnUpdateSach.TabIndex = 10;
             this.btnUpdateSach.Text = "Cập nhật";
             this.btnUpdateSach.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnUpdateSach.UseAccentColor = false;
@@ -211,13 +213,13 @@
             this.txbTenSach.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txbTenSach.Hint = "Tên sách";
             this.txbTenSach.LeadingIcon = null;
-            this.txbTenSach.Location = new System.Drawing.Point(232, 98);
+            this.txbTenSach.Location = new System.Drawing.Point(35, 166);
             this.txbTenSach.MaxLength = 100;
             this.txbTenSach.MouseState = MaterialSkin.MouseState.OUT;
             this.txbTenSach.Multiline = false;
             this.txbTenSach.Name = "txbTenSach";
-            this.txbTenSach.Size = new System.Drawing.Size(438, 50);
-            this.txbTenSach.TabIndex = 1;
+            this.txbTenSach.Size = new System.Drawing.Size(408, 50);
+            this.txbTenSach.TabIndex = 3;
             this.txbTenSach.Text = "";
             this.txbTenSach.TrailingIcon = null;
             // 
@@ -235,7 +237,7 @@
             this.txbTacGiaSach.Multiline = false;
             this.txbTacGiaSach.Name = "txbTacGiaSach";
             this.txbTacGiaSach.Size = new System.Drawing.Size(300, 50);
-            this.txbTacGiaSach.TabIndex = 3;
+            this.txbTacGiaSach.TabIndex = 5;
             this.txbTacGiaSach.Text = "";
             this.txbTacGiaSach.TrailingIcon = null;
             // 
@@ -254,9 +256,10 @@
             this.txbMaSach.Multiline = false;
             this.txbMaSach.Name = "txbMaSach";
             this.txbMaSach.Size = new System.Drawing.Size(179, 50);
-            this.txbMaSach.TabIndex = 29;
+            this.txbMaSach.TabIndex = 0;
             this.txbMaSach.Text = "";
             this.txbMaSach.TrailingIcon = null;
+            this.txbMaSach.KeyDown += new System.Windows.Forms.KeyEventHandler(this.readOnlyTxb_KeyDown);
             // 
             // txbSLSach
             // 
@@ -267,16 +270,16 @@
             this.txbSLSach.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txbSLSach.Hint = "Số lượng";
             this.txbSLSach.LeadingIcon = null;
-            this.txbSLSach.Location = new System.Drawing.Point(35, 166);
+            this.txbSLSach.Location = new System.Drawing.Point(232, 98);
             this.txbSLSach.MaxLength = 10;
             this.txbSLSach.MouseState = MaterialSkin.MouseState.OUT;
             this.txbSLSach.Multiline = false;
             this.txbSLSach.Name = "txbSLSach";
-            this.txbSLSach.Size = new System.Drawing.Size(300, 50);
-            this.txbSLSach.TabIndex = 2;
-            this.txbSLSach.TabStop = false;
+            this.txbSLSach.Size = new System.Drawing.Size(211, 50);
+            this.txbSLSach.TabIndex = 1;
             this.txbSLSach.Text = "";
             this.txbSLSach.TrailingIcon = null;
+            this.txbSLSach.KeyDown += new System.Windows.Forms.KeyEventHandler(this.readOnlyTxb_KeyDown);
             // 
             // txbGiaSach
             // 
@@ -286,21 +289,43 @@
             this.txbGiaSach.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txbGiaSach.Hint = "Đơn giá";
             this.txbGiaSach.LeadingIcon = null;
-            this.txbGiaSach.Location = new System.Drawing.Point(353, 166);
+            this.txbGiaSach.Location = new System.Drawing.Point(458, 166);
             this.txbGiaSach.MaxLength = 12;
             this.txbGiaSach.MouseState = MaterialSkin.MouseState.OUT;
             this.txbGiaSach.Multiline = false;
             this.txbGiaSach.Name = "txbGiaSach";
-            this.txbGiaSach.Size = new System.Drawing.Size(316, 50);
-            this.txbGiaSach.TabIndex = 2;
+            this.txbGiaSach.Size = new System.Drawing.Size(211, 50);
+            this.txbGiaSach.TabIndex = 4;
             this.txbGiaSach.Text = "";
             this.txbGiaSach.TrailingIcon = null;
+            // 
+            // txbGiaGoc
+            // 
+            this.txbGiaGoc.AnimateReadOnly = false;
+            this.txbGiaGoc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbGiaGoc.Depth = 0;
+            this.txbGiaGoc.Enabled = false;
+            this.txbGiaGoc.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txbGiaGoc.Hint = "Giá gốc";
+            this.txbGiaGoc.LeadingIcon = null;
+            this.txbGiaGoc.Location = new System.Drawing.Point(458, 98);
+            this.txbGiaGoc.MaxLength = 12;
+            this.txbGiaGoc.MouseState = MaterialSkin.MouseState.OUT;
+            this.txbGiaGoc.Multiline = false;
+            this.txbGiaGoc.Name = "txbGiaGoc";
+            this.txbGiaGoc.Size = new System.Drawing.Size(211, 50);
+            this.txbGiaGoc.TabIndex = 2;
+            this.txbGiaGoc.Text = "";
+            this.txbGiaGoc.TrailingIcon = null;
+            this.txbGiaGoc.KeyDown += new System.Windows.Forms.KeyEventHandler(this.readOnlyTxb_KeyDown);
             // 
             // XemSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(705, 784);
+            this.CancelButton = this.btnThoat;
+            this.ClientSize = new System.Drawing.Size(705, 775);
+            this.Controls.Add(this.txbGiaGoc);
             this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.cbLoaiSach);
             this.Controls.Add(this.txbGiaSach);
@@ -315,8 +340,10 @@
             this.Controls.Add(this.txbTacGiaSach);
             this.Controls.Add(this.txbMaSach);
             this.FormStyle = MaterialSkin.Controls.MaterialForm.FormStyles.ActionBar_48;
+            this.MinimumSize = new System.Drawing.Size(705, 690);
             this.Name = "XemSach";
             this.Padding = new System.Windows.Forms.Padding(3, 72, 3, 3);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thông tin sách";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -338,5 +365,6 @@
         private MaterialSkin.Controls.MaterialTextBox txbMaSach;
         private MaterialSkin.Controls.MaterialTextBox txbSLSach;
         private MaterialSkin.Controls.MaterialTextBox txbGiaSach;
+        private MaterialSkin.Controls.MaterialTextBox txbGiaGoc;
     }
 }

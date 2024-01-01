@@ -66,5 +66,59 @@ namespace BookstoreManager.DAO
 
             return DataProvider.Instance.ExcuteNonQuery(query) > 0;
         }
+
+        public List<CTNS> GetListNSByNgayTaoAndMaNV(string maNV, int thang, int nam)
+        {
+            List<CTNS> list = new List<CTNS>();
+
+            string query = $"SELECT * FROM HOADONNHAPSACH WHERE MONTH(NGAYNHAP) = {thang} AND YEAR(NGAYNHAP) = {nam} AND MANV = '{maNV}'";
+
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
+
+            foreach (DataRow row in data.Rows)
+            {
+                HOADONNHAPSACH hoaDon = new HOADONNHAPSACH(row);
+
+                string maHD = hoaDon.MaNS;
+
+                query = $"SELECT * FROM CTNS WHERE MANS = '{maHD}'";
+
+                DataTable data1 = DataProvider.Instance.ExcuteQuery(query);
+
+                foreach (DataRow row1 in data1.Rows)
+                {
+                    list.Add(new CTNS(row1));
+                }
+            }
+
+            return list;
+        }
+
+        public List<CTNS> GetListNSByNgayTao(int thang, int nam)
+        {
+            List<CTNS> list = new List<CTNS>();
+
+            string query = $"SELECT * FROM HOADONNHAPSACH WHERE MONTH(NGAYNHAP) = {thang} AND YEAR(NGAYNHAP) = {nam}";
+
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
+
+            foreach (DataRow row in data.Rows)
+            {
+                HOADONNHAPSACH hoaDon = new HOADONNHAPSACH(row);
+
+                string maHD = hoaDon.MaNS;
+
+                query = $"SELECT * FROM CTNS WHERE MANS = '{maHD}'";
+
+                DataTable data1 = DataProvider.Instance.ExcuteQuery(query);
+
+                foreach (DataRow row1 in data1.Rows)
+                {
+                    list.Add(new CTNS(row1));
+                }
+            }
+
+            return list;
+        }
     }
 }

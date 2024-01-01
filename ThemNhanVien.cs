@@ -80,6 +80,12 @@ namespace BookstoreManager
                 MessageBox.Show("Ngày tháng không hợp lệ. Vui lòng nhập theo định dạng dd-MM-yyyy.");
                 return;
             }
+            int year = int.Parse(txbNgaySinh.Text.Substring(6, 4));
+            if (year < 1900 || year > 2079)
+            {
+                MessageBox.Show("Năm không hợp lệ (từ 1900 đến 2079).");
+                return;
+            }
             if (txbSDT.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập số điện thoại!", "Thông báo");
@@ -122,6 +128,27 @@ namespace BookstoreManager
             {
                 e.Handled = true;
             }
+        }
+
+        private void txbSDT_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txbCCCD_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void readOnlyTxb_KeyDown(object sender, KeyEventArgs e)
+        {
+            e.Handled = true;
         }
     }
 }

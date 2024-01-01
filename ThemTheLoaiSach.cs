@@ -74,6 +74,10 @@ namespace BookstoreManager
         #endregion
 
         #region events
+        private void readOnlyTxb_KeyDown(object sender, KeyEventArgs e)
+        {
+            e.Handled = true;
+        }
         private void dtgvListLS_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex == dtgvListLS.Rows.Count - 1)
@@ -108,6 +112,7 @@ namespace BookstoreManager
             {
                 if (MessageBox.Show("Bạn có chắc muốn xóa loại sách này không?", "Warning") == DialogResult.OK)
                 {
+                    SACHDAO.Instance.SoftDeleteByMaLS(maLS);
                     if (LOAISACHDAO.Instance.DeleteLSByID(maLS))
                     {
                         MessageBox.Show("Xoá loại sách thành công!", "Thông báo");

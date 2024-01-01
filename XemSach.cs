@@ -46,13 +46,20 @@ namespace BookstoreManager
             SACH sach = SACHDAO.Instance.LoadBookByID(maSach);
 
             txbMaSach.Text = sach.MaSach;
-            txbGiaSach.Text = FormatMoney(sach.GiaSach);
+            string giaSach = FormatMoney(sach.GiaSach);
+            if (giaSach == "")
+                giaSach = "-1";
+            txbGiaSach.Text = giaSach;
             cbLoaiSach.Text = sach.MaLS;
             txbMoTaSach.Text = sach.MoTa;
             txbNamXBSach.Text = sach.NamXB.ToString();
             txbSLSach.Text = sach.SoLuong.ToString();
             txbTenSach.Text = sach.TenSach;
             txbTacGiaSach.Text = sach.TacGia;
+            string giaGoc = FormatMoney(sach.GiaGoc);
+            if (giaGoc == "")
+                giaGoc = "-1";
+            txbGiaGoc.Text = giaGoc;
             cbNXBSach.Text = NHAXUATBANDAO.Instance.GetNXBByID(sach.MaNXB).TenNXB;
         }
         void LoadNXB()
@@ -76,12 +83,28 @@ namespace BookstoreManager
         #endregion
 
         #region events
+        private void readOnlyTxb_KeyDown(object sender, KeyEventArgs e)
+        {
+            e.Handled = true;
+        }
         private void btnXoaSach_Click(object sender, EventArgs e)
         {
-            string idSach = txbMaSach.Text;
+            string iDSach = txbMaSach.Text;
+            string tenSach = txbTenSach.Text;
+            string tacGia = txbTacGiaSach.Text;
+            decimal giaSach = decimal.Parse(txbGiaSach.Text);
+            decimal giaGoc = decimal.Parse(txbGiaGoc.Text);
+            short? namXB = null;
+            if (txbNamXBSach.Text != "")
+            {
+                namXB = short.Parse(txbNamXBSach.Text);
+            }
+            string moTa = txbMoTaSach.Text;
+            string tenNXB = cbNXBSach.Text;
+            string loaiSach = cbLoaiSach.Text;
             if (MessageBox.Show("Bạn có chắc muốn xóa sách này không?", "Warning", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
-                if (SACHDAO.Instance.DeleteBookByID(idSach) == true)
+                if (SACHDAO.Instance.UpdateBookByID(iDSach, tenSach, tacGia, giaSach, namXB, moTa, -1, tenNXB, loaiSach, giaGoc) == true)
                 {
                     MessageBox.Show("Xoá sách thành công!", "Thông báo");
                 }
@@ -125,10 +148,17 @@ namespace BookstoreManager
                 MessageBox.Show("Vui lòng nhập giá sách!", "Thông báo");
                 return;
             }
+            int year = int.Parse(txbNamXBSach.Text);
+            if (year < 0 || year > 2024)
+            {
+                MessageBox.Show("Năm giảm giá không hợp lệ (từ 0 đến 2024).");
+                return;
+            }
             string iDSach = txbMaSach.Text;
             string tenSach = txbTenSach.Text;
             string tacGia = txbTacGiaSach.Text;
             decimal giaSach = decimal.Parse(txbGiaSach.Text);
+            decimal giaGoc = decimal.Parse(txbGiaGoc.Text);
             short? namXB = null;
             if (txbNamXBSach.Text != "")
             {
@@ -138,7 +168,7 @@ namespace BookstoreManager
             int soLuong = int.Parse(txbSLSach.Text);
             string tenNXB = cbNXBSach.Text;
             string loaiSach = cbLoaiSach.Text;
-            if (SACHDAO.Instance.UpdateBookByID(iDSach, tenSach, tacGia, giaSach, namXB, moTa, soLuong, tenNXB, loaiSach) == true)
+            if (SACHDAO.Instance.UpdateBookByID(iDSach, tenSach, tacGia, giaSach, namXB, moTa, soLuong, tenNXB, loaiSach, giaGoc) == true)
             {
                 MessageBox.Show("Cập nhật thông tin sách thành công!", "Thông báo");
             }

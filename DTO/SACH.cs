@@ -10,14 +10,9 @@ using System.Threading.Tasks;
 
 namespace BookstoreManager.DTO
 {
-    public class SACH : INotifyPropertyChanged
+    public class SACH
     {
-        public event PropertyChangedEventHandler PropertyChanged;
-        public virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-        public SACH(string maSach, string tenSach, string tacGia, decimal? giaSach, short namXB, string moTa, int soLuong, string maNXB, string maLS)
+        public SACH(string maSach, string tenSach, string tacGia, decimal? giaSach, short namXB, string moTa, int soLuong, string maNXB, string maLS, decimal? giaGoc)
         {
             this.MaSach = maSach;
             this.TenSach = tenSach;
@@ -28,6 +23,7 @@ namespace BookstoreManager.DTO
             this.SoLuong = soLuong;
             this.MaNXB = maNXB;
             this.MaLS = maLS;
+            this.GiaGoc = giaGoc;
         }
 
         public SACH(DataRow row)
@@ -48,6 +44,12 @@ namespace BookstoreManager.DTO
             this.SoLuong = (int)row["SOLUONG"];
             this.MaNXB = row["MANXB"].ToString();
             this.MaLS = row["MALS"].ToString();
+            if (row["GIAGOC"].ToString() != "")
+                this.GiaGoc = (decimal)row["GIAGOC"];
+            else
+            {
+                this.GiaGoc = null;
+            }
         }
 
         private string maSach;
@@ -68,6 +70,8 @@ namespace BookstoreManager.DTO
 
         private string maLS;
 
+        private decimal? giaGoc;
+
         public string MaSach { get => maSach; set => maSach = value; }
         public string TenSach { get => tenSach; set => tenSach = value; }
         public string TacGia { get => tacGia; set => tacGia = value; }
@@ -77,5 +81,6 @@ namespace BookstoreManager.DTO
         public int SoLuong { get => soLuong; set => soLuong = value; }
         public string MaNXB { get => maNXB; set => maNXB = value; }
         public string MaLS { get => maLS; set => maLS = value; }
+        public decimal? GiaGoc { get => giaGoc; set => giaGoc = value; }
     }
 }

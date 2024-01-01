@@ -40,7 +40,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(72, 133);
+            this.pictureBox1.Location = new System.Drawing.Point(72, 125);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(300, 243);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -53,7 +53,7 @@
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.materialLabel1.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
-            this.materialLabel1.Location = new System.Drawing.Point(425, 132);
+            this.materialLabel1.Location = new System.Drawing.Point(425, 124);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(214, 41);
@@ -76,7 +76,7 @@
             this.txbPass.Name = "txbPass";
             this.txbPass.Password = true;
             this.txbPass.Size = new System.Drawing.Size(324, 50);
-            this.txbPass.TabIndex = 3;
+            this.txbPass.TabIndex = 2;
             this.txbPass.Text = "";
             this.txbPass.TrailingIcon = null;
             // 
@@ -94,7 +94,7 @@
             this.txbUsername.Multiline = false;
             this.txbUsername.Name = "txbUsername";
             this.txbUsername.Size = new System.Drawing.Size(324, 50);
-            this.txbUsername.TabIndex = 2;
+            this.txbUsername.TabIndex = 1;
             this.txbUsername.Text = "";
             this.txbUsername.TrailingIcon = null;
             // 
@@ -112,7 +112,7 @@
             this.materialButton1.Name = "materialButton1";
             this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
             this.materialButton1.Size = new System.Drawing.Size(123, 42);
-            this.materialButton1.TabIndex = 4;
+            this.materialButton1.TabIndex = 3;
             this.materialButton1.Text = "Đăng nhập";
             this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.materialButton1.UseAccentColor = false;
@@ -124,15 +124,15 @@
             this.AcceptButton = this.materialButton1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(822, 428);
+            this.ClientSize = new System.Drawing.Size(791, 431);
             this.Controls.Add(this.materialButton1);
             this.Controls.Add(this.txbUsername);
             this.Controls.Add(this.txbPass);
             this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.pictureBox1);
-            this.FormStyle = MaterialSkin.Controls.MaterialForm.FormStyles.ActionBar_56;
+            this.FormStyle = MaterialSkin.Controls.MaterialForm.FormStyles.ActionBar_48;
             this.Name = "Login";
-            this.Padding = new System.Windows.Forms.Padding(3, 80, 3, 3);
+            this.Padding = new System.Windows.Forms.Padding(3, 72, 3, 3);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
